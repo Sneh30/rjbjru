@@ -181,4 +181,4 @@ after this pass is the project submitted.
 
 If a leak is found, fix it at the source (account profile, Vercel team, YouTube
 channel or repository text), redeploy or re-upload, and repeat H11. Do not patch
-the symptom in one place while leaving the account-level leak in another.
+the symptom in one place while leaving the same personal identifier in another.
