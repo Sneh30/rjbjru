@@ -2,7 +2,7 @@
 
 **Day-ahead wind decision support built on the forecast a buyer actually had.**
 
-[![CI workflow](https://github.com/__GITHUB_OWNER__/rjbjru/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/__GITHUB_OWNER__/rjbjru/actions/workflows/ci.yml)
+[![CI workflow](https://github.com/Sneh30/rjbjru/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/Sneh30/rjbjru/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-2f6f59?style=flat-square)](LICENSE)
 [![Data: Elexon BMRS](https://img.shields.io/badge/data-Elexon%20BMRS-2f6f59?style=flat-square)](docs/DATA_SOURCES.md)
 [![Stack: React + FastAPI](https://img.shields.io/badge/stack-React%20%2B%20FastAPI-2f6f59?style=flat-square)](#architecture)
@@ -15,13 +15,12 @@ the two permitted Elexon datasets — `FUELHH` filtered to wind outturn and
 `WINDFOR` forecast vintages — frozen into a committed, fingerprinted snapshot and
 served by a FastAPI API and a React interface.
 
-> **Live demo:** [__VERCEL_HOST__](https://__VERCEL_HOST__) —
-> public, no login wall after the fresh-account migration.
-> **Source:** [github.com/__GITHUB_OWNER__/rjbjru](https://github.com/__GITHUB_OWNER__/rjbjru).
+> **Live demo:** [windlens-vhdegk.vercel.app](https://windlens-vhdegk.vercel.app) —
+> public, no login wall.
+> **Source:** [github.com/Sneh30/rjbjru](https://github.com/Sneh30/rjbjru).
 >
-> The application and data snapshot are verified; the public links are inserted
-> by `scripts/set_public_urls.sh` when the fresh neutral accounts exist. The
-> commands and outputs are in
+> The application and data snapshot are verified; the production commands and
+> outputs are in
 > [`docs/AUDIT.md`](docs/AUDIT.md#14-public-repository-and-production-deployment).
 
 ![Decision Desk for 15 January 2026, with hindsight and the P90 risk band enabled](docs/img/desk-hindsight.png)
@@ -198,7 +197,7 @@ no missing periods and no interpolation. The 12:00 cutoff would lower MAE to
 ## API overview
 
 Base path `/api/v1`. Interactive docs: `/api/docs`; machine-readable schema:
-`/api/openapi.json`. Live docs: <https://__VERCEL_HOST__/api/docs>.
+`/api/openapi.json`. Live docs: <https://windlens-vhdegk.vercel.app/api/docs>.
 The Swagger UI is self-hosted, so it renders under the strict CSP without any
 third-party request.
 
@@ -268,8 +267,8 @@ fast without pretending the fixture is the dataset.
 
 ## Deployment
 
-Production: **<https://__VERCEL_HOST__>**, served by the Vercel project imported
-from the new neutral repository. The project uses the **Other** framework preset;
+Production: **<https://windlens-vhdegk.vercel.app>**, served by the existing
+`windlens-vhdegk` Vercel project. The project uses the **Other** framework preset;
 `vercel.json` supplies the SPA build, the Python function, the `/api/*` rewrite
 and the security headers. The Python function bundles `backend/app/**` (including
 the self-hosted Swagger UI) and `data/processed/**`; no database or external cache
@@ -283,14 +282,14 @@ deployed function is **70.9 MB**, inside Vercel's 250 MB limit. Observed TTFB fo
 benchmark.
 
 ```bash
-bash scripts/verify_deploy.sh "https://__VERCEL_HOST__"
+bash scripts/verify_deploy.sh "https://windlens-vhdegk.vercel.app"
 ```
 
 The script checks the SPA shell, health, metadata, a decision view, the accuracy
 summary, the self-hosted docs assets, the CSV export, `robots.txt` and
 `favicon.ico`, and fails on a protection wall or a missing JSON field. The
-replacement account, project and deployment URL are chosen to contain no personal
-handle; the old team-scoped deployment is retired (H2/H4).
+public account URL and deployment host are accepted by the recorded H2 decision;
+no separate anonymous account or retirement step is used.
 
 Heroku is a fallback, not the primary path: the API image can run there, but
 serving the SPA from the same process requires copying `frontend/dist` into the

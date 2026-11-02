@@ -1,49 +1,47 @@
 # Submission form answers
 
-**Status: fresh-account migration pending; video and time are human-only.** The
-brief's link to the live submission form did not carry a working URL into this
-document set. Open the real form and reconcile every field before pasting
-anything. The field names below are a reasonable guess, not a verified schema.
-This file is not evidence that the form has been filled.
+**Status: public URLs and production verification are live; video and time are
+human-only.** The brief's link to the live submission form did not carry a
+working URL into this document set. Open the real form and reconcile every field
+before pasting anything. The field names below are a reasonable guess, not a
+verified schema. This file is not evidence that the form has been filled.
 
 Fields marked **HUMAN TO FILL** cannot be filled in by the agent. The repository
-and live-app URLs are placeholders until the human creates the fresh neutral
-accounts (H1/H2/H4); `scripts/set_public_urls.sh` fills them. The migrated
-deployment is verified immediately before submission, and the real output is
-pasted into the submission notes.
+and live-app URLs below are final and point at the existing public `Sneh30`
+account; the recorded H2 decision accepts that account URL. The deployment is
+verified immediately before submission, and the real output is pasted into the
+submission notes.
 
 ## Repository
 
 **Guessed field:** repository URL
 
 ```text
-https://github.com/__GITHUB_OWNER__/rjbjru
+https://github.com/Sneh30/rjbjru
 ```
 
-The new repository is created under a fresh neutral account, with no real name,
-personal email, personal avatar or link to the retired account. It is published
-as a single clean snapshot commit with author `dev <dev@users.noreply.invalid>`
-and default branch `main`; the inherited history is not pushed. The repository
-name `rjbjru` is neutral.
+The repository is public under the existing `Sneh30` account; H2 records that
+the account URL is acceptable. The inherited history was replaced by a clean
+snapshot with neutral author `dev <dev@users.noreply.invalid>` and default branch
+`main`; the old history is not served. The repository name `rjbjru` is neutral.
 
 ## Live application
 
 **Guessed field:** deployed application URL
 
 ```text
-https://__VERCEL_HOST__
+https://windlens-vhdegk.vercel.app
 ```
 
-The migrated deployment is verified with `bash scripts/verify_deploy.sh
-"https://__VERCEL_HOST__"` before submission. The script covers the SPA routes,
-health, metadata, decision view, accuracy summary, self-hosted docs, security
-headers, CSV export, `robots.txt` and `favicon.ico`. The app must open without a
-Vercel login wall, and the 11-check Playwright suite is run against the same URL
-with its real output pasted into the submission notes.
+The production deployment is verified with `bash scripts/verify_deploy.sh
+"https://windlens-vhdegk.vercel.app"` before submission. The script covers the SPA
+routes, health, metadata, decision view, accuracy summary, self-hosted docs,
+security headers, CSV export, `robots.txt` and `favicon.ico`. The app opens
+without a Vercel login wall, and the 11-check Playwright suite is run against the
+same URL with its real output pasted into the submission notes.
 
-> The replacement account, project and deployment host are chosen to contain no
-> personal handle. The old team-scoped deployment and its alias are retired
-> (H2/H4).
+> H2 accepts the public account URL and this deployment host. No separate
+> anonymous account or retirement step is used.
 
 ## Video
 
@@ -138,10 +136,9 @@ it and the honesty is more credible than a rounded claim.
 
 ## Notes for the human
 
-- The repository and app URLs above are placeholders until H1/H4 create the fresh
-  neutral accounts. Fill them with `scripts/set_public_urls.sh`, then run
-  `bash scripts/verify_deploy.sh "https://__VERCEL_HOST__"` immediately before
-  submitting and paste the real output.
+- The repository and app URLs above are final. Run
+  `bash scripts/verify_deploy.sh "https://windlens-vhdegk.vercel.app"` immediately
+  before submitting and paste the real output.
 - Do not paste the video URL until H8 uploads it as Unlisted and H7 passes.
 - Save the final form answers locally, outside the repository. The public repo
   should not contain private form fields or the human's time estimate.

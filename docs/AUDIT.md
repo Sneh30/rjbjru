@@ -2,13 +2,14 @@
 
 Run date: **2026-11-02** (Europe/London).
 Tier 1 source commit: **`f05c8de`** (`test(api): audit decision-time leakage against the real snapshot`).
-Public submission: **pending the fresh-account migration (H2/H4/H5)**. The final
-repository URL, deployment URL and deployment source commit are inserted by
-`scripts/set_public_urls.sh` and recorded in §14 before submission.
-Repository: **<https://github.com/__GITHUB_OWNER__/rjbjru>**, neutral author
+Public submission: **real public account URL accepted by H2**. The repository
+and deployment use the existing public `Sneh30` account and the existing
+`windlens-vhdegk` Vercel project; no fresh account is created and nothing is
+retired. Production evidence is recorded in §14.
+Repository: **<https://github.com/Sneh30/rjbjru>**, neutral author
 `dev <dev@users.noreply.invalid>`.
-Deployment: **<https://__VERCEL_HOST__>** (Vercel, public, no login wall, after
-migration).
+Deployment: **<https://windlens-vhdegk.vercel.app>** (Vercel, public, no login
+wall).
 
 This file is the evidence record for `docs/VERIFICATION_GATE.md` Tier 1. Every
 command below was run in this build, and the output is reproduced from the run,
@@ -37,7 +38,7 @@ Node 22 in the web image, Docker Compose v5.2.0, Playwright 1.64.1 with Chromium
 | 5 | `make types` and `git diff --exit-code` | PASS | [§5](#5-generated-types-match-the-openapi-schema) |
 | 6 | `vitest-axe` and browser axe, zero serious/critical | PASS | [§6](#6-accessibility) |
 | 7 | `scripts/check_no_placeholders.sh` | PASS | [§7](#7-placeholder-scan) |
-| 8 | `scripts/check_anonymity.sh` + image metadata | PASS (generic scan; private denylist is H2) | [§8](#8-anonymity-scan-and-image-metadata) |
+| 8 | `scripts/check_anonymity.sh` + image metadata | PASS (denylist; accepted public handle) | [§8](#8-anonymity-scan-and-image-metadata) |
 | 9 | Repo size and composition | PASS | [§9](#9-repository-composition) |
 | 10 | Conventional commit history | PASS | [§10](#10-commit-history) |
 | 11 | Insights regenerated as the last content step | PASS | [§11](#11-insights-regenerated-last) |

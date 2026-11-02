@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Fail unless the public documentation contains one coherent set of real URLs.
-# Run after scripts/set_public_urls.sh and before publishing.
+# This is the final public-link gate; it is safe to run before every push.
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
@@ -10,6 +10,11 @@ python3 - <<'PY'
 from pathlib import Path
 import re
 import sys
+
+owner = "Sneh30"
+host = "windlens-vhdegk.vercel.app"
+repo_url = f"https://github.com/{owner}/rjbjru"
+host_url = f"https://{host}"
 
 docs = [
     Path("README.md"),
@@ -25,9 +30,10 @@ for path in docs:
         problems.append(f"missing {path}")
         continue
     text = path.read_text()
-    for marker in ("__GITHUB_OWNER__", "__VERCEL_HOST__"):
-        if marker in text:
-            problems.append(f"{path} still contains {marker}")
+    if repo_url not in text:
+        problems.append(f"{path} is missing {repo_url}")
+    if host_url not in text:
+        problems.append(f"{path} is missing {host_url}")
 
 repo_pattern = re.compile(r"https://github\.com/([A-Za-z0-9-]+)/rjbjru\b")
 host_pattern = re.compile(r"https://([a-z0-9-]+\.vercel\.app)\b")
@@ -50,17 +56,17 @@ for path in required:
     if not host_pattern.search(text):
         problems.append(f"{path} has no https://<project>.vercel.app URL")
 
-if len(owners) != 1:
-    problems.append(f"expected exactly one GitHub owner, found {sorted(owners) or 'none'}")
-if len(hosts) != 1:
-    problems.append(f"expected exactly one Vercel host, found {sorted(hosts) or 'none'}")
+if owners != {owner}:
+    problems.append(f"expected GitHub owner {owner!r}, found {sorted(owners) or 'none'}")
+if hosts != {host}:
+    problems.append(f"expected Vercel host {host!r}, found {sorted(hosts) or 'none'}")
 
 if problems:
     for problem in problems:
         print(f"FAIL: {problem}", file=sys.stderr)
     raise SystemExit(1)
 
-print(f"ok: GitHub owner = {next(iter(owners))}")
-print(f"ok: Vercel host = {next(iter(hosts))}")
+print(f"ok: GitHub owner = {owner}")
+print(f"ok: Vercel host = {host}")
 print("public URL check passed")
 PY

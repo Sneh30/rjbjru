@@ -1,10 +1,10 @@
 # Human actions
 
 This file separates completed, agent-executed steps from the work that remains
-human-only. The earlier public repository and deployment used identifying account
-handles and have been retired. The public submission moves to fresh, neutral
-GitHub and Vercel accounts created by the human; the agent cannot create accounts
-or complete CAPTCHA, email or phone verification.
+human-only. The recorded H2 decision is **real account, account URL is
+acceptable**. The public repository and deployment therefore use the existing
+public `Sneh30` account and the existing `windlens-vhdegk` Vercel project. No
+fresh account is created, and nothing is retired.
 
 The agent has **not** recorded a video, uploaded a video, opened the real
 submission form or submitted anything. Those actions, and the final human review,
@@ -12,11 +12,11 @@ remain yours.
 
 | ID | Action | Status |
 |---|---|---|
-| H1 | Fresh GitHub repository and clean public snapshot | **HUMAN** — account creation, then `scripts/publish_clean_snapshot.sh` |
-| H2 | Fresh-account anonymity decision | **DECIDED** — recorded in `.anonymity-decision`; accounts pending |
+| H1 | Public GitHub repository and clean snapshot | **DONE** — force-pushed `main`; old remote history replaced |
+| H2 | Account-level anonymity decision | **RESOLVED** — real account URL accepted; recorded in `.anonymity-decision` |
 | H3 | Refresh the snapshot | Not needed; T1 snapshot is current |
-| H4 | Fresh Vercel project and production deployment | **HUMAN** — account and project creation |
-| H5 | New URL, old-alias removal and slug check | **PENDING** H4 |
+| H4 | Existing Vercel project production deployment | **DONE** — `vercel --prod` CLI deployment |
+| H5 | Production URL verification | **RESOLVED** — verify, Lighthouse, Playwright and numbers evidence in `docs/AUDIT.md` §14 |
 | H6 | Record the video | **HUMAN** |
 | H7 | Post-record content QA | **HUMAN** |
 | H8 | Upload the video as Unlisted | **HUMAN** |
@@ -24,73 +24,26 @@ remain yours.
 | H10 | Report actual human time | **HUMAN** |
 | H11 | Final incognito pass | **HUMAN** |
 
-Do not use the old `gh` or `vercel` sessions for any step below. They are tied to
-the identifying accounts and must not be reused.
+## Completed public migration — H1, H2, H4 and H5
 
-## H1 — Create the fresh GitHub repository and push a clean snapshot
+- Repository: **<https://github.com/Sneh30/rjbjru>**, branch `main`. The public
+  branch was force-pushed from a clean local tree, so the repository's previous
+  history is no longer served. Commits use the neutral author
+  `dev <dev@users.noreply.invalid>`.
+- Decision: `.anonymity-decision` records
+  `H2: real account, account URL is acceptable`.
+- Deployment: **<https://windlens-vhdegk.vercel.app>**, produced by the existing
+  linked Vercel project `windlens-vhdegk` with `vercel --prod`. This was a CLI
+  deployment, not a Git-integration auto-deploy.
+- Production checks: `scripts/verify_deploy.sh`, Lighthouse, the Playwright e2e
+  suite and `scripts/check_numbers_consistency.sh` were run against the live URL.
+  The full output is in `docs/AUDIT.md` §14.
+- No old repository or deployment is being retired. The public account URL and
+  deployment host are the accepted public artefacts.
 
-The existing local history contains the retired account URLs in old documentation
-commits. Do **not** push that history to the new repository. Publish a single
-clean snapshot commit instead.
-
-1. Create a new GitHub account with a neutral username, no real name, no linked
-   personal email, no personal avatar and no public link to the old account.
-2. Create an empty **private** repository named `rjbjru`. Do not add a README,
-   licence or `.gitignore` through the browser.
-3. Authenticate `git` for the new account (credential helper or a fresh SSH key).
-   Do not run `gh auth login` over the old session; use a separate key or helper.
-4. Insert the new owner into the tracked documentation and commit it:
-   ```bash
-   bash scripts/set_public_urls.sh --github-owner <new-github-owner>
-   git add README.md docs/AUDIT.md docs/FORM_ANSWERS.md HUMAN_ACTIONS.md
-   git commit -m "docs: set migrated repository owner"
-   ```
-5. Point `origin` at the new empty repository:
-   ```bash
-   git remote set-url origin https://github.com/<new-github-owner>/rjbjru.git
-   git remote -v
-   ```
-6. Run the anonymity gate, then publish the initial clean snapshot while the
-   repository is still private:
-   ```bash
-   bash scripts/check_anonymity.sh
-   bash scripts/publish_clean_snapshot.sh --allow-pending-host
-   ```
-   The publish script creates an orphan commit containing only the current tree,
-   so no retired URL or old commit message enters the new history. The
-   `--allow-pending-host` flag is only for this private first push, before H4 has
-   a Vercel hostname; the second push in H4 must pass the full URL gate.
-7. In the old GitHub account's web UI, change the old `rjbjru` repository to
-   **private**. The agent will not use the old CLI session to do this.
-8. Keep the new repository private until H4 has filled the production host. Then
-   change its visibility to public.
-
-The repository name is neutral; the new account handle must also be neutral.
-
-## H2 — Decide account-level anonymity (decided)
-
-The recorded decision, in the gitignored `.anonymity-decision`, is:
-
-```text
-H2: fresh neutral GitHub and Vercel accounts (decision 2026-11-02, supersedes the earlier existing-account acceptance)
-```
-
-Consequences:
-
-- The GitHub account is created for this submission only, with no real name,
-  personal email, personal avatar or link to other accounts.
-- The Vercel account/project is created for this submission only. No identifying
-  team slug appears in the project, dashboard URL or deployment host.
-- The old repository becomes private and the old Vercel project is deleted, or at
-  minimum its team-scoped alias is removed, so the retired deployment stops
-  resolving.
-- README, form answers, video description and hand-off docs reference only the
-  new repository and production URLs.
-- `.anonymity-denylist` is populated and gitignored. `scripts/check_anonymity.sh`
-  scans every tracked file and every commit author.
-
-The literal old account, project and alias identifiers are recorded only in the
-gitignored decision and private evidence files, never in public documentation.
+The deployed function is built on Python 3.12 through `build.env.UV_PYTHON` in
+`vercel.json`, because the pinned `pydantic-core` has no Python 3.14 wheel. The
+expected function size is about 71 MB, inside Vercel's 250 MB limit.
 
 ## H3 — Refresh the snapshot only if you re-ingest
 
@@ -114,56 +67,6 @@ git commit -m "docs: regenerate insights for refreshed snapshot"
 The second commit is not optional: the insight files are generated from the
 snapshot and the contract test will fail if they drift. Re-run the number
 consistency check and the full test suite after a refresh.
-
-## H4 — Create the fresh Vercel project and deploy
-
-Do this only after H1 has pushed the clean snapshot.
-
-1. Sign in to Vercel through the new neutral account. Do not reuse the old
-   `vercel` CLI session or the old team.
-2. Import the new GitHub repository `rjbjru`. Use a neutral project name that
-   does not contain a person's name or handle. Framework preset: **Other**, root
-   directory `.`; `vercel.json` supplies the build.
-3. Deploy to production and record the assigned host, for example
-   `<neutral-project>.vercel.app`.
-4. Insert the host into the tracked documentation, commit, then replace the
-   private placeholder snapshot with the final clean one:
-   ```bash
-   bash scripts/set_public_urls.sh --vercel-host <neutral-project>.vercel.app
-   git add README.md docs HUMAN_ACTIONS.md
-   git commit -m "docs: record migrated production URL"
-   bash scripts/publish_clean_snapshot.sh
-   ```
-   The second publish force-pushes another parentless snapshot, now with both
-   real URLs and no placeholders. The public history is one commit.
-5. Delete the old Vercel project. If deletion is not possible, open
-   **Settings → Domains** on the old project and remove the team-scoped alias so
-   it stops resolving. The literal alias is in the private evidence file; it must
-   not appear in the new repository.
-6. Make the new GitHub repository public if it was created private.
-
-The deployed function is built on Python 3.12 through `build.env.UV_PYTHON` in
-`vercel.json`, because the pinned `pydantic-core` has no Python 3.14 wheel. The
-expected function size is about 71 MB, inside Vercel's 250 MB limit.
-
-## H5 — Check the new URL, old aliases and slug
-
-- Run the full verifier against the new host:
-  ```bash
-  bash scripts/verify_deploy.sh "https://<neutral-project>.vercel.app"
-  ```
-  It now checks the SPA routes, API, self-hosted docs, security headers, CSV
-  export, `robots.txt` and `favicon.ico`.
-- Run Lighthouse against the same URL and keep the full JSON/HTML report,
-  including failed audits.
-- Confirm the retired team-scoped alias no longer resolves (the literal is in the
-  private evidence file; do not paste it into tracked docs).
-- Confirm the new dashboard, deployment-specific URLs and repository URL contain
-  no personal handle.
-- Confirm the page title, footer, Open Graph tags and README contain no personal
-  name, email or avatar.
-- Run `bash scripts/check_anonymity.sh` and `scripts/check_public_urls.sh`, then
-  run the full incognito pass (H11) against the new links only.
 
 ## H6 — Record the video
 
@@ -206,8 +109,9 @@ Watch the recorded video once, end to end, with the script beside you. Confirm:
   the deployment path and at least one trade-off or next step.
 - Every number spoken matches `docs/INSIGHTS.md`. If a number changed after a
   snapshot refresh, re-record that segment.
-- No personal name, username, employer, email, account URL, browser profile or
-  notification appears in any frame.
+- No personal name, employer, email, browser profile or notification appears in
+  any frame. The public `Sneh30` account URL is accepted by H2 and is not a
+  failure.
 - The total length is under 10:00, and preferably under 9:30.
 
 If any item fails, fix it before uploading. Do not rely on a viewer to ignore a
@@ -270,10 +174,11 @@ After H6–H10, open every submitted URL in a fresh incognito window:
 - The YouTube video, including playback and the description.
 - The submission form's confirmation page, if the form shows one.
 
-Check the repository README, the app footer, the video frames and the form for
-any real name, handle, email, employer, location, school or account slug. Check
-that the live app has no Vercel protection wall and that the video is playable
-without signing in. Only after this pass is the project submitted.
+Check the repository README, the app footer, the video frames and the form for any
+real name, personal email, employer, location or school. The public `Sneh30`
+account URL is accepted by H2 and is not a failure. Check that the live app has no
+Vercel protection wall and that the video is playable without signing in. Only
+after this pass is the project submitted.
 
 If a leak is found, fix it at the source (account profile, Vercel team, YouTube
 channel or repository text), redeploy or re-upload, and repeat H11. Do not patch
