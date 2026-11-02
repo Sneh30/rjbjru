@@ -42,17 +42,19 @@ Node 22 in the web image, Docker Compose v5.2.0, Playwright 1.64.1 with Chromium
 | 7 | `scripts/check_no_placeholders.sh` | PASS | [§7](#7-placeholder-scan) |
 | 8 | `scripts/check_anonymity.sh` + image metadata | PASS (denylist; accepted public handle) | [§8](#8-anonymity-scan-and-image-metadata) |
 | 9 | Repo size and composition | PASS | [§9](#9-repository-composition) |
-| 10 | Conventional commit history | DEVIATION — 5 public commits; accepted anonymity trade-off | [§10](#10-commit-history) |
+| 10 | Conventional commit history | DEVIATION — 5 commits at verification head `5e0a62d`; accepted anonymity trade-off | [§10](#10-commit-history) |
 | 11 | Insights regenerated as the last content step | PASS | [§11](#11-insights-regenerated-last) |
 | 12 | Numbers consistency, every claim | PASS (77/77) | [§12](#12-numbers-consistency) |
 | 13 | Video timing estimate | PASS (541 s at 130 wpm) | [§13](#13-video-timing) |
 
 **Tier 1: 12 / 13 green, plus one recorded deviation.** Item 10 fails the
 supplied ≥ 15-commit gate because the clean-snapshot force-push collapsed the
-public history to five commits; §10 records the trade-off rather than claiming a
-pass. Tier 1 was otherwise captured on the local tree at `f05c8de`; the later
-public push, deployment and production checks are recorded in §14. Video
-recording, upload and form submission remain human-only and are not claimed here.
+public history to five commits at the verification head `5e0a62d`; §10 records
+the trade-off rather than claiming a pass. Later documentation commits extend the
+tail only and do not restore the gate count. Tier 1 was otherwise captured on the
+local tree at `f05c8de`; the later public push, deployment and production checks
+are recorded in §14. Video recording, upload and form submission remain
+human-only and are not claimed here.
 
 ---
 
@@ -553,11 +555,11 @@ docker-compose.yml valid
 ## 10. Commit history
 
 **Status: DEVIATION.** The supplied gate expects `git log --oneline` to show at
-least 15 meaningful, Conventional-Commits-style entries. The public branch has
-five, so this item is not a pass.
+least 15 meaningful, Conventional-Commits-style entries. At the verification head
+`5e0a62d` the public branch had five, so this item is not a pass.
 
 ```console
-$ git log --oneline
+$ git log 5e0a62d --oneline
 5e0a62d docs: keep the final incognito check scoped to personal identifiers
 19ec451 docs: record live verification and H6-H11 hand-off
 f5f24ff build: exclude all private anonymity files from Vercel uploads
@@ -565,7 +567,9 @@ f5f24ff build: exclude all private anonymity files from Vercel uploads
 77e2f93 WindLens: clean public submission snapshot
 ```
 
-All five use the neutral author identity:
+Documentation follow-ups after `5e0a62d` extend the tail only; they do not
+restore the gate count or turn the snapshot into an iterative log. All commits
+use the neutral author identity:
 
 ```console
 $ git log --format='%an <%ae>' | sort -u
