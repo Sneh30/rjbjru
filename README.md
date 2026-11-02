@@ -288,8 +288,7 @@ bash scripts/verify_deploy.sh "https://windlens-vhdegk.vercel.app"
 The script checks the SPA shell, health, metadata, a decision view, the accuracy
 summary, the self-hosted docs assets, the CSV export, `robots.txt` and
 `favicon.ico`, and fails on a protection wall or a missing JSON field. The
-public account URL and deployment host are accepted by the recorded H2 decision;
-no separate anonymous account or retirement step is used.
+public account URL and deployment host are accepted by the recorded H2 decision.
 
 Heroku is a fallback, not the primary path: the API image can run there, but
 serving the SPA from the same process requires copying `frontend/dist` into the

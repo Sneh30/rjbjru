@@ -37,11 +37,10 @@ The production deployment is verified with `bash scripts/verify_deploy.sh
 "https://windlens-vhdegk.vercel.app"` before submission. The script covers the SPA
 routes, health, metadata, decision view, accuracy summary, self-hosted docs,
 security headers, CSV export, `robots.txt` and `favicon.ico`. The app opens
-without a Vercel login wall, and the 11-check Playwright suite is run against the
-same URL with its real output pasted into the submission notes.
+without a Vercel login wall. The real `PLAYWRIGHT_BASE_URL` e2e output against
+this URL is recorded in the production-evidence section of `docs/AUDIT.md`.
 
-> H2 accepts the public account URL and this deployment host. No separate
-> anonymous account or retirement step is used.
+> H2 accepts the public account URL and this deployment host.
 
 ## Video
 

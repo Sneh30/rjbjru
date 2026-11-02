@@ -1,11 +1,13 @@
 # Verification audit
 
 Run date: **2026-11-02** (Europe/London).
-Tier 1 source commit: **`f05c8de`** (`test(api): audit decision-time leakage against the real snapshot`).
+Tier 1 evidence source: local tree at **`f05c8de`** (`test(api): audit
+decision-time leakage against the real snapshot`). That historical commit is not
+part of the force-pushed public branch; the public tree preserves the same files.
 Public submission: **real public account URL accepted by H2**. The repository
 and deployment use the existing public `Sneh30` account and the existing
-`windlens-vhdegk` Vercel project; no fresh account is created and nothing is
-retired. Production evidence is recorded in §14.
+`windlens-vhdegk` Vercel project. H2 accepts that account URL. Production
+evidence is recorded in §14.
 Repository: **<https://github.com/Sneh30/rjbjru>**, neutral author
 `dev <dev@users.noreply.invalid>`.
 Deployment: **<https://windlens-vhdegk.vercel.app>** (Vercel, public, no login
@@ -459,18 +461,18 @@ scripts or the hand-off documents.
 ```console
 $ bash scripts/check_anonymity.sh
 == anonymity check ==
-WARN: .anonymity-denylist is absent; private identifiers were not checked.
-      The human must add it before the public push (H2).
+using .anonymity-denylist
 ok: local git identity is neutral
 ok: commit authors are neutral
-anonymity check passed (generic checks; private tokens require .anonymity-denylist)
+anonymity check passed (denylist, tracked text and commit authors)
 ```
 
-The warning is real: the script can check the neutral commit identity and generic
-patterns, but it cannot know a private name, handle or employer without the
-gitignored `.anonymity-denylist`. H2 requires the human to supply that file
-before any public push. The script also cannot see the GitHub account, Vercel
-team slug or YouTube channel; H5 and H11 cover those.
+The private denylist rejects identifiers more specific than the public handle:
+full name, personal email, the old Vercel username and related variants. The H2
+decision explicitly accepts the public `Sneh30` account URL and the
+`windlens-vhdegk.vercel.app` host, so those strings are not treated as leaks. The
+script cannot see the GitHub account, Vercel team slug or YouTube channel; H2
+records that acceptance and H11 is the human check.
 
 Additional scans on the tracked tree:
 
@@ -747,12 +749,164 @@ has to record and measure the real runtime in H6/H7.
 
 ## 14. Public repository and production deployment
 
-**Status: pending fresh-account migration (H2/H4/H5).** The first deployment and
-its public evidence were retired because their URLs contained the identifying
-account handle. The replacement repository and Vercel project are created under
-fresh neutral accounts. This section is regenerated with the new URLs, deployment
-ID, source commit, verification output and browser checks before submission. The
-retired evidence is retained privately and is not part of the public tree.
+**Status: complete (H1/H2/H4/H5).** The recorded H2 decision is **real account,
+account URL is acceptable**. The public repository and deployment use the
+existing public `Sneh30` account and the existing `windlens-vhdegk` Vercel
+project. No separate account or project is used.
+
+Public repository: **<https://github.com/Sneh30/rjbjru>**, branch `main`. The
+remote `main` was force-pushed from a clean local tree. The previous remote head
+`207ca0a` was replaced by `3de23b6`; the subsequent build-only commit is
+`f5f24ff`. The public branch contains only neutral-author commits
+(`dev <dev@users.noreply.invalid>`) and does not serve the inherited local
+history.
+
+Production deployment:
+
+```text
+Project:      sneh30/windlens-vhdegk
+Method:       vercel --prod --yes (CLI deployment, not Git integration)
+Deployment:   dpl_CRiCqGKMW1eXYeQUWWWCamUod663
+Alias:        https://windlens-vhdegk.vercel.app
+Target:       production
+State:        READY
+Source commit: f5f24ff
+```
+
+`.vercelignore` excludes `.anonymity-*`, so the private decision, denylist and
+old-deployment evidence are not uploaded to the deployment.
+
+### 14.1 Deployment verification
+
+```console
+$ bash scripts/verify_deploy.sh https://windlens-vhdegk.vercel.app
+== WindLens deployment verification ==
+base: https://windlens-vhdegk.vercel.app
+ok: / -> 200
+ok: /desk -> 200
+ok: /revisions -> 200
+ok: /api/v1/health -> 200
+ok: /api/v1/meta -> 200
+ok: /api/v1/decision-view?delivery_date=2026-01-15&cutoff=09%3A00 -> 200
+ok: /api/v1/accuracy/summary?start=2026-01-02&end=2026-02-01&cutoff=09%3A00 -> 200
+ok: /api/docs -> 200
+ok: /api/static/swagger/swagger-ui.css -> 200
+ok: /api/static/swagger/swagger-ui-bundle.js -> 200
+ok: /api/openapi.json -> 200
+ok: health status = 'ok'
+ok: snapshot fingerprint = '331dc8acb133704a'
+ok: product name = 'WindLens'
+ok: manifest fingerprint = '331dc8acb133704a'
+ok: decision coverage = 24
+ok: scored hours = 744
+ok: health and meta refer to the same snapshot
+ok: static security headers present
+ok: SPA history fallback serves the app
+ok: favicon.ico is a valid ICO file
+ok: robots.txt and favicon.ico are real static files
+ok: docs UI assets are self-hosted
+ok: CSV export
+
+Deployment verification passed for https://windlens-vhdegk.vercel.app
+```
+
+Static asset responses at the same host:
+
+```console
+$ curl -sS -D - https://windlens-vhdegk.vercel.app/robots.txt
+HTTP/2 200
+content-type: text/plain; charset=utf-8
+content-disposition: inline; filename="robots.txt"
+
+User-agent: *
+Allow: /
+
+# WindLens is a public, read-only decision-support demo.
+# There are no private or authenticated areas to exclude.
+
+$ curl -sS -D - https://windlens-vhdegk.vercel.app/favicon.ico
+HTTP/2 200
+content-type: image/vnd.microsoft.icon
+content-disposition: inline; filename="favicon.ico"
+
+$ file favicon.ico
+MS Windows icon resource - 6 icons, 16x16 with PNG image data, ..., 32x32 with PNG image data, ...
+```
+
+Neither path is served by the SPA fallback: `/robots.txt` is `text/plain` and
+`/favicon.ico` is `image/vnd.microsoft.icon`, both HTTP 200.
+
+### 14.2 Lighthouse
+
+Lighthouse 12.8.2, mobile default, against
+`https://windlens-vhdegk.vercel.app/` (`/desk` after the redirect), fetched
+`2026-11-02T15:16:31.319Z`:
+
+```text
+performance:      95
+accessibility:   100
+best-practices:  100
+seo:             100
+```
+
+Failed audits:
+
+```text
+unused-javascript                 Est savings of 74 KiB
+network-dependency-tree-insight   no display value
+```
+
+Key checks:
+
+```text
+robots-txt                     pass
+errors-in-console              pass
+label-content-name-mismatch    pass
+is-on-https                    pass
+viewport                       pass
+document-title                 pass
+meta-description               pass
+http-status-code               pass
+crawlable-anchors              pass
+link-text                      pass
+```
+
+The full JSON and HTML reports were generated as `report.report.json` and
+`report.report.html` in the local Lighthouse output directory.
+
+### 14.3 Playwright against the live URL
+
+```console
+$ cd frontend
+$ PLAYWRIGHT_BASE_URL=https://windlens-vhdegk.vercel.app npx playwright test
+Running 11 tests using 4 workers
+
+  ✓   4 [chromium] › e2e/a11y.spec.ts:52:3 › Revisions explorer has no serious or critical axe violations (1.9s)
+  ✓   3 [chromium] › e2e/a11y.spec.ts:52:3 › About has no serious or critical axe violations (1.9s)
+  ✓   1 [chromium] › e2e/a11y.spec.ts:52:3 › Accuracy Lab has no serious or critical axe violations (1.9s)
+  ✓   2 [chromium] › e2e/a11y.spec.ts:52:3 › Decision Desk has no serious or critical axe violations (2.0s)
+  ✓   7 [chromium] › e2e/smoke.spec.ts:4:3 › WindLens smoke › redirects to the desk and renders the real snapshot (1.1s)
+  ✓   6 [chromium] › e2e/smoke.spec.ts:19:3 › WindLens smoke › changes delivery day with the keyboard-accessible controls (1.1s)
+  ✓   5 [chromium] › e2e/a11y.spec.ts:52:3 › Not found has no serious or critical axe violations (1.2s)
+  ✓   8 [chromium] › e2e/smoke.spec.ts:27:3 › WindLens smoke › toggles hindsight and reveals the actual outturn (1.4s)
+  ✓   9 [chromium] › e2e/smoke.spec.ts:36:3 › WindLens smoke › downloads the day CSV (1.2s)
+  ✓  11 [chromium] › e2e/smoke.spec.ts:70:3 › WindLens smoke › shows a useful 404 (1.2s)
+  ✓  10 [chromium] › e2e/smoke.spec.ts:44:3 › WindLens smoke › opens the lab, revisions and methodology views (2.1s)
+
+  11 passed (5.9s)
+```
+
+### 14.4 Numbers consistency
+
+```console
+$ bash scripts/check_numbers_consistency.sh
+canonical source: docs/INSIGHTS.md (206 distinct values)
+...
+checked 77 claims against 206 canonical values
+ok: every numeric claim traces exactly to docs/INSIGHTS.md
+```
+
+The full per-claim output is in the command log for this run.
 
 ## Additional build and runtime evidence
 
@@ -816,13 +970,13 @@ Video recording, upload and the real form have not happened.
 - **Hosted performance is observational.** The function is 70.95 MB and warm TTFB
   was 0.28–0.36 s, but no controlled cold-start benchmark was run. ADR-007
   records the fallback if the hosted function becomes too heavy.
-- **CI will be re-run on the clean public snapshot.** The earlier run passed all
-  five jobs, but the public repository is recreated as a single clean snapshot
-  under the new account; the final run ID and badge are recorded after the push.
-- **Fresh-account migration is pending.** The retired repository and deployment
-  URLs contained the old account handle. The new repository, deployment and
-  dashboard are chosen to contain no personal identifier (H2/H4/H5). The old
-  repository is made private and the old alias removed before submission.
+- **CI runs on the public snapshot.** The workflow is committed and the previous
+  local run passed all five jobs; the final Actions run ID and badge are read from
+  the public repository after the push.
+- **Account anonymity is scoped by H2.** The public `Sneh30` account URL and the
+  `windlens-vhdegk.vercel.app` host are accepted. The denylist still rejects
+  identifiers more specific than that handle, and H11 checks for a real name,
+  personal email, employer, location or school in the public artefacts.
 - **One month, one season.** The evaluation covers 31 January delivery days,
   and the walk-forward back-test has 23 evaluated days. Tail coverage is
   indicative, not precise.
@@ -842,17 +996,17 @@ Video recording, upload and the real form have not happened.
 ## Tier 3 sign-off
 
 ```text
-WHAT WAS BUILT: WindLens is a React/FastAPI decision-time wind forecast desk built on a committed live Elexon snapshot. It implements ingestion, normalisation, validation and snapshot serving (FR-D1–FR-D6); cutoff resolution, inclusive vintage selection, hourly join, metrics, breakdowns, persistence skill, risk buffers and a walk-forward back-test (FR-L1–FR-L11); a versioned read-only API with OpenAPI, problem errors, ETags, CSV exports, health and CORS (FR-A1–FR-A6); four routed views with URL state, accessible charts and tables, what-if demand and provenance (FR-U1–FR-U11); and Docker, README, CI, video script, form answers and hand-off artefacts (FR-P1, FR-P3–FR-P8). FR-P2 is pending redeployment at the migrated URL and is verified in §14; account/URL anonymity (FR-P9) is pending the fresh-account migration under H2/H4/H5; post-record QA (FR-P10) remains H7.
+WHAT WAS BUILT: WindLens is a React/FastAPI decision-time wind forecast desk built on a committed live Elexon snapshot. It implements ingestion, normalisation, validation and snapshot serving (FR-D1–FR-D6); cutoff resolution, inclusive vintage selection, hourly join, metrics, breakdowns, persistence skill, risk buffers and a walk-forward back-test (FR-L1–FR-L11); a versioned read-only API with OpenAPI, problem errors, ETags, CSV exports, health and CORS (FR-A1–FR-A6); four routed views with URL state, accessible charts and tables, what-if demand and provenance (FR-U1–FR-U11); and Docker, README, CI, video script, form answers and hand-off artefacts (FR-P1, FR-P3–FR-P8). FR-P2 is verified at https://windlens-vhdegk.vercel.app in §14; H2 resolves FR-P9 by accepting the public account URL; post-record QA (FR-P10) remains H7.
 KEY NUMBERS THE VIDEO WILL CITE: 744 hourly targets; MAE 2,038.9 MW; nMAE 18.07%; bias +1,747.9 MW; over-forecast 85.0%; P90 shortfall 4,097.9 MW; P95 5,283.4 MW; maximum 6,870.0 MW; persistence MAE 4,125.9 MW; skill 0.51 (50.58% MAE reduction); horizon 16.5–39.5 h (mean 28.0 h); earliest-vintage MAE 2,422.1 MW (18.79% worse); P90 in-sample buffer 4,097.9 MW; walk-forward coverage 86.0% over 23 days, mean buffer 4,051.8 MW, 22.0% of days breached; 12:00 cutoff MAE 1,901.0 MW (6.76% below default), mean horizon 24.1 h. All trace to docs/INSIGHTS.md.
 
-AGENT VERIFICATION (Tier 1): 13 / 13 items green — evidence in docs/AUDIT.md. Production verification is pending the fresh-account migration; the retired deployment's 22-check and 11-playwright evidence is retained privately. The clean public snapshot gets a fresh CI run and the migrated deployment gets a fresh verification run before submission.
-CAPABILITY GAPS (Tier 0 → Tier 2): fresh neutral GitHub/Vercel accounts, repository push, old-repo privatisation and old-alias removal (H1/H2/H4/H5); video recording, content QA and Unlisted upload (H6/H7/H8); real submission form (H9); honest human time (H10); final incognito pass (H11). The agent cannot create accounts or record audio/video.
+AGENT VERIFICATION (Tier 1): 13 / 13 items green — evidence in docs/AUDIT.md. Production verification: 24/24 deployment checks, Lighthouse 95/100/100/100, 11/11 Playwright checks, 77/77 numeric claims; evidence in §14.
+CAPABILITY GAPS (Tier 0 → Tier 2): video recording, content QA and Unlisted upload (H6/H7/H8); real submission form (H9); honest human time (H10); final incognito pass (H11). The agent cannot record audio/video or submit the form.
 DATA INTEGRITY (T1): real snapshot confirmed — live Elexon pull, manifest fingerprint 331dc8acb133704a, 1,536 FUELHH rows, 19,856 WINDFOR rows, 744/744 decision coverage, both processed SHA-256 checks green.
 NUMBERS CONSISTENCY (§2.4): pass — 77/77 claims traced exactly to docs/INSIGHTS.md.
-HUMAN ACTIONS REMAINING (Tier 2, from HUMAN_ACTIONS.md): H1/H2/H4/H5 fresh accounts, clean push, old-repo privatisation and old-alias removal; H6 record; H7 post-record QA; H8 Unlisted upload; H9 reconcile form; H10 time spent; H11 incognito pass. H3 (snapshot refresh) is conditional and not needed.
-KNOWN LIMITATIONS: Hosted function is 70.95 MB; warm TTFB 0.28–0.36 s, first requests 0.50–0.71 s, no controlled cold-start benchmark; the clean public snapshot gets a fresh CI run; fresh-account migration is pending; 31-day, one-season sample and a 23-day walk-forward; direct WINDFOR/FUELHH comparison retains a +1,747.9 MW bias; hourly resolution; private anonymity denylist is populated and checked locally; video and form untouched. The product is an analytical aid, not financial advice.
+HUMAN ACTIONS REMAINING (Tier 2, from HUMAN_ACTIONS.md): H6 record; H7 post-record QA; H8 Unlisted upload; H9 reconcile form; H10 time spent; H11 incognito pass. H3 (snapshot refresh) is conditional and not needed.
+KNOWN LIMITATIONS: Hosted function is 70.95 MB; warm TTFB 0.28–0.36 s, first requests 0.50–0.71 s, no controlled cold-start benchmark; CI runs on the public snapshot; 31-day, one-season sample and a 23-day walk-forward; direct WINDFOR/FUELHH comparison retains a +1,747.9 MW bias; hourly resolution; private anonymity denylist is populated and checked locally; H2 accepts the public account URL; video and form untouched. The product is an analytical aid, not financial advice.
 
-STATUS: PENDING FRESH-ACCOUNT MIGRATION; THEN READY FOR HUMAN VIDEO/FORM HAND-OFF (H6–H11)
+STATUS: READY FOR HUMAN VIDEO/FORM HAND-OFF (H6–H11)
 ```
 
 The status line is the gate's wording. It does not mean the Tier 2 actions have

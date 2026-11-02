@@ -3,8 +3,8 @@
 This file separates completed, agent-executed steps from the work that remains
 human-only. The recorded H2 decision is **real account, account URL is
 acceptable**. The public repository and deployment therefore use the existing
-public `Sneh30` account and the existing `windlens-vhdegk` Vercel project. No
-fresh account is created, and nothing is retired.
+public `Sneh30` account and the existing `windlens-vhdegk` Vercel project. The
+public account URL and deployment host are accepted.
 
 The agent has **not** recorded a video, uploaded a video, opened the real
 submission form or submitted anything. Those actions, and the final human review,
@@ -24,7 +24,7 @@ remain yours.
 | H10 | Report actual human time | **HUMAN** |
 | H11 | Final incognito pass | **HUMAN** |
 
-## Completed public migration — H1, H2, H4 and H5
+## Completed public link and deployment work — H1, H2, H4 and H5
 
 - Repository: **<https://github.com/Sneh30/rjbjru>**, branch `main`. The public
   branch was force-pushed from a clean local tree, so the repository's previous
@@ -38,8 +38,7 @@ remain yours.
 - Production checks: `scripts/verify_deploy.sh`, Lighthouse, the Playwright e2e
   suite and `scripts/check_numbers_consistency.sh` were run against the live URL.
   The full output is in `docs/AUDIT.md` §14.
-- No old repository or deployment is being retired. The public account URL and
-  deployment host are the accepted public artefacts.
+- The public account URL and deployment host are the accepted public artefacts.
 
 The deployed function is built on Python 3.12 through `build.env.UV_PYTHON` in
 `vercel.json`, because the pinned `pydantic-core` has no Python 3.14 wheel. The

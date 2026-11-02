@@ -282,9 +282,8 @@ Use these phrases for the caption track if the platform auto-caption is poor:
   Google account.
 - **Title:** `WindLens — day-ahead wind decision support`. No personal name.
 - **Description:** one neutral paragraph, the repository URL and the verified
-  live URL from `docs/FORM_ANSWERS.md` after the fresh-account migration. Do not
-  use the retired links. No email, phone, location, school, employer or personal
-  social links.
+  live URL from `docs/FORM_ANSWERS.md`. No email, phone, location, school,
+  employer or personal social links.
 - **Audience:** not made for kids, if asked.
 - **Comments:** off.
 - **Captions:** English, reviewed for names and numbers.
