@@ -262,6 +262,9 @@ About page's AI disclosure and the repository README.
       voice is identifying.
 - [ ] The script has been read once end to end and the numbers checked against
       `docs/INSIGHTS.md`.
+- [ ] Do not open the repository's commit list or describe a longer development
+      history: the public branch has five commits after the clean-snapshot push.
+      Part 2 is about the committed tree, not the commit log.
 
 ## Caption outline
 

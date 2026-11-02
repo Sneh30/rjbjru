@@ -42,15 +42,17 @@ Node 22 in the web image, Docker Compose v5.2.0, Playwright 1.64.1 with Chromium
 | 7 | `scripts/check_no_placeholders.sh` | PASS | [§7](#7-placeholder-scan) |
 | 8 | `scripts/check_anonymity.sh` + image metadata | PASS (denylist; accepted public handle) | [§8](#8-anonymity-scan-and-image-metadata) |
 | 9 | Repo size and composition | PASS | [§9](#9-repository-composition) |
-| 10 | Conventional commit history | PASS | [§10](#10-commit-history) |
+| 10 | Conventional commit history | DEVIATION — 5 public commits; accepted anonymity trade-off | [§10](#10-commit-history) |
 | 11 | Insights regenerated as the last content step | PASS | [§11](#11-insights-regenerated-last) |
 | 12 | Numbers consistency, every claim | PASS (77/77) | [§12](#12-numbers-consistency) |
 | 13 | Video timing estimate | PASS (541 s at 130 wpm) | [§13](#13-video-timing) |
 
-**Tier 1: 13 / 13 green.** Tier 1 was captured on the local tree at `f05c8de`;
-the later public push, deployment and production checks are recorded in §14.
-Video recording, upload and form submission remain human-only and are not
-claimed here.
+**Tier 1: 12 / 13 green, plus one recorded deviation.** Item 10 fails the
+supplied ≥ 15-commit gate because the clean-snapshot force-push collapsed the
+public history to five commits; §10 records the trade-off rather than claiming a
+pass. Tier 1 was otherwise captured on the local tree at `f05c8de`; the later
+public push, deployment and production checks are recorded in §14. Video
+recording, upload and form submission remain human-only and are not claimed here.
 
 ---
 
@@ -550,44 +552,37 @@ docker-compose.yml valid
 
 ## 10. Commit history
 
+**Status: DEVIATION.** The supplied gate expects `git log --oneline` to show at
+least 15 meaningful, Conventional-Commits-style entries. The public branch has
+five, so this item is not a pass.
+
 ```console
 $ git log --oneline
-f05c8de test(api): audit decision-time leakage against the real snapshot
-00c081c docs: add README, licence, video script, form answers and hand-off
-a8acaab ci: add backend, frontend, contract, docker and anonymity jobs
-89f343a build: add Vercel SPA and Python function entrypoint
-74dadd6 build: add hardened API and nginx containers with compose
-80e642e chore: add smoke, deploy, hygiene, numbers and screenshot scripts
-435d4e6 docs: document verified sources, methodology, architecture and decisions
-e7c07d9 test(web): cover pages, URL state, charts, axe and Playwright flows
-63cd8ae feat(web): add revisions explorer, methodology and routed views
-fbd4073 feat(web): add accuracy lab with accessible chart and table parity
-7de69b4 feat(web): add decision desk with forecast, vintage and risk views
-8478f7f feat(web): scaffold React app, design tokens and typed API client
-e375e38 test(analysis): lock committed insights to the live API contract
-1f9ee75 docs: publish generated insight narrative and API payloads
-855f294 feat(analysis): add deterministic insight generator over the API
-218f054 chore(data): add live January 2026 Elexon snapshot and manifest
-085d72d test(api): add contract, error and real-snapshot leakage audits
-3aa40d4 feat(api): add versioned endpoints, schemas, services and problem errors
-81e96ae feat(data): add validated snapshot repository and hourly loaders
-18302ac test(domain): cover cutoff boundaries, metrics, risk and no-leakage invariants
-47d287a feat(domain): add metrics, breakdowns, persistence baseline and risk buffer
-f077ebf feat(domain): add decision-time selection, time and join primitives
-d32e6d3 test(ingestion): cover client retries, normalisation, validation and live samples
-75e76e2 feat(ingestion): add Elexon client, normalisation and snapshot pipeline
-173bdc8 build(backend): pin Python dependencies and quality tooling
-38377bd docs: add supplied brief, evaluation gate and capability preflight
-52c617c chore: bootstrap repository tooling and runtime config
+5e0a62d docs: keep the final incognito check scoped to personal identifiers
+19ec451 docs: record live verification and H6-H11 hand-off
+f5f24ff build: exclude all private anonymity files from Vercel uploads
+3de23b6 docs: record real public account URLs and H2 decision
+77e2f93 WindLens: clean public submission snapshot
 ```
 
-The history has 27 commits before the commit that adds this audit file, all in
-Conventional Commits form, with one neutral author identity:
+All five use the neutral author identity:
 
 ```console
 $ git log --format='%an <%ae>' | sort -u
 dev <dev@users.noreply.invalid>
 ```
+
+The pre-push local tree contained 27 commits, still present locally as `f05c8de`
+and useful for audit, but it is not served by the public repository. The
+clean-snapshot force-push replaced the inherited remote history with one
+parentless snapshot commit so that commit timestamps, author metadata and
+development granularity could not identify the author. That is the trade-off,
+and the cost is a real deviation from the gate's count and style requirements:
+the snapshot commit has no Conventional-Commits type prefix.
+
+The public history is not presented as an iterative development log. The video
+script does not show or cite `git log`; Part 2 discusses architecture, selection,
+tests, CI, deployment and trade-offs from the committed tree.
 
 ## 11. Insights regenerated last
 
@@ -999,15 +994,15 @@ Video recording, upload and the real form have not happened.
 WHAT WAS BUILT: WindLens is a React/FastAPI decision-time wind forecast desk built on a committed live Elexon snapshot. It implements ingestion, normalisation, validation and snapshot serving (FR-D1–FR-D6); cutoff resolution, inclusive vintage selection, hourly join, metrics, breakdowns, persistence skill, risk buffers and a walk-forward back-test (FR-L1–FR-L11); a versioned read-only API with OpenAPI, problem errors, ETags, CSV exports, health and CORS (FR-A1–FR-A6); four routed views with URL state, accessible charts and tables, what-if demand and provenance (FR-U1–FR-U11); and Docker, README, CI, video script, form answers and hand-off artefacts (FR-P1, FR-P3–FR-P8). FR-P2 is verified at https://windlens-vhdegk.vercel.app in §14; H2 resolves FR-P9 by accepting the public account URL; post-record QA (FR-P10) remains H7.
 KEY NUMBERS THE VIDEO WILL CITE: 744 hourly targets; MAE 2,038.9 MW; nMAE 18.07%; bias +1,747.9 MW; over-forecast 85.0%; P90 shortfall 4,097.9 MW; P95 5,283.4 MW; maximum 6,870.0 MW; persistence MAE 4,125.9 MW; skill 0.51 (50.58% MAE reduction); horizon 16.5–39.5 h (mean 28.0 h); earliest-vintage MAE 2,422.1 MW (18.79% worse); P90 in-sample buffer 4,097.9 MW; walk-forward coverage 86.0% over 23 days, mean buffer 4,051.8 MW, 22.0% of days breached; 12:00 cutoff MAE 1,901.0 MW (6.76% below default), mean horizon 24.1 h. All trace to docs/INSIGHTS.md.
 
-AGENT VERIFICATION (Tier 1): 13 / 13 items green — evidence in docs/AUDIT.md. Production verification: 24/24 deployment checks, Lighthouse 95/100/100/100, 11/11 Playwright checks, 77/77 numeric claims; evidence in §14.
+AGENT VERIFICATION (Tier 1): 12 / 13 items green, plus one recorded deviation (public commit count and style, §10) — evidence in docs/AUDIT.md. Production verification: 24/24 deployment checks, Lighthouse 95/100/100/100, 11/11 Playwright checks, 77/77 numeric claims; evidence in §14.
 CAPABILITY GAPS (Tier 0 → Tier 2): video recording, content QA and Unlisted upload (H6/H7/H8); real submission form (H9); honest human time (H10); final incognito pass (H11). The agent cannot record audio/video or submit the form.
 DATA INTEGRITY (T1): real snapshot confirmed — live Elexon pull, manifest fingerprint 331dc8acb133704a, 1,536 FUELHH rows, 19,856 WINDFOR rows, 744/744 decision coverage, both processed SHA-256 checks green.
 NUMBERS CONSISTENCY (§2.4): pass — 77/77 claims traced exactly to docs/INSIGHTS.md.
 HUMAN ACTIONS REMAINING (Tier 2, from HUMAN_ACTIONS.md): H6 record; H7 post-record QA; H8 Unlisted upload; H9 reconcile form; H10 time spent; H11 incognito pass. H3 (snapshot refresh) is conditional and not needed.
 KNOWN LIMITATIONS: Hosted function is 70.95 MB; warm TTFB 0.28–0.36 s, first requests 0.50–0.71 s, no controlled cold-start benchmark; CI runs on the public snapshot; 31-day, one-season sample and a 23-day walk-forward; direct WINDFOR/FUELHH comparison retains a +1,747.9 MW bias; hourly resolution; private anonymity denylist is populated and checked locally; H2 accepts the public account URL; video and form untouched. The product is an analytical aid, not financial advice.
 
-STATUS: READY FOR HUMAN VIDEO/FORM HAND-OFF (H6–H11)
+STATUS: PENDING HUMAN VIDEO/FORM HAND-OFF (H6–H11); TIER 1 ITEM 10 DEVIATION RECORDED
 ```
 
-The status line is the gate's wording. It does not mean the Tier 2 actions have
-happened, and it is not a submission.
+The status line does not mean the Tier 2 actions have happened, and it is not a
+submission.
