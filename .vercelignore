@@ -16,8 +16,7 @@ frontend/coverage/
 frontend/playwright-report/
 frontend/test-results/
 data/raw/
-.anonymity-decision
-.anonymity-denylist
+.anonymity-*
 .env
 .env.local
 .DS_Store
