@@ -1,0 +1,50 @@
+{
+    "basis": "actual",
+    "bins": [
+        {
+            "label": "Q1 (lowest)",
+            "from_mw": 1711.5,
+            "to_mw": 7473.5,
+            "n": 149,
+            "mae_mw": 2027.8,
+            "bias_mw": 1799.3,
+            "nmae_pct": 39.57
+        },
+        {
+            "label": "Q2",
+            "from_mw": 7477.5,
+            "to_mw": 9851.0,
+            "n": 149,
+            "mae_mw": 1550.7,
+            "bias_mw": 1028.6,
+            "nmae_pct": 18.13
+        },
+        {
+            "label": "Q3",
+            "from_mw": 9865.5,
+            "to_mw": 13671.5,
+            "n": 149,
+            "mae_mw": 1722.1,
+            "bias_mw": 1148.0,
+            "nmae_pct": 14.84
+        },
+        {
+            "label": "Q4",
+            "from_mw": 13727.5,
+            "to_mw": 15478.0,
+            "n": 149,
+            "mae_mw": 2737.2,
+            "bias_mw": 2693.8,
+            "nmae_pct": 18.62
+        },
+        {
+            "label": "Q5",
+            "from_mw": 15482.0,
+            "to_mw": 17755.5,
+            "n": 148,
+            "mae_mw": 2157.5,
+            "bias_mw": 2072.0,
+            "nmae_pct": 13.1
+        }
+    ]
+}

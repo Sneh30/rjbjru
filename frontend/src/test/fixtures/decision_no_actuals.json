@@ -1,0 +1,205 @@
+{
+    "delivery_date": "2026-02-01",
+    "delivery_date_local": "01 Feb 2026",
+    "cutoff": {
+        "local": "2026-01-31T09:00:00+00:00",
+        "utc": "2026-01-31T09:00:00Z",
+        "time": "09:00",
+        "timezone": "Europe/London"
+    },
+    "resolution_minutes": 60,
+    "points": [
+        {
+            "start_time": "2026-02-01T00:00:00Z",
+            "local_time": "2026-02-01T00:00:00+00:00",
+            "forecast_mw": 10099.0,
+            "publish_time": "2026-01-31T07:30:00Z",
+            "horizon_h": 16.5
+        },
+        {
+            "start_time": "2026-02-01T01:00:00Z",
+            "local_time": "2026-02-01T01:00:00+00:00",
+            "forecast_mw": 9860.0,
+            "publish_time": "2026-01-31T07:30:00Z",
+            "horizon_h": 17.5
+        },
+        {
+            "start_time": "2026-02-01T02:00:00Z",
+            "local_time": "2026-02-01T02:00:00+00:00",
+            "forecast_mw": 9606.0,
+            "publish_time": "2026-01-31T07:30:00Z",
+            "horizon_h": 18.5
+        },
+        {
+            "start_time": "2026-02-01T03:00:00Z",
+            "local_time": "2026-02-01T03:00:00+00:00",
+            "forecast_mw": 9315.0,
+            "publish_time": "2026-01-31T07:30:00Z",
+            "horizon_h": 19.5
+        },
+        {
+            "start_time": "2026-02-01T04:00:00Z",
+            "local_time": "2026-02-01T04:00:00+00:00",
+            "forecast_mw": 9007.0,
+            "publish_time": "2026-01-31T07:30:00Z",
+            "horizon_h": 20.5
+        },
+        {
+            "start_time": "2026-02-01T05:00:00Z",
+            "local_time": "2026-02-01T05:00:00+00:00",
+            "forecast_mw": 8668.0,
+            "publish_time": "2026-01-31T07:30:00Z",
+            "horizon_h": 21.5
+        },
+        {
+            "start_time": "2026-02-01T06:00:00Z",
+            "local_time": "2026-02-01T06:00:00+00:00",
+            "forecast_mw": 8307.0,
+            "publish_time": "2026-01-31T07:30:00Z",
+            "horizon_h": 22.5
+        },
+        {
+            "start_time": "2026-02-01T07:00:00Z",
+            "local_time": "2026-02-01T07:00:00+00:00",
+            "forecast_mw": 7979.0,
+            "publish_time": "2026-01-31T07:30:00Z",
+            "horizon_h": 23.5
+        },
+        {
+            "start_time": "2026-02-01T08:00:00Z",
+            "local_time": "2026-02-01T08:00:00+00:00",
+            "forecast_mw": 7772.0,
+            "publish_time": "2026-01-31T07:30:00Z",
+            "horizon_h": 24.5
+        },
+        {
+            "start_time": "2026-02-01T09:00:00Z",
+            "local_time": "2026-02-01T09:00:00+00:00",
+            "forecast_mw": 7527.0,
+            "publish_time": "2026-01-31T07:30:00Z",
+            "horizon_h": 25.5
+        },
+        {
+            "start_time": "2026-02-01T10:00:00Z",
+            "local_time": "2026-02-01T10:00:00+00:00",
+            "forecast_mw": 7223.0,
+            "publish_time": "2026-01-31T07:30:00Z",
+            "horizon_h": 26.5
+        },
+        {
+            "start_time": "2026-02-01T11:00:00Z",
+            "local_time": "2026-02-01T11:00:00+00:00",
+            "forecast_mw": 7005.0,
+            "publish_time": "2026-01-31T07:30:00Z",
+            "horizon_h": 27.5
+        },
+        {
+            "start_time": "2026-02-01T12:00:00Z",
+            "local_time": "2026-02-01T12:00:00+00:00",
+            "forecast_mw": 6720.0,
+            "publish_time": "2026-01-31T07:30:00Z",
+            "horizon_h": 28.5
+        },
+        {
+            "start_time": "2026-02-01T13:00:00Z",
+            "local_time": "2026-02-01T13:00:00+00:00",
+            "forecast_mw": 6274.0,
+            "publish_time": "2026-01-31T07:30:00Z",
+            "horizon_h": 29.5
+        },
+        {
+            "start_time": "2026-02-01T14:00:00Z",
+            "local_time": "2026-02-01T14:00:00+00:00",
+            "forecast_mw": 5870.0,
+            "publish_time": "2026-01-31T07:30:00Z",
+            "horizon_h": 30.5
+        },
+        {
+            "start_time": "2026-02-01T15:00:00Z",
+            "local_time": "2026-02-01T15:00:00+00:00",
+            "forecast_mw": 5725.0,
+            "publish_time": "2026-01-31T07:30:00Z",
+            "horizon_h": 31.5
+        },
+        {
+            "start_time": "2026-02-01T16:00:00Z",
+            "local_time": "2026-02-01T16:00:00+00:00",
+            "forecast_mw": 5727.0,
+            "publish_time": "2026-01-31T07:30:00Z",
+            "horizon_h": 32.5
+        },
+        {
+            "start_time": "2026-02-01T17:00:00Z",
+            "local_time": "2026-02-01T17:00:00+00:00",
+            "forecast_mw": 5755.0,
+            "publish_time": "2026-01-31T07:30:00Z",
+            "horizon_h": 33.5
+        },
+        {
+            "start_time": "2026-02-01T18:00:00Z",
+            "local_time": "2026-02-01T18:00:00+00:00",
+            "forecast_mw": 5897.0,
+            "publish_time": "2026-01-31T07:30:00Z",
+            "horizon_h": 34.5
+        },
+        {
+            "start_time": "2026-02-01T19:00:00Z",
+            "local_time": "2026-02-01T19:00:00+00:00",
+            "forecast_mw": 5900.0,
+            "publish_time": "2026-01-31T07:30:00Z",
+            "horizon_h": 35.5
+        },
+        {
+            "start_time": "2026-02-01T20:00:00Z",
+            "local_time": "2026-02-01T20:00:00+00:00",
+            "forecast_mw": 5620.0,
+            "publish_time": "2026-01-31T07:30:00Z",
+            "horizon_h": 36.5
+        },
+        {
+            "start_time": "2026-02-01T21:00:00Z",
+            "local_time": "2026-02-01T21:00:00+00:00",
+            "forecast_mw": 5421.0,
+            "publish_time": "2026-01-31T07:30:00Z",
+            "horizon_h": 37.5
+        },
+        {
+            "start_time": "2026-02-01T22:00:00Z",
+            "local_time": "2026-02-01T22:00:00+00:00",
+            "forecast_mw": 5226.0,
+            "publish_time": "2026-01-31T07:30:00Z",
+            "horizon_h": 38.5
+        },
+        {
+            "start_time": "2026-02-01T23:00:00Z",
+            "local_time": "2026-02-01T23:00:00+00:00",
+            "forecast_mw": 4915.0,
+            "publish_time": "2026-01-31T07:30:00Z",
+            "horizon_h": 39.5
+        }
+    ],
+    "summary": {
+        "mean_mw": 7142.4,
+        "peak_mw": 10099.0,
+        "peak_time": "2026-02-01T00:00:00Z",
+        "min_mw": 4915.0,
+        "min_time": "2026-02-01T23:00:00Z",
+        "energy_mwh": 171418.0,
+        "max_ramp_1h_mw": 446.0,
+        "max_ramp_3h_mw": 1135.0,
+        "latest_publish_time": "2026-01-31T07:30:00Z",
+        "earliest_publish_time": "2026-01-31T07:30:00Z",
+        "horizon_h": {
+            "min": 16.5,
+            "mean": 28.0,
+            "max": 39.5
+        }
+    },
+    "coverage": {
+        "expected_periods": 24,
+        "with_forecast": 24,
+        "with_actual": 24,
+        "missing_forecast_periods": [],
+        "missing_actual_periods": []
+    }
+}

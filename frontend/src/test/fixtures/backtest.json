@@ -1,0 +1,189 @@
+{
+    "basis": "walk_forward",
+    "window": {
+        "start": "2026-01-02",
+        "end": "2026-02-01"
+    },
+    "level": 0.9,
+    "outcome_lag_days": 2,
+    "min_history_days": 7,
+    "evaluated_days": 23,
+    "skipped_days": [
+        "2026-01-02",
+        "2026-01-03",
+        "2026-01-04",
+        "2026-01-05",
+        "2026-01-06",
+        "2026-01-07",
+        "2026-01-08",
+        "2026-01-09"
+    ],
+    "coverage": 0.86,
+    "target": 0.9,
+    "mean_buffer_mw": 4051.8,
+    "days_with_breach_share": 0.22,
+    "daily": [
+        {
+            "delivery_date": "2026-01-10",
+            "buffer_mw": 3571.6,
+            "coverage": 1.0,
+            "n": 24,
+            "breaches": 0
+        },
+        {
+            "delivery_date": "2026-01-11",
+            "buffer_mw": 3459.0,
+            "coverage": 0.0,
+            "n": 24,
+            "breaches": 24
+        },
+        {
+            "delivery_date": "2026-01-12",
+            "buffer_mw": 3339.2,
+            "coverage": 0.25,
+            "n": 24,
+            "breaches": 18
+        },
+        {
+            "delivery_date": "2026-01-13",
+            "buffer_mw": 4093.3,
+            "coverage": 1.0,
+            "n": 24,
+            "breaches": 0
+        },
+        {
+            "delivery_date": "2026-01-14",
+            "buffer_mw": 4773.0,
+            "coverage": 1.0,
+            "n": 24,
+            "breaches": 0
+        },
+        {
+            "delivery_date": "2026-01-15",
+            "buffer_mw": 4559.0,
+            "coverage": 1.0,
+            "n": 24,
+            "breaches": 0
+        },
+        {
+            "delivery_date": "2026-01-16",
+            "buffer_mw": 4376.5,
+            "coverage": 1.0,
+            "n": 24,
+            "breaches": 0
+        },
+        {
+            "delivery_date": "2026-01-17",
+            "buffer_mw": 4230.0,
+            "coverage": 1.0,
+            "n": 24,
+            "breaches": 0
+        },
+        {
+            "delivery_date": "2026-01-18",
+            "buffer_mw": 4170.5,
+            "coverage": 1.0,
+            "n": 24,
+            "breaches": 0
+        },
+        {
+            "delivery_date": "2026-01-19",
+            "buffer_mw": 4097.9,
+            "coverage": 1.0,
+            "n": 24,
+            "breaches": 0
+        },
+        {
+            "delivery_date": "2026-01-20",
+            "buffer_mw": 4079.7,
+            "coverage": 1.0,
+            "n": 24,
+            "breaches": 0
+        },
+        {
+            "delivery_date": "2026-01-21",
+            "buffer_mw": 4012.4,
+            "coverage": 0.54,
+            "n": 24,
+            "breaches": 11
+        },
+        {
+            "delivery_date": "2026-01-22",
+            "buffer_mw": 3925.5,
+            "coverage": 1.0,
+            "n": 24,
+            "breaches": 0
+        },
+        {
+            "delivery_date": "2026-01-23",
+            "buffer_mw": 4096.7,
+            "coverage": 1.0,
+            "n": 24,
+            "breaches": 0
+        },
+        {
+            "delivery_date": "2026-01-24",
+            "buffer_mw": 4072.3,
+            "coverage": 1.0,
+            "n": 24,
+            "breaches": 0
+        },
+        {
+            "delivery_date": "2026-01-25",
+            "buffer_mw": 4056.8,
+            "coverage": 1.0,
+            "n": 24,
+            "breaches": 0
+        },
+        {
+            "delivery_date": "2026-01-26",
+            "buffer_mw": 3936.8,
+            "coverage": 1.0,
+            "n": 24,
+            "breaches": 0
+        },
+        {
+            "delivery_date": "2026-01-27",
+            "buffer_mw": 3925.5,
+            "coverage": 0.88,
+            "n": 24,
+            "breaches": 3
+        },
+        {
+            "delivery_date": "2026-01-28",
+            "buffer_mw": 3844.8,
+            "coverage": 0.0,
+            "n": 24,
+            "breaches": 24
+        },
+        {
+            "delivery_date": "2026-01-29",
+            "buffer_mw": 3855.6,
+            "coverage": 1.0,
+            "n": 24,
+            "breaches": 0
+        },
+        {
+            "delivery_date": "2026-01-30",
+            "buffer_mw": 4324.9,
+            "coverage": 1.0,
+            "n": 24,
+            "breaches": 0
+        },
+        {
+            "delivery_date": "2026-01-31",
+            "buffer_mw": 4211.4,
+            "coverage": 1.0,
+            "n": 24,
+            "breaches": 0
+        },
+        {
+            "delivery_date": "2026-02-01",
+            "buffer_mw": 4179.8,
+            "coverage": 1.0,
+            "n": 24,
+            "breaches": 0
+        }
+    ],
+    "caveat": "Each day's buffer uses only delivery days at least two days earlier, so outcomes that were not published by the cutoff cannot leak into it. Coverage is pooled over evaluated periods; interpret it with the number of delivery days, not just period count."
+}

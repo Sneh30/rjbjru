@@ -1,0 +1,90 @@
+{
+    "buckets": [
+        {
+            "from_h": 0.0,
+            "to_h": 6.0,
+            "label": "0-6 h",
+            "n": 1488,
+            "nmae_pct": 14.76,
+            "mae_mw": 1660.0,
+            "bias_mw": 1427.7,
+            "rmse_mw": 2120.0
+        },
+        {
+            "from_h": 6.0,
+            "to_h": 12.0,
+            "label": "6-12 h",
+            "n": 1488,
+            "nmae_pct": 15.32,
+            "mae_mw": 1734.5,
+            "bias_mw": 1502.8,
+            "rmse_mw": 2192.4
+        },
+        {
+            "from_h": 12.0,
+            "to_h": 18.0,
+            "label": "12-18 h",
+            "n": 1488,
+            "nmae_pct": 16.21,
+            "mae_mw": 1837.0,
+            "bias_mw": 1634.3,
+            "rmse_mw": 2309.8
+        },
+        {
+            "from_h": 18.0,
+            "to_h": 24.0,
+            "label": "18-24 h",
+            "n": 1488,
+            "nmae_pct": 17.36,
+            "mae_mw": 1949.4,
+            "bias_mw": 1771.8,
+            "rmse_mw": 2424.9
+        },
+        {
+            "from_h": 24.0,
+            "to_h": 36.0,
+            "label": "24-36 h",
+            "n": 2976,
+            "nmae_pct": 17.89,
+            "mae_mw": 2018.8,
+            "bias_mw": 1717.9,
+            "rmse_mw": 2480.8
+        },
+        {
+            "from_h": 36.0,
+            "to_h": 48.0,
+            "label": "36-48 h",
+            "n": 2945,
+            "nmae_pct": 19.95,
+            "mae_mw": 2249.8,
+            "bias_mw": 1905.0,
+            "rmse_mw": 2789.2
+        },
+        {
+            "from_h": 48.0,
+            "to_h": 72.0,
+            "label": "48-72 h",
+            "n": 2510,
+            "nmae_pct": 20.35,
+            "mae_mw": 2317.3,
+            "bias_mw": 1402.6,
+            "rmse_mw": 2925.4
+        },
+        {
+            "from_h": 72.0,
+            "to_h": null,
+            "label": "72+ h",
+            "n": 0,
+            "nmae_pct": null,
+            "mae_mw": null,
+            "bias_mw": null,
+            "rmse_mw": null
+        }
+    ],
+    "decision_band_h": {
+        "min": 16.5,
+        "max": 39.5
+    },
+    "dropped_negative_horizon": 3697,
+    "n_vintage_rows": 18080
+}

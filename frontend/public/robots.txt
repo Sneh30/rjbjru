@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# WindLens is a public, read-only decision-support demo.
+# There are no private or authenticated areas to exclude.

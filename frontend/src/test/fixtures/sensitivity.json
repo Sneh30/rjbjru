@@ -1,0 +1,67 @@
+{
+    "rows": [
+        {
+            "cutoff": "06:00",
+            "n": 744,
+            "mae_mw": 2016.1,
+            "bias_mw": 1671.0,
+            "shortfall_p90_mw": 4157.9,
+            "mean_horizon_h": 31.0,
+            "coverage_pct": 100.0
+        },
+        {
+            "cutoff": "08:00",
+            "n": 744,
+            "mae_mw": 2038.9,
+            "bias_mw": 1747.9,
+            "shortfall_p90_mw": 4097.9,
+            "mean_horizon_h": 28.0,
+            "coverage_pct": 100.0
+        },
+        {
+            "cutoff": "09:00",
+            "n": 744,
+            "mae_mw": 2038.9,
+            "bias_mw": 1747.9,
+            "shortfall_p90_mw": 4097.9,
+            "mean_horizon_h": 28.0,
+            "coverage_pct": 100.0
+        },
+        {
+            "cutoff": "09:20",
+            "n": 744,
+            "mae_mw": 2038.9,
+            "bias_mw": 1747.9,
+            "shortfall_p90_mw": 4097.9,
+            "mean_horizon_h": 28.0,
+            "coverage_pct": 100.0
+        },
+        {
+            "cutoff": "09:50",
+            "n": 744,
+            "mae_mw": 2013.0,
+            "bias_mw": 1729.9,
+            "shortfall_p90_mw": 4143.9,
+            "mean_horizon_h": 26.0,
+            "coverage_pct": 100.0
+        },
+        {
+            "cutoff": "10:00",
+            "n": 744,
+            "mae_mw": 2013.0,
+            "bias_mw": 1729.9,
+            "shortfall_p90_mw": 4143.9,
+            "mean_horizon_h": 26.0,
+            "coverage_pct": 100.0
+        },
+        {
+            "cutoff": "12:00",
+            "n": 744,
+            "mae_mw": 1901.0,
+            "bias_mw": 1687.2,
+            "shortfall_p90_mw": 3847.2,
+            "mean_horizon_h": 24.1,
+            "coverage_pct": 100.0
+        }
+    ]
+}

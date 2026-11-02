@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="WindLens">
+  <rect width="64" height="64" rx="14" fill="#1f3d33"/>
+  <g fill="none" stroke="#f7f4ec" stroke-width="4.5" stroke-linecap="round">
+    <path d="M14 22h23c8 0 8-8 8-8"/>
+    <path d="M14 32h32c8 0 8 6 8 6"/>
+    <path d="M14 42h16"/>
+  </g>
+</svg>

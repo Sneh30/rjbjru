@@ -1,0 +1,7 @@
+# Runtime dependencies for the Vercel Python function.
+# Keep this file small: the serverless bundle has a hard size limit.
+fastapi==0.115.8
+pydantic==2.10.6
+pydantic-settings==2.7.1
+pandas==2.2.3
+numpy==2.2.1

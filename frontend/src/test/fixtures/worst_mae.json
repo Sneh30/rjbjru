@@ -1,0 +1,87 @@
+{
+    "metric": "mae",
+    "days": [
+        {
+            "delivery_date": "2026-01-28",
+            "n": 24,
+            "mae_mw": 5374.8,
+            "bias_mw": 5374.8,
+            "rmse_mw": 5399.4,
+            "max_abs_mw": 6271.0,
+            "max_abs_time": "2026-01-28T04:00:00Z"
+        },
+        {
+            "delivery_date": "2026-01-12",
+            "n": 24,
+            "mae_mw": 4868.2,
+            "bias_mw": 4868.2,
+            "rmse_mw": 5120.9,
+            "max_abs_mw": 6870.0,
+            "max_abs_time": "2026-01-12T01:00:00Z"
+        },
+        {
+            "delivery_date": "2026-01-11",
+            "n": 24,
+            "mae_mw": 4801.6,
+            "bias_mw": 4801.6,
+            "rmse_mw": 4853.4,
+            "max_abs_mw": 5953.0,
+            "max_abs_time": "2026-01-11T23:00:00Z"
+        },
+        {
+            "delivery_date": "2026-01-21",
+            "n": 24,
+            "mae_mw": 3658.3,
+            "bias_mw": 3658.3,
+            "rmse_mw": 3766.5,
+            "max_abs_mw": 4844.0,
+            "max_abs_time": "2026-01-21T05:00:00Z"
+        },
+        {
+            "delivery_date": "2026-01-27",
+            "n": 24,
+            "mae_mw": 3479.1,
+            "bias_mw": 3479.1,
+            "rmse_mw": 3578.4,
+            "max_abs_mw": 6184.0,
+            "max_abs_time": "2026-01-27T23:00:00Z"
+        }
+    ],
+    "periods": [
+        {
+            "start_time": "2026-01-12T01:00:00Z",
+            "delivery_date": "2026-01-12",
+            "forecast_mw": 20942.0,
+            "actual_mw": 14072.0,
+            "error_mw": 6870.0
+        },
+        {
+            "start_time": "2026-01-12T00:00:00Z",
+            "delivery_date": "2026-01-12",
+            "forecast_mw": 20790.0,
+            "actual_mw": 14032.0,
+            "error_mw": 6758.0
+        },
+        {
+            "start_time": "2026-01-12T02:00:00Z",
+            "delivery_date": "2026-01-12",
+            "forecast_mw": 20876.0,
+            "actual_mw": 14120.5,
+            "error_mw": 6755.5
+        },
+        {
+            "start_time": "2026-01-12T03:00:00Z",
+            "delivery_date": "2026-01-12",
+            "forecast_mw": 20809.0,
+            "actual_mw": 14163.0,
+            "error_mw": 6646.0
+        },
+        {
+            "start_time": "2026-01-12T05:00:00Z",
+            "delivery_date": "2026-01-12",
+            "forecast_mw": 20583.0,
+            "actual_mw": 14022.0,
+            "error_mw": 6561.0
+        }
+    ]
+}

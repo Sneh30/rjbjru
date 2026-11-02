@@ -1,0 +1,63 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "windlens-api"
+version = "1.0.0"
+description = "Decision-time GB wind forecast accuracy desk"
+# 3.14 is excluded until the pinned pydantic-core supports it.
+requires-python = ">=3.12,<3.14"
+license = { text = "MIT" }
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+extend-exclude = [".venv", "htmlcov"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM", "C4", "PT", "RUF", "TID", "N", "D", "PL", "PERF"]
+ignore = ["D203", "D213", "D413", "PLR2004", "D100", "D104", "D107", "PLR0913", "PLR0915"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["D", "PLR2004", "PLR0913", "PLR0915", "S101"]
+"app/ingestion/cli.py" = ["PLR0912"]
+"app/api/v1/*.py" = ["D103", "PLR0912"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+warn_unused_ignores = true
+show_error_codes = true
+files = ["app"]
+exclude = ["app/ingestion"]
+
+[[tool.mypy.overrides]]
+module = ["tests.*"]
+disallow_untyped_defs = false
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+pythonpath = ["."]
+addopts = "-q --strict-markers --cov-branch --cov=app --cov-report=term-missing --cov-fail-under=85"
+testpaths = ["tests"]
+markers = [
+  "snapshot: audits that run against the committed real snapshot",
+  "slow: tests that take more than a second",
+]
+filterwarnings = [
+  "error",
+  # Starlette 0.45 imports the deprecated anyio.abc.BlockingPortal alias at module
+  # import time. The alias still works; the reference disappears when Starlette is
+  # upgraded. Ignore only that exact message so every other warning stays fatal.
+  "ignore:The anyio.abc.BlockingPortal alias is deprecated:DeprecationWarning",
+]
+
+[tool.coverage.run]
+source = ["app"]
+branch = true
+omit = ["app/__init__.py", "app/ingestion/cli.py"]
+
+[tool.coverage.report]
+fail_under = 85
+exclude_lines = ["pragma: no cover", "if TYPE_CHECKING:", "raise NotImplementedError"]

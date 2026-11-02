@@ -1,0 +1,130 @@
+{
+    "target_time": "2026-02-01T12:00:00Z",
+    "target_time_local": "2026-02-01T12:00:00+00:00",
+    "delivery_date": "2026-02-01",
+    "cutoff": {
+        "local": "2026-01-31T09:00:00+00:00",
+        "utc": "2026-01-31T09:00:00Z",
+        "time": "09:00",
+        "timezone": "Europe/London"
+    },
+    "vintages": [
+        {
+            "publish_time": "2026-01-30T02:30:00Z",
+            "publish_time_local": "2026-01-30T02:30:00+00:00",
+            "horizon_h": 57.5,
+            "forecast_mw": 7019.0,
+            "eligible": true,
+            "selected": false
+        },
+        {
+            "publish_time": "2026-01-30T04:30:00Z",
+            "publish_time_local": "2026-01-30T04:30:00+00:00",
+            "horizon_h": 55.5,
+            "forecast_mw": 6564.0,
+            "eligible": true,
+            "selected": false
+        },
+        {
+            "publish_time": "2026-01-30T07:30:00Z",
+            "publish_time_local": "2026-01-30T07:30:00+00:00",
+            "horizon_h": 52.5,
+            "forecast_mw": 7163.0,
+            "eligible": true,
+            "selected": false
+        },
+        {
+            "publish_time": "2026-01-30T09:30:00Z",
+            "publish_time_local": "2026-01-30T09:30:00+00:00",
+            "horizon_h": 50.5,
+            "forecast_mw": 7333.0,
+            "eligible": true,
+            "selected": false
+        },
+        {
+            "publish_time": "2026-01-30T11:30:00Z",
+            "publish_time_local": "2026-01-30T11:30:00+00:00",
+            "horizon_h": 48.5,
+            "forecast_mw": 6832.0,
+            "eligible": true,
+            "selected": false
+        },
+        {
+            "publish_time": "2026-01-30T15:30:00Z",
+            "publish_time_local": "2026-01-30T15:30:00+00:00",
+            "horizon_h": 44.5,
+            "forecast_mw": 6244.0,
+            "eligible": true,
+            "selected": false
+        },
+        {
+            "publish_time": "2026-01-30T18:30:00Z",
+            "publish_time_local": "2026-01-30T18:30:00+00:00",
+            "horizon_h": 41.5,
+            "forecast_mw": 6388.0,
+            "eligible": true,
+            "selected": false
+        },
+        {
+            "publish_time": "2026-01-30T22:30:00Z",
+            "publish_time_local": "2026-01-30T22:30:00+00:00",
+            "horizon_h": 37.5,
+            "forecast_mw": 6199.0,
+            "eligible": true,
+            "selected": false
+        },
+        {
+            "publish_time": "2026-01-31T02:30:00Z",
+            "publish_time_local": "2026-01-31T02:30:00+00:00",
+            "horizon_h": 33.5,
+            "forecast_mw": 5659.0,
+            "eligible": true,
+            "selected": false
+        },
+        {
+            "publish_time": "2026-01-31T04:30:00Z",
+            "publish_time_local": "2026-01-31T04:30:00+00:00",
+            "horizon_h": 31.5,
+            "forecast_mw": 5817.0,
+            "eligible": true,
+            "selected": false
+        },
+        {
+            "publish_time": "2026-01-31T07:30:00Z",
+            "publish_time_local": "2026-01-31T07:30:00+00:00",
+            "horizon_h": 28.5,
+            "forecast_mw": 6720.0,
+            "eligible": true,
+            "selected": true
+        },
+        {
+            "publish_time": "2026-01-31T09:30:00Z",
+            "publish_time_local": "2026-01-31T09:30:00+00:00",
+            "horizon_h": 26.5,
+            "forecast_mw": 6246.0,
+            "eligible": false,
+            "selected": false
+        },
+        {
+            "publish_time": "2026-01-31T11:30:00Z",
+            "publish_time_local": "2026-01-31T11:30:00+00:00",
+            "horizon_h": 24.5,
+            "forecast_mw": 5941.0,
+            "eligible": false,
+            "selected": false
+        }
+    ],
+    "selected_publish_time": "2026-01-31T07:30:00Z",
+    "selected_forecast_mw": 6720.0,
+    "actual_mw": 5606.0,
+    "error_mw": 1114.0,
+    "revision_range_mw": {
+        "min": 5659.0,
+        "max": 7333.0,
+        "spread": 1674.0
+    },
+    "shown_until": "2026-01-31T15:00:00Z",
+    "lookahead_hours": 6,
+    "eligibility_note": "eligible means publish_time <= cutoff (inclusive); later vintages are shown only to illustrate information that was not available at decision time",
+    "resolution_minutes": 60
+}

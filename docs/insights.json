@@ -1,0 +1,3400 @@
+{
+  "cutoff_sensitivity": {
+    "rows": [
+      {
+        "bias_mw": 1671.0,
+        "coverage_pct": 100.0,
+        "cutoff": "06:00",
+        "mae_mw": 2016.1,
+        "mean_horizon_h": 31.0,
+        "n": 744,
+        "shortfall_p90_mw": 4157.9
+      },
+      {
+        "bias_mw": 1747.9,
+        "coverage_pct": 100.0,
+        "cutoff": "08:00",
+        "mae_mw": 2038.9,
+        "mean_horizon_h": 28.0,
+        "n": 744,
+        "shortfall_p90_mw": 4097.9
+      },
+      {
+        "bias_mw": 1747.9,
+        "coverage_pct": 100.0,
+        "cutoff": "09:00",
+        "mae_mw": 2038.9,
+        "mean_horizon_h": 28.0,
+        "n": 744,
+        "shortfall_p90_mw": 4097.9
+      },
+      {
+        "bias_mw": 1747.9,
+        "coverage_pct": 100.0,
+        "cutoff": "09:20",
+        "mae_mw": 2038.9,
+        "mean_horizon_h": 28.0,
+        "n": 744,
+        "shortfall_p90_mw": 4097.9
+      },
+      {
+        "bias_mw": 1729.9,
+        "coverage_pct": 100.0,
+        "cutoff": "09:50",
+        "mae_mw": 2013.0,
+        "mean_horizon_h": 26.0,
+        "n": 744,
+        "shortfall_p90_mw": 4143.9
+      },
+      {
+        "bias_mw": 1729.9,
+        "coverage_pct": 100.0,
+        "cutoff": "10:00",
+        "mae_mw": 2013.0,
+        "mean_horizon_h": 26.0,
+        "n": 744,
+        "shortfall_p90_mw": 4143.9
+      },
+      {
+        "bias_mw": 1687.2,
+        "coverage_pct": 100.0,
+        "cutoff": "12:00",
+        "mae_mw": 1901.0,
+        "mean_horizon_h": 24.1,
+        "n": 744,
+        "shortfall_p90_mw": 3847.2
+      }
+    ]
+  },
+  "daily": {
+    "days": [
+      {
+        "bias_mw": 3109.9,
+        "delivery_date": "2026-01-02",
+        "mae_mw": 3109.9,
+        "max_abs_mw": 4322.5,
+        "max_abs_time": "2026-01-02T22:00:00Z",
+        "mean_actual_mw": 15169.1,
+        "n": 24,
+        "nmae_pct": 20.5,
+        "rmse_mw": 3171.4,
+        "shortfall_p90_mw": 3889.8
+      },
+      {
+        "bias_mw": 2102.2,
+        "delivery_date": "2026-01-03",
+        "mae_mw": 2102.2,
+        "max_abs_mw": 4248.0,
+        "max_abs_time": "2026-01-03T02:00:00Z",
+        "mean_actual_mw": 15251.2,
+        "n": 24,
+        "nmae_pct": 13.78,
+        "rmse_mw": 2463.2,
+        "shortfall_p90_mw": 4091.2
+      },
+      {
+        "bias_mw": 1146.5,
+        "delivery_date": "2026-01-04",
+        "mae_mw": 1146.5,
+        "max_abs_mw": 2123.0,
+        "max_abs_time": "2026-01-04T18:00:00Z",
+        "mean_actual_mw": 13343.2,
+        "n": 24,
+        "nmae_pct": 8.59,
+        "rmse_mw": 1255.4,
+        "shortfall_p90_mw": 1822.6
+      },
+      {
+        "bias_mw": -55.9,
+        "delivery_date": "2026-01-05",
+        "mae_mw": 1331.7,
+        "max_abs_mw": 2867.0,
+        "max_abs_time": "2026-01-05T13:00:00Z",
+        "mean_actual_mw": 9439.4,
+        "n": 24,
+        "nmae_pct": 14.11,
+        "rmse_mw": 1583.9,
+        "shortfall_p90_mw": 1879.4
+      },
+      {
+        "bias_mw": 1835.3,
+        "delivery_date": "2026-01-06",
+        "mae_mw": 2085.0,
+        "max_abs_mw": 4055.0,
+        "max_abs_time": "2026-01-06T05:00:00Z",
+        "mean_actual_mw": 9448.5,
+        "n": 24,
+        "nmae_pct": 22.07,
+        "rmse_mw": 2444.5,
+        "shortfall_p90_mw": 3748.4
+      },
+      {
+        "bias_mw": 1468.1,
+        "delivery_date": "2026-01-07",
+        "mae_mw": 1492.9,
+        "max_abs_mw": 3167.0,
+        "max_abs_time": "2026-01-07T06:00:00Z",
+        "mean_actual_mw": 12143.1,
+        "n": 24,
+        "nmae_pct": 12.29,
+        "rmse_mw": 1733.6,
+        "shortfall_p90_mw": 2639.2
+      },
+      {
+        "bias_mw": 844.8,
+        "delivery_date": "2026-01-08",
+        "mae_mw": 1949.2,
+        "max_abs_mw": 3550.0,
+        "max_abs_time": "2026-01-08T19:00:00Z",
+        "mean_actual_mw": 4528.1,
+        "n": 24,
+        "nmae_pct": 43.05,
+        "rmse_mw": 2153.4,
+        "shortfall_p90_mw": 2880.6
+      },
+      {
+        "bias_mw": 804.9,
+        "delivery_date": "2026-01-09",
+        "mae_mw": 839.4,
+        "max_abs_mw": 2242.5,
+        "max_abs_time": "2026-01-09T00:00:00Z",
+        "mean_actual_mw": 10756.9,
+        "n": 24,
+        "nmae_pct": 7.8,
+        "rmse_mw": 1074.6,
+        "shortfall_p90_mw": 1834.9
+      },
+      {
+        "bias_mw": -86.1,
+        "delivery_date": "2026-01-10",
+        "mae_mw": 1101.2,
+        "max_abs_mw": 2245.5,
+        "max_abs_time": "2026-01-10T18:00:00Z",
+        "mean_actual_mw": 8779.2,
+        "n": 24,
+        "nmae_pct": 12.54,
+        "rmse_mw": 1238.0,
+        "shortfall_p90_mw": 1273.5
+      },
+      {
+        "bias_mw": 4801.6,
+        "delivery_date": "2026-01-11",
+        "mae_mw": 4801.6,
+        "max_abs_mw": 5953.0,
+        "max_abs_time": "2026-01-11T23:00:00Z",
+        "mean_actual_mw": 13557.4,
+        "n": 24,
+        "nmae_pct": 35.42,
+        "rmse_mw": 4853.4,
+        "shortfall_p90_mw": 5664.8
+      },
+      {
+        "bias_mw": 4868.2,
+        "delivery_date": "2026-01-12",
+        "mae_mw": 4868.2,
+        "max_abs_mw": 6870.0,
+        "max_abs_time": "2026-01-12T01:00:00Z",
+        "mean_actual_mw": 14452.2,
+        "n": 24,
+        "nmae_pct": 33.69,
+        "rmse_mw": 5120.9,
+        "shortfall_p90_mw": 6722.6
+      },
+      {
+        "bias_mw": 156.5,
+        "delivery_date": "2026-01-13",
+        "mae_mw": 1403.3,
+        "max_abs_mw": 3012.5,
+        "max_abs_time": "2026-01-13T06:00:00Z",
+        "mean_actual_mw": 10068.5,
+        "n": 24,
+        "nmae_pct": 13.94,
+        "rmse_mw": 1584.5,
+        "shortfall_p90_mw": 2039.0
+      },
+      {
+        "bias_mw": -84.2,
+        "delivery_date": "2026-01-14",
+        "mae_mw": 1077.4,
+        "max_abs_mw": 2033.0,
+        "max_abs_time": "2026-01-14T05:00:00Z",
+        "mean_actual_mw": 9670.6,
+        "n": 24,
+        "nmae_pct": 11.14,
+        "rmse_mw": 1236.1,
+        "shortfall_p90_mw": 1595.8
+      },
+      {
+        "bias_mw": 1041.8,
+        "delivery_date": "2026-01-15",
+        "mae_mw": 1041.8,
+        "max_abs_mw": 1812.5,
+        "max_abs_time": "2026-01-15T11:00:00Z",
+        "mean_actual_mw": 10567.8,
+        "n": 24,
+        "nmae_pct": 9.86,
+        "rmse_mw": 1149.3,
+        "shortfall_p90_mw": 1614.8
+      },
+      {
+        "bias_mw": 352.0,
+        "delivery_date": "2026-01-16",
+        "mae_mw": 782.8,
+        "max_abs_mw": 2101.5,
+        "max_abs_time": "2026-01-16T21:00:00Z",
+        "mean_actual_mw": 7578.5,
+        "n": 24,
+        "nmae_pct": 10.33,
+        "rmse_mw": 926.0,
+        "shortfall_p90_mw": 1341.8
+      },
+      {
+        "bias_mw": 1726.8,
+        "delivery_date": "2026-01-17",
+        "mae_mw": 1726.8,
+        "max_abs_mw": 2612.0,
+        "max_abs_time": "2026-01-17T10:00:00Z",
+        "mean_actual_mw": 5647.0,
+        "n": 24,
+        "nmae_pct": 30.58,
+        "rmse_mw": 1802.2,
+        "shortfall_p90_mw": 2318.1
+      },
+      {
+        "bias_mw": 1554.8,
+        "delivery_date": "2026-01-18",
+        "mae_mw": 1554.8,
+        "max_abs_mw": 2485.0,
+        "max_abs_time": "2026-01-18T19:00:00Z",
+        "mean_actual_mw": 4977.0,
+        "n": 24,
+        "nmae_pct": 31.24,
+        "rmse_mw": 1611.3,
+        "shortfall_p90_mw": 2072.9
+      },
+      {
+        "bias_mw": -730.1,
+        "delivery_date": "2026-01-19",
+        "mae_mw": 736.1,
+        "max_abs_mw": 1779.5,
+        "max_abs_time": "2026-01-19T23:00:00Z",
+        "mean_actual_mw": 6526.1,
+        "n": 24,
+        "nmae_pct": 11.28,
+        "rmse_mw": 812.6,
+        "shortfall_p90_mw": 0.0
+      },
+      {
+        "bias_mw": 351.8,
+        "delivery_date": "2026-01-20",
+        "mae_mw": 1054.6,
+        "max_abs_mw": 3444.0,
+        "max_abs_time": "2026-01-20T23:00:00Z",
+        "mean_actual_mw": 15130.2,
+        "n": 24,
+        "nmae_pct": 6.97,
+        "rmse_mw": 1438.9,
+        "shortfall_p90_mw": 2754.0
+      },
+      {
+        "bias_mw": 3658.3,
+        "delivery_date": "2026-01-21",
+        "mae_mw": 3658.3,
+        "max_abs_mw": 4844.0,
+        "max_abs_time": "2026-01-21T05:00:00Z",
+        "mean_actual_mw": 15731.7,
+        "n": 24,
+        "nmae_pct": 23.25,
+        "rmse_mw": 3766.5,
+        "shortfall_p90_mw": 4798.7
+      },
+      {
+        "bias_mw": 2666.4,
+        "delivery_date": "2026-01-22",
+        "mae_mw": 2666.4,
+        "max_abs_mw": 3700.0,
+        "max_abs_time": "2026-01-22T11:00:00Z",
+        "mean_actual_mw": 16188.6,
+        "n": 24,
+        "nmae_pct": 16.47,
+        "rmse_mw": 2781.4,
+        "shortfall_p90_mw": 3527.8
+      },
+      {
+        "bias_mw": 1514.8,
+        "delivery_date": "2026-01-23",
+        "mae_mw": 1514.8,
+        "max_abs_mw": 2751.5,
+        "max_abs_time": "2026-01-23T00:00:00Z",
+        "mean_actual_mw": 16146.4,
+        "n": 24,
+        "nmae_pct": 9.38,
+        "rmse_mw": 1600.1,
+        "shortfall_p90_mw": 2195.9
+      },
+      {
+        "bias_mw": 1925.9,
+        "delivery_date": "2026-01-24",
+        "mae_mw": 1925.9,
+        "max_abs_mw": 3553.0,
+        "max_abs_time": "2026-01-24T08:00:00Z",
+        "mean_actual_mw": 15867.2,
+        "n": 24,
+        "nmae_pct": 12.14,
+        "rmse_mw": 2213.3,
+        "shortfall_p90_mw": 3266.7
+      },
+      {
+        "bias_mw": 1891.2,
+        "delivery_date": "2026-01-25",
+        "mae_mw": 1891.2,
+        "max_abs_mw": 3081.5,
+        "max_abs_time": "2026-01-25T22:00:00Z",
+        "mean_actual_mw": 13602.2,
+        "n": 24,
+        "nmae_pct": 13.9,
+        "rmse_mw": 2042.0,
+        "shortfall_p90_mw": 2786.2
+      },
+      {
+        "bias_mw": 1980.9,
+        "delivery_date": "2026-01-26",
+        "mae_mw": 1980.9,
+        "max_abs_mw": 3771.5,
+        "max_abs_time": "2026-01-26T17:00:00Z",
+        "mean_actual_mw": 10439.9,
+        "n": 24,
+        "nmae_pct": 18.97,
+        "rmse_mw": 2206.4,
+        "shortfall_p90_mw": 3298.7
+      },
+      {
+        "bias_mw": 3479.1,
+        "delivery_date": "2026-01-27",
+        "mae_mw": 3479.1,
+        "max_abs_mw": 6184.0,
+        "max_abs_time": "2026-01-27T23:00:00Z",
+        "mean_actual_mw": 16408.5,
+        "n": 24,
+        "nmae_pct": 21.2,
+        "rmse_mw": 3578.4,
+        "shortfall_p90_mw": 4249.3
+      },
+      {
+        "bias_mw": 5374.8,
+        "delivery_date": "2026-01-28",
+        "mae_mw": 5374.8,
+        "max_abs_mw": 6271.0,
+        "max_abs_time": "2026-01-28T04:00:00Z",
+        "mean_actual_mw": 5759.8,
+        "n": 24,
+        "nmae_pct": 93.32,
+        "rmse_mw": 5399.4,
+        "shortfall_p90_mw": 5982.5
+      },
+      {
+        "bias_mw": 1739.0,
+        "delivery_date": "2026-01-29",
+        "mae_mw": 1739.0,
+        "max_abs_mw": 2354.5,
+        "max_abs_time": "2026-01-29T14:00:00Z",
+        "mean_actual_mw": 10192.5,
+        "n": 24,
+        "nmae_pct": 17.06,
+        "rmse_mw": 1775.1,
+        "shortfall_p90_mw": 2236.8
+      },
+      {
+        "bias_mw": 1371.7,
+        "delivery_date": "2026-01-30",
+        "mae_mw": 1371.7,
+        "max_abs_mw": 2724.5,
+        "max_abs_time": "2026-01-30T00:00:00Z",
+        "mean_actual_mw": 15837.1,
+        "n": 24,
+        "nmae_pct": 8.66,
+        "rmse_mw": 1590.7,
+        "shortfall_p90_mw": 2340.2
+      },
+      {
+        "bias_mw": 2390.2,
+        "delivery_date": "2026-01-31",
+        "mae_mw": 2390.2,
+        "max_abs_mw": 3354.0,
+        "max_abs_time": "2026-01-31T11:00:00Z",
+        "mean_actual_mw": 10423.2,
+        "n": 24,
+        "nmae_pct": 22.93,
+        "rmse_mw": 2490.5,
+        "shortfall_p90_mw": 3079.5
+      },
+      {
+        "bias_mw": 983.0,
+        "delivery_date": "2026-02-01",
+        "mae_mw": 1008.1,
+        "max_abs_mw": 1750.0,
+        "max_abs_time": "2026-02-01T01:00:00Z",
+        "mean_actual_mw": 6159.4,
+        "n": 24,
+        "nmae_pct": 16.37,
+        "rmse_mw": 1067.9,
+        "shortfall_p90_mw": 1447.3
+      }
+    ],
+    "end": "2026-02-01",
+    "start": "2026-01-02"
+  },
+  "derived": {
+    "cutoff_summary": {
+      "best": {
+        "bias_mw": 1687.2,
+        "coverage_pct": 100.0,
+        "cutoff": "12:00",
+        "mae_mw": 1901.0,
+        "mean_horizon_h": 24.1,
+        "n": 744,
+        "shortfall_p90_mw": 3847.2
+      },
+      "best_horizon_change_h": -3.9,
+      "conclusion": "The lowest MAE is 1,901.0 MW at 12:00, 137.9 MW (6.76%) below the 09:00 default. It shortens mean horizon from 28.0 h to 24.1 h. The grid spans 137.9 MW; the curve is flat near the default, which stays because it aligns with the 07:30 WINDFOR vintage and preserves lead time.",
+      "default": {
+        "bias_mw": 1747.9,
+        "coverage_pct": 100.0,
+        "cutoff": "09:00",
+        "mae_mw": 2038.9,
+        "mean_horizon_h": 28.0,
+        "n": 744,
+        "shortfall_p90_mw": 4097.9
+      },
+      "improvement_mw": 137.9,
+      "improvement_pct": 6.76,
+      "rows": [
+        {
+          "bias_mw": 1671.0,
+          "coverage_pct": 100.0,
+          "cutoff": "06:00",
+          "mae_mw": 2016.1,
+          "mean_horizon_h": 31.0,
+          "n": 744,
+          "shortfall_p90_mw": 4157.9
+        },
+        {
+          "bias_mw": 1747.9,
+          "coverage_pct": 100.0,
+          "cutoff": "08:00",
+          "mae_mw": 2038.9,
+          "mean_horizon_h": 28.0,
+          "n": 744,
+          "shortfall_p90_mw": 4097.9
+        },
+        {
+          "bias_mw": 1747.9,
+          "coverage_pct": 100.0,
+          "cutoff": "09:00",
+          "mae_mw": 2038.9,
+          "mean_horizon_h": 28.0,
+          "n": 744,
+          "shortfall_p90_mw": 4097.9
+        },
+        {
+          "bias_mw": 1747.9,
+          "coverage_pct": 100.0,
+          "cutoff": "09:20",
+          "mae_mw": 2038.9,
+          "mean_horizon_h": 28.0,
+          "n": 744,
+          "shortfall_p90_mw": 4097.9
+        },
+        {
+          "bias_mw": 1729.9,
+          "coverage_pct": 100.0,
+          "cutoff": "09:50",
+          "mae_mw": 2013.0,
+          "mean_horizon_h": 26.0,
+          "n": 744,
+          "shortfall_p90_mw": 4143.9
+        },
+        {
+          "bias_mw": 1729.9,
+          "coverage_pct": 100.0,
+          "cutoff": "10:00",
+          "mae_mw": 2013.0,
+          "mean_horizon_h": 26.0,
+          "n": 744,
+          "shortfall_p90_mw": 4143.9
+        },
+        {
+          "bias_mw": 1687.2,
+          "coverage_pct": 100.0,
+          "cutoff": "12:00",
+          "mae_mw": 1901.0,
+          "mean_horizon_h": 24.1,
+          "n": 744,
+          "shortfall_p90_mw": 3847.2
+        }
+      ],
+      "spread_mw": 137.9
+    },
+    "data": {
+      "actuals": {
+        "end": "2026-02-01T23:30:00Z",
+        "expected_rows": 1536,
+        "hourly_incomplete": 0,
+        "hourly_rows": 768,
+        "missing_rows": 0,
+        "resolution_minutes": 30,
+        "rows": 1536,
+        "start": "2026-01-01T00:00:00Z"
+      },
+      "decision_coverage": {
+        "coverage_pct": 100.0,
+        "expected_periods": 744,
+        "missing_actual_periods": 0,
+        "missing_forecast_periods": 0,
+        "with_actual": 744,
+        "with_forecast": 744
+      },
+      "forecasts": {
+        "first_publish": "2025-12-30T02:30:00Z",
+        "last_publish": "2026-02-01T22:30:00Z",
+        "publish_days": 34,
+        "resolution_minutes": 60,
+        "rows": 19856,
+        "target_end": "2026-02-03T21:00:00Z",
+        "target_start": "2025-12-29T21:00:00Z",
+        "targets": 865,
+        "vintages": 272,
+        "vintages_per_publish_day_max": 8,
+        "vintages_per_publish_day_min": 8
+      },
+      "scope": {
+        "decision_dates": {
+          "end": "2026-01-31",
+          "start": "2026-01-01"
+        },
+        "default_cutoff": "09:00",
+        "delivery_dates": {
+          "end": "2026-02-01",
+          "start": "2026-01-02"
+        },
+        "delivery_days": 31,
+        "expected_hours": 744,
+        "mode": "decision_date",
+        "timezone": "Europe/London"
+      },
+      "snapshot": {
+        "fingerprint": "331dc8acb133704a",
+        "manifest_generated_at": "2026-11-01T18:42:17Z",
+        "processed": {
+          "actuals": {
+            "columns": [
+              "start_time",
+              "generation_mw"
+            ],
+            "file": "actuals.csv.gz",
+            "resolution_minutes": 30,
+            "rows": 1536,
+            "sha256": "587408a3105a7405ed66bcd7ad7386d1c6f1ad11d22fbf151b610e4963d5183d"
+          },
+          "forecasts": {
+            "columns": [
+              "start_time",
+              "publish_time",
+              "generation_mw"
+            ],
+            "file": "forecasts.csv.gz",
+            "resolution_minutes": 60,
+            "rows": 19856,
+            "sha256": "31c554443803a5a59ec9dd47fcc772c50750e6e1c480a819c911d4209930a42d"
+          }
+        },
+        "schema_version": 1,
+        "source": {
+          "base_url": "https://data.elexon.co.uk/bmrs/api/v1",
+          "datasets": [
+            "FUELHH (fuelType=WIND)",
+            "WINDFOR"
+          ],
+          "documentation": {
+            "fuelhh": "https://bmrs.elexon.co.uk/api-documentation/endpoint/datasets/FUELHH/stream",
+            "windfor": "https://bmrs.elexon.co.uk/api-documentation/endpoint/datasets/WINDFOR/stream"
+          },
+          "name": "Elexon BMRS Insights Solution"
+        }
+      }
+    },
+    "demo_days": {
+      "bad": {
+        "bias_mw": 5374.8,
+        "delivery_date": "2026-01-28",
+        "description": "low-wind lull (daily mean 5,759.8 MW); over-forecast in all 24 hours (bias +5,374.8 MW); max 1 h actual ramp 1,747.5 MW (top-decile ramp).",
+        "mae_mw": 5374.8,
+        "max_abs_mw": 6271.0,
+        "max_abs_time": "2026-01-28T04:00:00Z",
+        "max_actual_mw": 10325.5,
+        "max_ramp_1h_mw": 1747.5,
+        "max_ramp_3h_mw": 3954.0,
+        "mean_actual_mw": 5759.8,
+        "min_actual_mw": 4349.0,
+        "n": 24,
+        "nmae_pct": 93.32,
+        "over_count": 24,
+        "rmse_mw": 5399.4,
+        "shortfall_p90_mw": 5982.5,
+        "under_count": 0
+      },
+      "big_ramp": {
+        "bias_mw": 844.8,
+        "delivery_date": "2026-01-08",
+        "description": "low-wind lull (daily mean 4,528.1 MW); over-forecast in 18/24 hours (bias +844.8 MW); max 1 h actual ramp 2,395.5 MW (top-decile ramp).",
+        "mae_mw": 1949.2,
+        "max_abs_mw": 3550.0,
+        "max_abs_time": "2026-01-08T19:00:00Z",
+        "max_actual_mw": 10654.5,
+        "max_ramp_1h_mw": 2395.5,
+        "max_ramp_3h_mw": 5729.5,
+        "mean_actual_mw": 4528.1,
+        "min_actual_mw": 1711.5,
+        "n": 24,
+        "nmae_pct": 43.05,
+        "over_count": 18,
+        "rmse_mw": 2153.4,
+        "shortfall_p90_mw": 2880.6,
+        "under_count": 6
+      },
+      "daily_max_ramp_1h_p90_mw": 1638.0,
+      "daily_mean_actual_p20_mw": 7578.5,
+      "daily_mean_actual_p80_mw": 15251.2,
+      "median_daily_mae_mw": 1726.8,
+      "typical": {
+        "bias_mw": 1726.8,
+        "delivery_date": "2026-01-17",
+        "description": "low-wind lull (daily mean 5,647.0 MW); over-forecast in all 24 hours (bias +1,726.8 MW); max 1 h actual ramp 837.5 MW.",
+        "mae_mw": 1726.8,
+        "max_abs_mw": 2612.0,
+        "max_abs_time": "2026-01-17T10:00:00Z",
+        "max_actual_mw": 8901.5,
+        "max_ramp_1h_mw": 837.5,
+        "max_ramp_3h_mw": 2219.0,
+        "mean_actual_mw": 5647.0,
+        "min_actual_mw": 3550.0,
+        "n": 24,
+        "nmae_pct": 30.58,
+        "over_count": 24,
+        "rmse_mw": 1802.2,
+        "shortfall_p90_mw": 2318.1,
+        "under_count": 0
+      }
+    },
+    "distribution": {
+      "bias_share_of_mean_actual_pct": 15.49,
+      "mean_over_forecast_mw": 2228.9,
+      "mean_under_forecast_mw": 966.6,
+      "median_error_mw": 1592.0,
+      "n": 744,
+      "over_count": 632,
+      "over_share": 0.85,
+      "p5_error_mw": -1151.4,
+      "p95_error_mw": 5283.4,
+      "shortfall_max_mw": 6870.0,
+      "shortfall_p90_mw": 4097.9,
+      "shortfall_p95_mw": 5283.4,
+      "under_count": 112,
+      "under_share": 0.15,
+      "zero_count": 0
+    },
+    "horizon_summary": {
+      "buckets": [
+        {
+          "bias_mw": 1427.7,
+          "from_h": 0.0,
+          "label": "0-6 h",
+          "mae_mw": 1660.0,
+          "n": 1488,
+          "nmae_pct": 14.76,
+          "rmse_mw": 2120.0,
+          "to_h": 6.0
+        },
+        {
+          "bias_mw": 1502.8,
+          "from_h": 6.0,
+          "label": "6-12 h",
+          "mae_mw": 1734.5,
+          "n": 1488,
+          "nmae_pct": 15.32,
+          "rmse_mw": 2192.4,
+          "to_h": 12.0
+        },
+        {
+          "bias_mw": 1634.3,
+          "from_h": 12.0,
+          "label": "12-18 h",
+          "mae_mw": 1837.0,
+          "n": 1488,
+          "nmae_pct": 16.21,
+          "rmse_mw": 2309.8,
+          "to_h": 18.0
+        },
+        {
+          "bias_mw": 1771.8,
+          "from_h": 18.0,
+          "label": "18-24 h",
+          "mae_mw": 1949.4,
+          "n": 1488,
+          "nmae_pct": 17.36,
+          "rmse_mw": 2424.9,
+          "to_h": 24.0
+        },
+        {
+          "bias_mw": 1717.9,
+          "from_h": 24.0,
+          "label": "24-36 h",
+          "mae_mw": 2018.8,
+          "n": 2976,
+          "nmae_pct": 17.89,
+          "rmse_mw": 2480.8,
+          "to_h": 36.0
+        },
+        {
+          "bias_mw": 1905.0,
+          "from_h": 36.0,
+          "label": "36-48 h",
+          "mae_mw": 2249.8,
+          "n": 2945,
+          "nmae_pct": 19.95,
+          "rmse_mw": 2789.2,
+          "to_h": 48.0
+        },
+        {
+          "bias_mw": 1402.6,
+          "from_h": 48.0,
+          "label": "48-72 h",
+          "mae_mw": 2317.3,
+          "n": 2510,
+          "nmae_pct": 20.35,
+          "rmse_mw": 2925.4,
+          "to_h": 72.0
+        },
+        {
+          "bias_mw": null,
+          "from_h": 72.0,
+          "label": "72+ h",
+          "mae_mw": null,
+          "n": 0,
+          "nmae_pct": null,
+          "rmse_mw": null,
+          "to_h": null
+        }
+      ],
+      "decision_band_h": {
+        "max": 39.5,
+        "min": 16.5
+      },
+      "dropped_negative_horizon": 3697,
+      "empty_buckets": [
+        "72+ h"
+      ],
+      "first_populated": {
+        "bias_mw": 1427.7,
+        "from_h": 0.0,
+        "label": "0-6 h",
+        "mae_mw": 1660.0,
+        "n": 1488,
+        "nmae_pct": 14.76,
+        "rmse_mw": 2120.0,
+        "to_h": 6.0
+      },
+      "last_populated": {
+        "bias_mw": 1402.6,
+        "from_h": 48.0,
+        "label": "48-72 h",
+        "mae_mw": 2317.3,
+        "n": 2510,
+        "nmae_pct": 20.35,
+        "rmse_mw": 2925.4,
+        "to_h": 72.0
+      },
+      "mae_growth_first_to_last_pct": 39.6,
+      "n_vintage_rows": 18080,
+      "populated_buckets": 7,
+      "selected_horizon_h": {
+        "max": 39.5,
+        "mean": 28.0,
+        "min": 16.5
+      }
+    },
+    "hours_summary": {
+      "all": [
+        {
+          "bias_mw": 1952.7,
+          "hour": 0,
+          "label": "00:00",
+          "mae_mw": 2027.8,
+          "mean_actual_mw": 11616.0,
+          "n": 31,
+          "rmse_mw": 2526.1,
+          "shortfall_p90_mw": 3937.0
+        },
+        {
+          "bias_mw": 2133.3,
+          "hour": 1,
+          "label": "01:00",
+          "mae_mw": 2169.0,
+          "mean_actual_mw": 11353.8,
+          "n": 31,
+          "rmse_mw": 2671.5,
+          "shortfall_p90_mw": 4185.0
+        },
+        {
+          "bias_mw": 2253.5,
+          "hour": 2,
+          "label": "02:00",
+          "mae_mw": 2299.4,
+          "mean_actual_mw": 11156.5,
+          "n": 31,
+          "rmse_mw": 2799.8,
+          "shortfall_p90_mw": 4330.5
+        },
+        {
+          "bias_mw": 2321.7,
+          "hour": 3,
+          "label": "03:00",
+          "mae_mw": 2413.1,
+          "mean_actual_mw": 11024.8,
+          "n": 31,
+          "rmse_mw": 2908.7,
+          "shortfall_p90_mw": 4512.0
+        },
+        {
+          "bias_mw": 2334.6,
+          "hour": 4,
+          "label": "04:00",
+          "mae_mw": 2405.2,
+          "mean_actual_mw": 10932.6,
+          "n": 31,
+          "rmse_mw": 2904.4,
+          "shortfall_p90_mw": 4756.0
+        },
+        {
+          "bias_mw": 2358.1,
+          "hour": 5,
+          "label": "05:00",
+          "mae_mw": 2429.9,
+          "mean_actual_mw": 10793.3,
+          "n": 31,
+          "rmse_mw": 2919.2,
+          "shortfall_p90_mw": 4844.0
+        },
+        {
+          "bias_mw": 2312.2,
+          "hour": 6,
+          "label": "06:00",
+          "mae_mw": 2379.9,
+          "mean_actual_mw": 10721.1,
+          "n": 31,
+          "rmse_mw": 2876.6,
+          "shortfall_p90_mw": 4830.5
+        },
+        {
+          "bias_mw": 2139.4,
+          "hour": 7,
+          "label": "07:00",
+          "mae_mw": 2227.3,
+          "mean_actual_mw": 10817.1,
+          "n": 31,
+          "rmse_mw": 2735.9,
+          "shortfall_p90_mw": 4817.0
+        },
+        {
+          "bias_mw": 1903.2,
+          "hour": 8,
+          "label": "08:00",
+          "mae_mw": 2032.4,
+          "mean_actual_mw": 10983.1,
+          "n": 31,
+          "rmse_mw": 2494.7,
+          "shortfall_p90_mw": 3772.0
+        },
+        {
+          "bias_mw": 1854.5,
+          "hour": 9,
+          "label": "09:00",
+          "mae_mw": 1996.3,
+          "mean_actual_mw": 11000.6,
+          "n": 31,
+          "rmse_mw": 2449.6,
+          "shortfall_p90_mw": 3477.5
+        },
+        {
+          "bias_mw": 1731.4,
+          "hour": 10,
+          "label": "10:00",
+          "mae_mw": 1930.7,
+          "mean_actual_mw": 11082.0,
+          "n": 31,
+          "rmse_mw": 2390.6,
+          "shortfall_p90_mw": 3680.5
+        },
+        {
+          "bias_mw": 1570.5,
+          "hour": 11,
+          "label": "11:00",
+          "mae_mw": 1962.9,
+          "mean_actual_mw": 11142.0,
+          "n": 31,
+          "rmse_mw": 2337.2,
+          "shortfall_p90_mw": 3700.0
+        },
+        {
+          "bias_mw": 1387.7,
+          "hour": 12,
+          "label": "12:00",
+          "mae_mw": 1929.3,
+          "mean_actual_mw": 11186.5,
+          "n": 31,
+          "rmse_mw": 2295.5,
+          "shortfall_p90_mw": 3388.0
+        },
+        {
+          "bias_mw": 1330.7,
+          "hour": 13,
+          "label": "13:00",
+          "mae_mw": 1942.5,
+          "mean_actual_mw": 11139.5,
+          "n": 31,
+          "rmse_mw": 2265.0,
+          "shortfall_p90_mw": 3175.0
+        },
+        {
+          "bias_mw": 1328.4,
+          "hour": 14,
+          "label": "14:00",
+          "mae_mw": 1913.6,
+          "mean_actual_mw": 11114.5,
+          "n": 31,
+          "rmse_mw": 2234.2,
+          "shortfall_p90_mw": 3382.5
+        },
+        {
+          "bias_mw": 1247.0,
+          "hour": 15,
+          "label": "15:00",
+          "mae_mw": 1817.5,
+          "mean_actual_mw": 11273.4,
+          "n": 31,
+          "rmse_mw": 2199.8,
+          "shortfall_p90_mw": 3350.5
+        },
+        {
+          "bias_mw": 1303.3,
+          "hour": 16,
+          "label": "16:00",
+          "mae_mw": 1847.1,
+          "mean_actual_mw": 11385.5,
+          "n": 31,
+          "rmse_mw": 2228.5,
+          "shortfall_p90_mw": 4021.0
+        },
+        {
+          "bias_mw": 1320.2,
+          "hour": 17,
+          "label": "17:00",
+          "mae_mw": 1918.2,
+          "mean_actual_mw": 11578.0,
+          "n": 31,
+          "rmse_mw": 2292.1,
+          "shortfall_p90_mw": 3771.5
+        },
+        {
+          "bias_mw": 1347.5,
+          "hour": 18,
+          "label": "18:00",
+          "mae_mw": 1954.6,
+          "mean_actual_mw": 11784.6,
+          "n": 31,
+          "rmse_mw": 2368.0,
+          "shortfall_p90_mw": 3806.5
+        },
+        {
+          "bias_mw": 1388.7,
+          "hour": 19,
+          "label": "19:00",
+          "mae_mw": 1952.9,
+          "mean_actual_mw": 11887.1,
+          "n": 31,
+          "rmse_mw": 2383.0,
+          "shortfall_p90_mw": 3606.0
+        },
+        {
+          "bias_mw": 1435.7,
+          "hour": 20,
+          "label": "20:00",
+          "mae_mw": 1856.3,
+          "mean_actual_mw": 11880.5,
+          "n": 31,
+          "rmse_mw": 2339.8,
+          "shortfall_p90_mw": 3843.0
+        },
+        {
+          "bias_mw": 1544.2,
+          "hour": 21,
+          "label": "21:00",
+          "mae_mw": 1785.6,
+          "mean_actual_mw": 11783.2,
+          "n": 31,
+          "rmse_mw": 2324.1,
+          "shortfall_p90_mw": 3716.5
+        },
+        {
+          "bias_mw": 1635.8,
+          "hour": 22,
+          "label": "22:00",
+          "mae_mw": 1792.5,
+          "mean_actual_mw": 11691.9,
+          "n": 31,
+          "rmse_mw": 2368.6,
+          "shortfall_p90_mw": 4322.5
+        },
+        {
+          "bias_mw": 1814.9,
+          "hour": 23,
+          "label": "23:00",
+          "mae_mw": 1949.7,
+          "mean_actual_mw": 11477.9,
+          "n": 31,
+          "rmse_mw": 2532.3,
+          "shortfall_p90_mw": 4145.5
+        }
+      ],
+      "best": [
+        {
+          "bias_mw": 1544.2,
+          "hour": 21,
+          "label": "21:00",
+          "mae_mw": 1785.6,
+          "mean_actual_mw": 11783.2,
+          "n": 31,
+          "rmse_mw": 2324.1,
+          "shortfall_p90_mw": 3716.5
+        },
+        {
+          "bias_mw": 1635.8,
+          "hour": 22,
+          "label": "22:00",
+          "mae_mw": 1792.5,
+          "mean_actual_mw": 11691.9,
+          "n": 31,
+          "rmse_mw": 2368.6,
+          "shortfall_p90_mw": 4322.5
+        },
+        {
+          "bias_mw": 1247.0,
+          "hour": 15,
+          "label": "15:00",
+          "mae_mw": 1817.5,
+          "mean_actual_mw": 11273.4,
+          "n": 31,
+          "rmse_mw": 2199.8,
+          "shortfall_p90_mw": 3350.5
+        }
+      ],
+      "best_hour": {
+        "bias_mw": 1544.2,
+        "hour": 21,
+        "label": "21:00",
+        "mae_mw": 1785.6,
+        "mean_actual_mw": 11783.2,
+        "n": 31,
+        "rmse_mw": 2324.1,
+        "shortfall_p90_mw": 3716.5
+      },
+      "spread_mw": 644.3,
+      "spread_pct": 36.08,
+      "worst": [
+        {
+          "bias_mw": 2358.1,
+          "hour": 5,
+          "label": "05:00",
+          "mae_mw": 2429.9,
+          "mean_actual_mw": 10793.3,
+          "n": 31,
+          "rmse_mw": 2919.2,
+          "shortfall_p90_mw": 4844.0
+        },
+        {
+          "bias_mw": 2321.7,
+          "hour": 3,
+          "label": "03:00",
+          "mae_mw": 2413.1,
+          "mean_actual_mw": 11024.8,
+          "n": 31,
+          "rmse_mw": 2908.7,
+          "shortfall_p90_mw": 4512.0
+        },
+        {
+          "bias_mw": 2334.6,
+          "hour": 4,
+          "label": "04:00",
+          "mae_mw": 2405.2,
+          "mean_actual_mw": 10932.6,
+          "n": 31,
+          "rmse_mw": 2904.4,
+          "shortfall_p90_mw": 4756.0
+        }
+      ],
+      "worst_hour": {
+        "bias_mw": 2358.1,
+        "hour": 5,
+        "label": "05:00",
+        "mae_mw": 2429.9,
+        "mean_actual_mw": 10793.3,
+        "n": 31,
+        "rmse_mw": 2919.2,
+        "shortfall_p90_mw": 4844.0
+      }
+    },
+    "levels_summary": {
+      "basis": "actual",
+      "bins": [
+        {
+          "bias_mw": 1799.3,
+          "from_mw": 1711.5,
+          "label": "Q1 (lowest)",
+          "mae_mw": 2027.8,
+          "n": 149,
+          "nmae_pct": 39.57,
+          "to_mw": 7473.5
+        },
+        {
+          "bias_mw": 1028.6,
+          "from_mw": 7477.5,
+          "label": "Q2",
+          "mae_mw": 1550.7,
+          "n": 149,
+          "nmae_pct": 18.13,
+          "to_mw": 9851.0
+        },
+        {
+          "bias_mw": 1148.0,
+          "from_mw": 9865.5,
+          "label": "Q3",
+          "mae_mw": 1722.1,
+          "n": 149,
+          "nmae_pct": 14.84,
+          "to_mw": 13671.5
+        },
+        {
+          "bias_mw": 2693.8,
+          "from_mw": 13727.5,
+          "label": "Q4",
+          "mae_mw": 2737.2,
+          "n": 149,
+          "nmae_pct": 18.62,
+          "to_mw": 15478.0
+        },
+        {
+          "bias_mw": 2072.0,
+          "from_mw": 15482.0,
+          "label": "Q5",
+          "mae_mw": 2157.5,
+          "n": 148,
+          "nmae_pct": 13.1,
+          "to_mw": 17755.5
+        }
+      ],
+      "highest_nmae": {
+        "bias_mw": 1799.3,
+        "from_mw": 1711.5,
+        "label": "Q1 (lowest)",
+        "mae_mw": 2027.8,
+        "n": 149,
+        "nmae_pct": 39.57,
+        "to_mw": 7473.5
+      },
+      "largest_abs_bias": {
+        "bias_mw": 2693.8,
+        "from_mw": 13727.5,
+        "label": "Q4",
+        "mae_mw": 2737.2,
+        "n": 149,
+        "nmae_pct": 18.62,
+        "to_mw": 15478.0
+      },
+      "largest_error": {
+        "bias_mw": 2693.8,
+        "from_mw": 13727.5,
+        "label": "Q4",
+        "mae_mw": 2737.2,
+        "n": 149,
+        "nmae_pct": 18.62,
+        "to_mw": 15478.0
+      }
+    },
+    "risk_summary": {
+      "caveat": "In-sample coverage is nominal by construction because the buffer is an empirical quantile. The walk-forward column is the honest estimate: each day's buffer uses only outcomes from at least two days earlier. With 23 evaluated days, treat the tail coverage as indicative rather than precise.",
+      "conclusion": "At level 0.90 the in-sample buffer is 4,097.9 MW. Walk-forward coverage is 86.0% over 23 evaluated days (8 skipped), with a mean buffer of 4,051.8 MW and 22.0% of days breached. The target is 90.0%; the gap is the honest out-of-sample cost, and the day count is small.",
+      "default": {
+        "evaluated_days": 23,
+        "in_sample_buffer_mw": 4097.9,
+        "in_sample_coverage": 0.9,
+        "level": 0.9,
+        "skipped_days": [
+          "2026-01-02",
+          "2026-01-03",
+          "2026-01-04",
+          "2026-01-05",
+          "2026-01-06",
+          "2026-01-07",
+          "2026-01-08",
+          "2026-01-09"
+        ],
+        "target": 0.9,
+        "walk_forward_coverage": 0.86,
+        "walk_forward_coverage_pct": 86.0,
+        "walk_forward_days_with_breach_pct": 22.0,
+        "walk_forward_days_with_breach_share": 0.22,
+        "walk_forward_mean_buffer_mw": 4051.8
+      },
+      "default_level": 0.9,
+      "rows": [
+        {
+          "evaluated_days": 23,
+          "in_sample_buffer_mw": 1592.0,
+          "in_sample_coverage": 0.5,
+          "level": 0.5,
+          "skipped_days": [
+            "2026-01-02",
+            "2026-01-03",
+            "2026-01-04",
+            "2026-01-05",
+            "2026-01-06",
+            "2026-01-07",
+            "2026-01-08",
+            "2026-01-09"
+          ],
+          "target": 0.5,
+          "walk_forward_coverage": 0.43,
+          "walk_forward_coverage_pct": 43.0,
+          "walk_forward_days_with_breach_pct": 91.0,
+          "walk_forward_days_with_breach_share": 0.91,
+          "walk_forward_mean_buffer_mw": 1426.0
+        },
+        {
+          "evaluated_days": 23,
+          "in_sample_buffer_mw": 2775.1,
+          "in_sample_coverage": 0.75,
+          "level": 0.75,
+          "skipped_days": [
+            "2026-01-02",
+            "2026-01-03",
+            "2026-01-04",
+            "2026-01-05",
+            "2026-01-06",
+            "2026-01-07",
+            "2026-01-08",
+            "2026-01-09"
+          ],
+          "target": 0.75,
+          "walk_forward_coverage": 0.71,
+          "walk_forward_coverage_pct": 71.0,
+          "walk_forward_days_with_breach_pct": 57.0,
+          "walk_forward_days_with_breach_share": 0.57,
+          "walk_forward_mean_buffer_mw": 2658.8
+        },
+        {
+          "evaluated_days": 23,
+          "in_sample_buffer_mw": 4097.9,
+          "in_sample_coverage": 0.9,
+          "level": 0.9,
+          "skipped_days": [
+            "2026-01-02",
+            "2026-01-03",
+            "2026-01-04",
+            "2026-01-05",
+            "2026-01-06",
+            "2026-01-07",
+            "2026-01-08",
+            "2026-01-09"
+          ],
+          "target": 0.9,
+          "walk_forward_coverage": 0.86,
+          "walk_forward_coverage_pct": 86.0,
+          "walk_forward_days_with_breach_pct": 22.0,
+          "walk_forward_days_with_breach_share": 0.22,
+          "walk_forward_mean_buffer_mw": 4051.8
+        },
+        {
+          "evaluated_days": 23,
+          "in_sample_buffer_mw": 5283.4,
+          "in_sample_coverage": 0.95,
+          "level": 0.95,
+          "skipped_days": [
+            "2026-01-02",
+            "2026-01-03",
+            "2026-01-04",
+            "2026-01-05",
+            "2026-01-06",
+            "2026-01-07",
+            "2026-01-08",
+            "2026-01-09"
+          ],
+          "target": 0.95,
+          "walk_forward_coverage": 0.89,
+          "walk_forward_coverage_pct": 89.0,
+          "walk_forward_days_with_breach_pct": 17.0,
+          "walk_forward_days_with_breach_share": 0.17,
+          "walk_forward_mean_buffer_mw": 4986.1
+        }
+      ]
+    },
+    "vintage_value": {
+      "comparisons": {
+        "earliest_mae_above_latest_mw": 383.2,
+        "earliest_mae_above_latest_pct": 18.79,
+        "earliest_mae_below_persistence_mw": 1703.8,
+        "earliest_mae_below_persistence_pct": 41.3,
+        "earliest_skill": 0.41,
+        "latest_mae_below_persistence_mw": 2087.0,
+        "latest_mae_below_persistence_pct": 50.58,
+        "latest_skill": 0.51
+      },
+      "earliest": {
+        "baseline": {
+          "forecast_mae_mw": 2422.1,
+          "mae_mw": 4125.9,
+          "n": 744,
+          "name": "persistence_last_actual_at_cutoff",
+          "skill": 0.41
+        },
+        "horizon_h": {
+          "max": 66.5,
+          "mean": 55.0,
+          "min": 43.5
+        },
+        "label": "earliest eligible vintage",
+        "metrics": {
+          "bias_mw": 1598.9,
+          "correlation": 0.83,
+          "mae_mw": 2422.1,
+          "mape_n": 744,
+          "mape_pct": 26.27,
+          "mean_actual_mw": 11283.6,
+          "n": 744,
+          "n_missing_actual": 0,
+          "n_missing_forecast": 0,
+          "nmae_pct": 21.47,
+          "over_forecast_share": 0.8,
+          "p50_abs_mw": 1967.5,
+          "p50_err_mw": 1530.8,
+          "p5_err_mw": -2629.9,
+          "p90_abs_mw": 5500.7,
+          "p95_abs_mw": 6386.4,
+          "p95_err_mw": 5991.4,
+          "rmse_mw": 3104.8,
+          "shortfall_max_mw": 9567.0,
+          "shortfall_mean_mw": 2010.5,
+          "shortfall_p90_mw": 5101.8,
+          "shortfall_p95_mw": 5991.4,
+          "wape_pct": 21.47
+        }
+      },
+      "latest": {
+        "baseline": {
+          "forecast_mae_mw": 2038.9,
+          "mae_mw": 4125.9,
+          "n": 744,
+          "name": "persistence_last_actual_at_cutoff",
+          "skill": 0.51
+        },
+        "horizon_h": {
+          "max": 39.5,
+          "mean": 28.0,
+          "min": 16.5
+        },
+        "label": "latest eligible vintage",
+        "metrics": {
+          "bias_mw": 1747.9,
+          "correlation": 0.93,
+          "mae_mw": 2038.9,
+          "mape_n": 744,
+          "mape_pct": 22.04,
+          "mean_actual_mw": 11283.6,
+          "n": 744,
+          "n_missing_actual": 0,
+          "n_missing_forecast": 0,
+          "nmae_pct": 18.07,
+          "over_forecast_share": 0.85,
+          "p50_abs_mw": 1671.0,
+          "p50_err_mw": 1592.0,
+          "p5_err_mw": -1151.4,
+          "p90_abs_mw": 4097.9,
+          "p95_abs_mw": 5283.4,
+          "p95_err_mw": 5283.4,
+          "rmse_mw": 2504.8,
+          "shortfall_max_mw": 6870.0,
+          "shortfall_mean_mw": 1893.4,
+          "shortfall_p90_mw": 4097.9,
+          "shortfall_p95_mw": 5283.4,
+          "wape_pct": 18.07
+        },
+        "skill": 0.51
+      },
+      "persistence": {
+        "label": "persistence of last complete actual at cutoff",
+        "metrics": {
+          "mae_mw": 4125.9,
+          "n": 744
+        }
+      }
+    },
+    "worst_days": [
+      {
+        "bias_mw": 5374.8,
+        "delivery_date": "2026-01-28",
+        "description": "low-wind lull (daily mean 5,759.8 MW); over-forecast in all 24 hours (bias +5,374.8 MW); max 1 h actual ramp 1,747.5 MW (top-decile ramp).",
+        "mae_mw": 5374.8,
+        "max_abs_mw": 6271.0,
+        "max_abs_time": "2026-01-28T04:00:00Z",
+        "max_actual_mw": 10325.5,
+        "max_ramp_1h_mw": 1747.5,
+        "max_ramp_3h_mw": 3954.0,
+        "mean_actual_mw": 5759.8,
+        "min_actual_mw": 4349.0,
+        "n": 24,
+        "nmae_pct": 93.32,
+        "over_count": 24,
+        "rmse_mw": 5399.4,
+        "shortfall_p90_mw": 5982.5,
+        "under_count": 0
+      },
+      {
+        "bias_mw": 4868.2,
+        "delivery_date": "2026-01-12",
+        "description": "mid-range wind (daily mean 14,452.2 MW); over-forecast in all 24 hours (bias +4,868.2 MW); max 1 h actual ramp 678.5 MW.",
+        "mae_mw": 4868.2,
+        "max_abs_mw": 6870.0,
+        "max_abs_time": "2026-01-12T01:00:00Z",
+        "max_actual_mw": 15356.0,
+        "max_ramp_1h_mw": 678.5,
+        "max_ramp_3h_mw": 1684.5,
+        "mean_actual_mw": 14452.2,
+        "min_actual_mw": 13671.5,
+        "n": 24,
+        "nmae_pct": 33.69,
+        "over_count": 24,
+        "rmse_mw": 5120.9,
+        "shortfall_p90_mw": 6722.6,
+        "under_count": 0
+      },
+      {
+        "bias_mw": 4801.6,
+        "delivery_date": "2026-01-11",
+        "description": "mid-range wind (daily mean 13,557.4 MW); over-forecast in all 24 hours (bias +4,801.6 MW); max 1 h actual ramp 1,131.0 MW.",
+        "mae_mw": 4801.6,
+        "max_abs_mw": 5953.0,
+        "max_abs_time": "2026-01-11T23:00:00Z",
+        "max_actual_mw": 15982.0,
+        "max_ramp_1h_mw": 1131.0,
+        "max_ramp_3h_mw": 2671.5,
+        "mean_actual_mw": 13557.4,
+        "min_actual_mw": 8214.0,
+        "n": 24,
+        "nmae_pct": 35.42,
+        "over_count": 24,
+        "rmse_mw": 4853.4,
+        "shortfall_p90_mw": 5664.8,
+        "under_count": 0
+      },
+      {
+        "bias_mw": 3658.3,
+        "delivery_date": "2026-01-21",
+        "description": "strong-wind day (daily mean 15,731.7 MW); over-forecast in all 24 hours (bias +3,658.3 MW); max 1 h actual ramp 1,182.5 MW.",
+        "mae_mw": 3658.3,
+        "max_abs_mw": 4844.0,
+        "max_abs_time": "2026-01-21T05:00:00Z",
+        "max_actual_mw": 17530.0,
+        "max_ramp_1h_mw": 1182.5,
+        "max_ramp_3h_mw": 2966.5,
+        "mean_actual_mw": 15731.7,
+        "min_actual_mw": 12909.0,
+        "n": 24,
+        "nmae_pct": 23.25,
+        "over_count": 24,
+        "rmse_mw": 3766.5,
+        "shortfall_p90_mw": 4798.7,
+        "under_count": 0
+      },
+      {
+        "bias_mw": 3479.1,
+        "delivery_date": "2026-01-27",
+        "description": "strong-wind day (daily mean 16,408.5 MW); over-forecast in all 24 hours (bias +3,479.1 MW); max 1 h actual ramp 1,525.0 MW.",
+        "mae_mw": 3479.1,
+        "max_abs_mw": 6184.0,
+        "max_abs_time": "2026-01-27T23:00:00Z",
+        "max_actual_mw": 17534.0,
+        "max_ramp_1h_mw": 1525.0,
+        "max_ramp_3h_mw": 3549.5,
+        "mean_actual_mw": 16408.5,
+        "min_actual_mw": 11472.0,
+        "n": 24,
+        "nmae_pct": 21.2,
+        "over_count": 24,
+        "rmse_mw": 3578.4,
+        "shortfall_p90_mw": 4249.3,
+        "under_count": 0
+      }
+    ]
+  },
+  "description": "Deterministic WindLens analysis generated from the committed Elexon FUELHH (WIND) and WINDFOR snapshot.",
+  "horizon": {
+    "buckets": [
+      {
+        "bias_mw": 1427.7,
+        "from_h": 0.0,
+        "label": "0-6 h",
+        "mae_mw": 1660.0,
+        "n": 1488,
+        "nmae_pct": 14.76,
+        "rmse_mw": 2120.0,
+        "to_h": 6.0
+      },
+      {
+        "bias_mw": 1502.8,
+        "from_h": 6.0,
+        "label": "6-12 h",
+        "mae_mw": 1734.5,
+        "n": 1488,
+        "nmae_pct": 15.32,
+        "rmse_mw": 2192.4,
+        "to_h": 12.0
+      },
+      {
+        "bias_mw": 1634.3,
+        "from_h": 12.0,
+        "label": "12-18 h",
+        "mae_mw": 1837.0,
+        "n": 1488,
+        "nmae_pct": 16.21,
+        "rmse_mw": 2309.8,
+        "to_h": 18.0
+      },
+      {
+        "bias_mw": 1771.8,
+        "from_h": 18.0,
+        "label": "18-24 h",
+        "mae_mw": 1949.4,
+        "n": 1488,
+        "nmae_pct": 17.36,
+        "rmse_mw": 2424.9,
+        "to_h": 24.0
+      },
+      {
+        "bias_mw": 1717.9,
+        "from_h": 24.0,
+        "label": "24-36 h",
+        "mae_mw": 2018.8,
+        "n": 2976,
+        "nmae_pct": 17.89,
+        "rmse_mw": 2480.8,
+        "to_h": 36.0
+      },
+      {
+        "bias_mw": 1905.0,
+        "from_h": 36.0,
+        "label": "36-48 h",
+        "mae_mw": 2249.8,
+        "n": 2945,
+        "nmae_pct": 19.95,
+        "rmse_mw": 2789.2,
+        "to_h": 48.0
+      },
+      {
+        "bias_mw": 1402.6,
+        "from_h": 48.0,
+        "label": "48-72 h",
+        "mae_mw": 2317.3,
+        "n": 2510,
+        "nmae_pct": 20.35,
+        "rmse_mw": 2925.4,
+        "to_h": 72.0
+      },
+      {
+        "bias_mw": null,
+        "from_h": 72.0,
+        "label": "72+ h",
+        "mae_mw": null,
+        "n": 0,
+        "nmae_pct": null,
+        "rmse_mw": null,
+        "to_h": null
+      }
+    ],
+    "decision_band_h": {
+      "max": 39.5,
+      "min": 16.5
+    },
+    "dropped_negative_horizon": 3697,
+    "n_vintage_rows": 18080
+  },
+  "hours": {
+    "hours": [
+      {
+        "bias_mw": 1952.7,
+        "hour": 0,
+        "label": "00:00",
+        "mae_mw": 2027.8,
+        "mean_actual_mw": 11616.0,
+        "n": 31,
+        "rmse_mw": 2526.1,
+        "shortfall_p90_mw": 3937.0
+      },
+      {
+        "bias_mw": 2133.3,
+        "hour": 1,
+        "label": "01:00",
+        "mae_mw": 2169.0,
+        "mean_actual_mw": 11353.8,
+        "n": 31,
+        "rmse_mw": 2671.5,
+        "shortfall_p90_mw": 4185.0
+      },
+      {
+        "bias_mw": 2253.5,
+        "hour": 2,
+        "label": "02:00",
+        "mae_mw": 2299.4,
+        "mean_actual_mw": 11156.5,
+        "n": 31,
+        "rmse_mw": 2799.8,
+        "shortfall_p90_mw": 4330.5
+      },
+      {
+        "bias_mw": 2321.7,
+        "hour": 3,
+        "label": "03:00",
+        "mae_mw": 2413.1,
+        "mean_actual_mw": 11024.8,
+        "n": 31,
+        "rmse_mw": 2908.7,
+        "shortfall_p90_mw": 4512.0
+      },
+      {
+        "bias_mw": 2334.6,
+        "hour": 4,
+        "label": "04:00",
+        "mae_mw": 2405.2,
+        "mean_actual_mw": 10932.6,
+        "n": 31,
+        "rmse_mw": 2904.4,
+        "shortfall_p90_mw": 4756.0
+      },
+      {
+        "bias_mw": 2358.1,
+        "hour": 5,
+        "label": "05:00",
+        "mae_mw": 2429.9,
+        "mean_actual_mw": 10793.3,
+        "n": 31,
+        "rmse_mw": 2919.2,
+        "shortfall_p90_mw": 4844.0
+      },
+      {
+        "bias_mw": 2312.2,
+        "hour": 6,
+        "label": "06:00",
+        "mae_mw": 2379.9,
+        "mean_actual_mw": 10721.1,
+        "n": 31,
+        "rmse_mw": 2876.6,
+        "shortfall_p90_mw": 4830.5
+      },
+      {
+        "bias_mw": 2139.4,
+        "hour": 7,
+        "label": "07:00",
+        "mae_mw": 2227.3,
+        "mean_actual_mw": 10817.1,
+        "n": 31,
+        "rmse_mw": 2735.9,
+        "shortfall_p90_mw": 4817.0
+      },
+      {
+        "bias_mw": 1903.2,
+        "hour": 8,
+        "label": "08:00",
+        "mae_mw": 2032.4,
+        "mean_actual_mw": 10983.1,
+        "n": 31,
+        "rmse_mw": 2494.7,
+        "shortfall_p90_mw": 3772.0
+      },
+      {
+        "bias_mw": 1854.5,
+        "hour": 9,
+        "label": "09:00",
+        "mae_mw": 1996.3,
+        "mean_actual_mw": 11000.6,
+        "n": 31,
+        "rmse_mw": 2449.6,
+        "shortfall_p90_mw": 3477.5
+      },
+      {
+        "bias_mw": 1731.4,
+        "hour": 10,
+        "label": "10:00",
+        "mae_mw": 1930.7,
+        "mean_actual_mw": 11082.0,
+        "n": 31,
+        "rmse_mw": 2390.6,
+        "shortfall_p90_mw": 3680.5
+      },
+      {
+        "bias_mw": 1570.5,
+        "hour": 11,
+        "label": "11:00",
+        "mae_mw": 1962.9,
+        "mean_actual_mw": 11142.0,
+        "n": 31,
+        "rmse_mw": 2337.2,
+        "shortfall_p90_mw": 3700.0
+      },
+      {
+        "bias_mw": 1387.7,
+        "hour": 12,
+        "label": "12:00",
+        "mae_mw": 1929.3,
+        "mean_actual_mw": 11186.5,
+        "n": 31,
+        "rmse_mw": 2295.5,
+        "shortfall_p90_mw": 3388.0
+      },
+      {
+        "bias_mw": 1330.7,
+        "hour": 13,
+        "label": "13:00",
+        "mae_mw": 1942.5,
+        "mean_actual_mw": 11139.5,
+        "n": 31,
+        "rmse_mw": 2265.0,
+        "shortfall_p90_mw": 3175.0
+      },
+      {
+        "bias_mw": 1328.4,
+        "hour": 14,
+        "label": "14:00",
+        "mae_mw": 1913.6,
+        "mean_actual_mw": 11114.5,
+        "n": 31,
+        "rmse_mw": 2234.2,
+        "shortfall_p90_mw": 3382.5
+      },
+      {
+        "bias_mw": 1247.0,
+        "hour": 15,
+        "label": "15:00",
+        "mae_mw": 1817.5,
+        "mean_actual_mw": 11273.4,
+        "n": 31,
+        "rmse_mw": 2199.8,
+        "shortfall_p90_mw": 3350.5
+      },
+      {
+        "bias_mw": 1303.3,
+        "hour": 16,
+        "label": "16:00",
+        "mae_mw": 1847.1,
+        "mean_actual_mw": 11385.5,
+        "n": 31,
+        "rmse_mw": 2228.5,
+        "shortfall_p90_mw": 4021.0
+      },
+      {
+        "bias_mw": 1320.2,
+        "hour": 17,
+        "label": "17:00",
+        "mae_mw": 1918.2,
+        "mean_actual_mw": 11578.0,
+        "n": 31,
+        "rmse_mw": 2292.1,
+        "shortfall_p90_mw": 3771.5
+      },
+      {
+        "bias_mw": 1347.5,
+        "hour": 18,
+        "label": "18:00",
+        "mae_mw": 1954.6,
+        "mean_actual_mw": 11784.6,
+        "n": 31,
+        "rmse_mw": 2368.0,
+        "shortfall_p90_mw": 3806.5
+      },
+      {
+        "bias_mw": 1388.7,
+        "hour": 19,
+        "label": "19:00",
+        "mae_mw": 1952.9,
+        "mean_actual_mw": 11887.1,
+        "n": 31,
+        "rmse_mw": 2383.0,
+        "shortfall_p90_mw": 3606.0
+      },
+      {
+        "bias_mw": 1435.7,
+        "hour": 20,
+        "label": "20:00",
+        "mae_mw": 1856.3,
+        "mean_actual_mw": 11880.5,
+        "n": 31,
+        "rmse_mw": 2339.8,
+        "shortfall_p90_mw": 3843.0
+      },
+      {
+        "bias_mw": 1544.2,
+        "hour": 21,
+        "label": "21:00",
+        "mae_mw": 1785.6,
+        "mean_actual_mw": 11783.2,
+        "n": 31,
+        "rmse_mw": 2324.1,
+        "shortfall_p90_mw": 3716.5
+      },
+      {
+        "bias_mw": 1635.8,
+        "hour": 22,
+        "label": "22:00",
+        "mae_mw": 1792.5,
+        "mean_actual_mw": 11691.9,
+        "n": 31,
+        "rmse_mw": 2368.6,
+        "shortfall_p90_mw": 4322.5
+      },
+      {
+        "bias_mw": 1814.9,
+        "hour": 23,
+        "label": "23:00",
+        "mae_mw": 1949.7,
+        "mean_actual_mw": 11477.9,
+        "n": 31,
+        "rmse_mw": 2532.3,
+        "shortfall_p90_mw": 4145.5
+      }
+    ]
+  },
+  "levels": {
+    "basis": "actual",
+    "bins": [
+      {
+        "bias_mw": 1799.3,
+        "from_mw": 1711.5,
+        "label": "Q1 (lowest)",
+        "mae_mw": 2027.8,
+        "n": 149,
+        "nmae_pct": 39.57,
+        "to_mw": 7473.5
+      },
+      {
+        "bias_mw": 1028.6,
+        "from_mw": 7477.5,
+        "label": "Q2",
+        "mae_mw": 1550.7,
+        "n": 149,
+        "nmae_pct": 18.13,
+        "to_mw": 9851.0
+      },
+      {
+        "bias_mw": 1148.0,
+        "from_mw": 9865.5,
+        "label": "Q3",
+        "mae_mw": 1722.1,
+        "n": 149,
+        "nmae_pct": 14.84,
+        "to_mw": 13671.5
+      },
+      {
+        "bias_mw": 2693.8,
+        "from_mw": 13727.5,
+        "label": "Q4",
+        "mae_mw": 2737.2,
+        "n": 149,
+        "nmae_pct": 18.62,
+        "to_mw": 15478.0
+      },
+      {
+        "bias_mw": 2072.0,
+        "from_mw": 15482.0,
+        "label": "Q5",
+        "mae_mw": 2157.5,
+        "n": 148,
+        "nmae_pct": 13.1,
+        "to_mw": 17755.5
+      }
+    ]
+  },
+  "product": "WindLens",
+  "risk": {
+    "backtests": {
+      "0.5": {
+        "basis": "walk_forward",
+        "caveat": "Each day's buffer uses only delivery days at least two days earlier, so outcomes that were not published by the cutoff cannot leak into it. Coverage is pooled over evaluated periods; interpret it with the number of delivery days, not just period count.",
+        "coverage": 0.43,
+        "daily": [
+          {
+            "breaches": 0,
+            "buffer_mw": 1487.8,
+            "coverage": 1.0,
+            "delivery_date": "2026-01-10",
+            "n": 24
+          },
+          {
+            "breaches": 24,
+            "buffer_mw": 1420.8,
+            "coverage": 0.0,
+            "delivery_date": "2026-01-11",
+            "n": 24
+          },
+          {
+            "breaches": 24,
+            "buffer_mw": 1254.2,
+            "coverage": 0.0,
+            "delivery_date": "2026-01-12",
+            "n": 24
+          },
+          {
+            "breaches": 6,
+            "buffer_mw": 1434.2,
+            "coverage": 0.75,
+            "delivery_date": "2026-01-13",
+            "n": 24
+          },
+          {
+            "breaches": 4,
+            "buffer_mw": 1576.2,
+            "coverage": 0.83,
+            "delivery_date": "2026-01-14",
+            "n": 24
+          },
+          {
+            "breaches": 7,
+            "buffer_mw": 1480.8,
+            "coverage": 0.71,
+            "delivery_date": "2026-01-15",
+            "n": 24
+          },
+          {
+            "breaches": 2,
+            "buffer_mw": 1420.8,
+            "coverage": 0.92,
+            "delivery_date": "2026-01-16",
+            "n": 24
+          },
+          {
+            "breaches": 18,
+            "buffer_mw": 1354.2,
+            "coverage": 0.25,
+            "delivery_date": "2026-01-17",
+            "n": 24
+          },
+          {
+            "breaches": 18,
+            "buffer_mw": 1274.0,
+            "coverage": 0.25,
+            "delivery_date": "2026-01-18",
+            "n": 24
+          },
+          {
+            "breaches": 0,
+            "buffer_mw": 1332.2,
+            "coverage": 1.0,
+            "delivery_date": "2026-01-19",
+            "n": 24
+          },
+          {
+            "breaches": 6,
+            "buffer_mw": 1378.2,
+            "coverage": 0.75,
+            "delivery_date": "2026-01-20",
+            "n": 24
+          },
+          {
+            "breaches": 24,
+            "buffer_mw": 1288.5,
+            "coverage": 0.0,
+            "delivery_date": "2026-01-21",
+            "n": 24
+          },
+          {
+            "breaches": 24,
+            "buffer_mw": 1247.8,
+            "coverage": 0.0,
+            "delivery_date": "2026-01-22",
+            "n": 24
+          },
+          {
+            "breaches": 13,
+            "buffer_mw": 1332.2,
+            "coverage": 0.46,
+            "delivery_date": "2026-01-23",
+            "n": 24
+          },
+          {
+            "breaches": 14,
+            "buffer_mw": 1423.0,
+            "coverage": 0.42,
+            "delivery_date": "2026-01-24",
+            "n": 24
+          },
+          {
+            "breaches": 17,
+            "buffer_mw": 1418.8,
+            "coverage": 0.29,
+            "delivery_date": "2026-01-25",
+            "n": 24
+          },
+          {
+            "breaches": 15,
+            "buffer_mw": 1433.5,
+            "coverage": 0.38,
+            "delivery_date": "2026-01-26",
+            "n": 24
+          },
+          {
+            "breaches": 24,
+            "buffer_mw": 1460.0,
+            "coverage": 0.0,
+            "delivery_date": "2026-01-27",
+            "n": 24
+          },
+          {
+            "breaches": 24,
+            "buffer_mw": 1471.2,
+            "coverage": 0.0,
+            "delivery_date": "2026-01-28",
+            "n": 24
+          },
+          {
+            "breaches": 17,
+            "buffer_mw": 1539.0,
+            "coverage": 0.29,
+            "delivery_date": "2026-01-29",
+            "n": 24
+          },
+          {
+            "breaches": 12,
+            "buffer_mw": 1583.0,
+            "coverage": 0.5,
+            "delivery_date": "2026-01-30",
+            "n": 24
+          },
+          {
+            "breaches": 20,
+            "buffer_mw": 1594.0,
+            "coverage": 0.17,
+            "delivery_date": "2026-01-31",
+            "n": 24
+          },
+          {
+            "breaches": 2,
+            "buffer_mw": 1594.0,
+            "coverage": 0.92,
+            "delivery_date": "2026-02-01",
+            "n": 24
+          }
+        ],
+        "days_with_breach_share": 0.91,
+        "evaluated_days": 23,
+        "level": 0.5,
+        "mean_buffer_mw": 1426.0,
+        "min_history_days": 7,
+        "outcome_lag_days": 2,
+        "skipped_days": [
+          "2026-01-02",
+          "2026-01-03",
+          "2026-01-04",
+          "2026-01-05",
+          "2026-01-06",
+          "2026-01-07",
+          "2026-01-08",
+          "2026-01-09"
+        ],
+        "target": 0.5,
+        "window": {
+          "end": "2026-02-01",
+          "start": "2026-01-02"
+        }
+      },
+      "0.75": {
+        "basis": "walk_forward",
+        "caveat": "Each day's buffer uses only delivery days at least two days earlier, so outcomes that were not published by the cutoff cannot leak into it. Coverage is pooled over evaluated periods; interpret it with the number of delivery days, not just period count.",
+        "coverage": 0.71,
+        "daily": [
+          {
+            "breaches": 0,
+            "buffer_mw": 2683.0,
+            "coverage": 1.0,
+            "delivery_date": "2026-01-10",
+            "n": 24
+          },
+          {
+            "breaches": 24,
+            "buffer_mw": 2496.2,
+            "coverage": 0.0,
+            "delivery_date": "2026-01-11",
+            "n": 24
+          },
+          {
+            "breaches": 23,
+            "buffer_mw": 2248.4,
+            "coverage": 0.04,
+            "delivery_date": "2026-01-12",
+            "n": 24
+          },
+          {
+            "breaches": 1,
+            "buffer_mw": 2868.6,
+            "coverage": 0.96,
+            "delivery_date": "2026-01-13",
+            "n": 24
+          },
+          {
+            "breaches": 0,
+            "buffer_mw": 3189.5,
+            "coverage": 1.0,
+            "delivery_date": "2026-01-14",
+            "n": 24
+          },
+          {
+            "breaches": 0,
+            "buffer_mw": 3013.4,
+            "coverage": 1.0,
+            "delivery_date": "2026-01-15",
+            "n": 24
+          },
+          {
+            "breaches": 0,
+            "buffer_mw": 2897.0,
+            "coverage": 1.0,
+            "delivery_date": "2026-01-16",
+            "n": 24
+          },
+          {
+            "breaches": 0,
+            "buffer_mw": 2748.2,
+            "coverage": 1.0,
+            "delivery_date": "2026-01-17",
+            "n": 24
+          },
+          {
+            "breaches": 0,
+            "buffer_mw": 2632.8,
+            "coverage": 1.0,
+            "delivery_date": "2026-01-18",
+            "n": 24
+          },
+          {
+            "breaches": 0,
+            "buffer_mw": 2520.5,
+            "coverage": 1.0,
+            "delivery_date": "2026-01-19",
+            "n": 24
+          },
+          {
+            "breaches": 4,
+            "buffer_mw": 2367.8,
+            "coverage": 0.83,
+            "delivery_date": "2026-01-20",
+            "n": 24
+          },
+          {
+            "breaches": 20,
+            "buffer_mw": 2248.4,
+            "coverage": 0.17,
+            "delivery_date": "2026-01-21",
+            "n": 24
+          },
+          {
+            "breaches": 16,
+            "buffer_mw": 2209.2,
+            "coverage": 0.33,
+            "delivery_date": "2026-01-22",
+            "n": 24
+          },
+          {
+            "breaches": 1,
+            "buffer_mw": 2496.2,
+            "coverage": 0.96,
+            "delivery_date": "2026-01-23",
+            "n": 24
+          },
+          {
+            "breaches": 9,
+            "buffer_mw": 2663.0,
+            "coverage": 0.62,
+            "delivery_date": "2026-01-24",
+            "n": 24
+          },
+          {
+            "breaches": 5,
+            "buffer_mw": 2605.6,
+            "coverage": 0.79,
+            "delivery_date": "2026-01-25",
+            "n": 24
+          },
+          {
+            "breaches": 5,
+            "buffer_mw": 2639.9,
+            "coverage": 0.79,
+            "delivery_date": "2026-01-26",
+            "n": 24
+          },
+          {
+            "breaches": 21,
+            "buffer_mw": 2630.9,
+            "coverage": 0.12,
+            "delivery_date": "2026-01-27",
+            "n": 24
+          },
+          {
+            "breaches": 24,
+            "buffer_mw": 2625.5,
+            "coverage": 0.0,
+            "delivery_date": "2026-01-28",
+            "n": 24
+          },
+          {
+            "breaches": 0,
+            "buffer_mw": 2751.9,
+            "coverage": 1.0,
+            "delivery_date": "2026-01-29",
+            "n": 24
+          },
+          {
+            "breaches": 0,
+            "buffer_mw": 2945.6,
+            "coverage": 1.0,
+            "delivery_date": "2026-01-30",
+            "n": 24
+          },
+          {
+            "breaches": 5,
+            "buffer_mw": 2868.6,
+            "coverage": 0.79,
+            "delivery_date": "2026-01-31",
+            "n": 24
+          },
+          {
+            "breaches": 0,
+            "buffer_mw": 2801.1,
+            "coverage": 1.0,
+            "delivery_date": "2026-02-01",
+            "n": 24
+          }
+        ],
+        "days_with_breach_share": 0.57,
+        "evaluated_days": 23,
+        "level": 0.75,
+        "mean_buffer_mw": 2658.8,
+        "min_history_days": 7,
+        "outcome_lag_days": 2,
+        "skipped_days": [
+          "2026-01-02",
+          "2026-01-03",
+          "2026-01-04",
+          "2026-01-05",
+          "2026-01-06",
+          "2026-01-07",
+          "2026-01-08",
+          "2026-01-09"
+        ],
+        "target": 0.75,
+        "window": {
+          "end": "2026-02-01",
+          "start": "2026-01-02"
+        }
+      },
+      "0.9": {
+        "basis": "walk_forward",
+        "caveat": "Each day's buffer uses only delivery days at least two days earlier, so outcomes that were not published by the cutoff cannot leak into it. Coverage is pooled over evaluated periods; interpret it with the number of delivery days, not just period count.",
+        "coverage": 0.86,
+        "daily": [
+          {
+            "breaches": 0,
+            "buffer_mw": 3571.6,
+            "coverage": 1.0,
+            "delivery_date": "2026-01-10",
+            "n": 24
+          },
+          {
+            "breaches": 24,
+            "buffer_mw": 3459.0,
+            "coverage": 0.0,
+            "delivery_date": "2026-01-11",
+            "n": 24
+          },
+          {
+            "breaches": 18,
+            "buffer_mw": 3339.2,
+            "coverage": 0.25,
+            "delivery_date": "2026-01-12",
+            "n": 24
+          },
+          {
+            "breaches": 0,
+            "buffer_mw": 4093.3,
+            "coverage": 1.0,
+            "delivery_date": "2026-01-13",
+            "n": 24
+          },
+          {
+            "breaches": 0,
+            "buffer_mw": 4773.0,
+            "coverage": 1.0,
+            "delivery_date": "2026-01-14",
+            "n": 24
+          },
+          {
+            "breaches": 0,
+            "buffer_mw": 4559.0,
+            "coverage": 1.0,
+            "delivery_date": "2026-01-15",
+            "n": 24
+          },
+          {
+            "breaches": 0,
+            "buffer_mw": 4376.5,
+            "coverage": 1.0,
+            "delivery_date": "2026-01-16",
+            "n": 24
+          },
+          {
+            "breaches": 0,
+            "buffer_mw": 4230.0,
+            "coverage": 1.0,
+            "delivery_date": "2026-01-17",
+            "n": 24
+          },
+          {
+            "breaches": 0,
+            "buffer_mw": 4170.5,
+            "coverage": 1.0,
+            "delivery_date": "2026-01-18",
+            "n": 24
+          },
+          {
+            "breaches": 0,
+            "buffer_mw": 4097.9,
+            "coverage": 1.0,
+            "delivery_date": "2026-01-19",
+            "n": 24
+          },
+          {
+            "breaches": 0,
+            "buffer_mw": 4079.7,
+            "coverage": 1.0,
+            "delivery_date": "2026-01-20",
+            "n": 24
+          },
+          {
+            "breaches": 11,
+            "buffer_mw": 4012.4,
+            "coverage": 0.54,
+            "delivery_date": "2026-01-21",
+            "n": 24
+          },
+          {
+            "breaches": 0,
+            "buffer_mw": 3925.5,
+            "coverage": 1.0,
+            "delivery_date": "2026-01-22",
+            "n": 24
+          },
+          {
+            "breaches": 0,
+            "buffer_mw": 4096.7,
+            "coverage": 1.0,
+            "delivery_date": "2026-01-23",
+            "n": 24
+          },
+          {
+            "breaches": 0,
+            "buffer_mw": 4072.3,
+            "coverage": 1.0,
+            "delivery_date": "2026-01-24",
+            "n": 24
+          },
+          {
+            "breaches": 0,
+            "buffer_mw": 4056.8,
+            "coverage": 1.0,
+            "delivery_date": "2026-01-25",
+            "n": 24
+          },
+          {
+            "breaches": 0,
+            "buffer_mw": 3936.8,
+            "coverage": 1.0,
+            "delivery_date": "2026-01-26",
+            "n": 24
+          },
+          {
+            "breaches": 3,
+            "buffer_mw": 3925.5,
+            "coverage": 0.88,
+            "delivery_date": "2026-01-27",
+            "n": 24
+          },
+          {
+            "breaches": 24,
+            "buffer_mw": 3844.8,
+            "coverage": 0.0,
+            "delivery_date": "2026-01-28",
+            "n": 24
+          },
+          {
+            "breaches": 0,
+            "buffer_mw": 3855.6,
+            "coverage": 1.0,
+            "delivery_date": "2026-01-29",
+            "n": 24
+          },
+          {
+            "breaches": 0,
+            "buffer_mw": 4324.9,
+            "coverage": 1.0,
+            "delivery_date": "2026-01-30",
+            "n": 24
+          },
+          {
+            "breaches": 0,
+            "buffer_mw": 4211.4,
+            "coverage": 1.0,
+            "delivery_date": "2026-01-31",
+            "n": 24
+          },
+          {
+            "breaches": 0,
+            "buffer_mw": 4179.8,
+            "coverage": 1.0,
+            "delivery_date": "2026-02-01",
+            "n": 24
+          }
+        ],
+        "days_with_breach_share": 0.22,
+        "evaluated_days": 23,
+        "level": 0.9,
+        "mean_buffer_mw": 4051.8,
+        "min_history_days": 7,
+        "outcome_lag_days": 2,
+        "skipped_days": [
+          "2026-01-02",
+          "2026-01-03",
+          "2026-01-04",
+          "2026-01-05",
+          "2026-01-06",
+          "2026-01-07",
+          "2026-01-08",
+          "2026-01-09"
+        ],
+        "target": 0.9,
+        "window": {
+          "end": "2026-02-01",
+          "start": "2026-01-02"
+        }
+      },
+      "0.95": {
+        "basis": "walk_forward",
+        "caveat": "Each day's buffer uses only delivery days at least two days earlier, so outcomes that were not published by the cutoff cannot leak into it. Coverage is pooled over evaluated periods; interpret it with the number of delivery days, not just period count.",
+        "coverage": 0.89,
+        "daily": [
+          {
+            "breaches": 0,
+            "buffer_mw": 3902.9,
+            "coverage": 1.0,
+            "delivery_date": "2026-01-10",
+            "n": 24
+          },
+          {
+            "breaches": 22,
+            "buffer_mw": 3831.0,
+            "coverage": 0.08,
+            "delivery_date": "2026-01-11",
+            "n": 24
+          },
+          {
+            "breaches": 17,
+            "buffer_mw": 3790.8,
+            "coverage": 0.29,
+            "delivery_date": "2026-01-12",
+            "n": 24
+          },
+          {
+            "breaches": 0,
+            "buffer_mw": 4680.9,
+            "coverage": 1.0,
+            "delivery_date": "2026-01-13",
+            "n": 24
+          },
+          {
+            "breaches": 0,
+            "buffer_mw": 5519.4,
+            "coverage": 1.0,
+            "delivery_date": "2026-01-14",
+            "n": 24
+          },
+          {
+            "breaches": 0,
+            "buffer_mw": 5503.2,
+            "coverage": 1.0,
+            "delivery_date": "2026-01-15",
+            "n": 24
+          },
+          {
+            "breaches": 0,
+            "buffer_mw": 5447.0,
+            "coverage": 1.0,
+            "delivery_date": "2026-01-16",
+            "n": 24
+          },
+          {
+            "breaches": 0,
+            "buffer_mw": 5388.2,
+            "coverage": 1.0,
+            "delivery_date": "2026-01-17",
+            "n": 24
+          },
+          {
+            "breaches": 0,
+            "buffer_mw": 5375.6,
+            "coverage": 1.0,
+            "delivery_date": "2026-01-18",
+            "n": 24
+          },
+          {
+            "breaches": 0,
+            "buffer_mw": 5356.0,
+            "coverage": 1.0,
+            "delivery_date": "2026-01-19",
+            "n": 24
+          },
+          {
+            "breaches": 0,
+            "buffer_mw": 5321.8,
+            "coverage": 1.0,
+            "delivery_date": "2026-01-20",
+            "n": 24
+          },
+          {
+            "breaches": 0,
+            "buffer_mw": 5283.2,
+            "coverage": 1.0,
+            "delivery_date": "2026-01-21",
+            "n": 24
+          },
+          {
+            "breaches": 0,
+            "buffer_mw": 5268.8,
+            "coverage": 1.0,
+            "delivery_date": "2026-01-22",
+            "n": 24
+          },
+          {
+            "breaches": 0,
+            "buffer_mw": 5022.4,
+            "coverage": 1.0,
+            "delivery_date": "2026-01-23",
+            "n": 24
+          },
+          {
+            "breaches": 0,
+            "buffer_mw": 4971.9,
+            "coverage": 1.0,
+            "delivery_date": "2026-01-24",
+            "n": 24
+          },
+          {
+            "breaches": 0,
+            "buffer_mw": 4839.3,
+            "coverage": 1.0,
+            "delivery_date": "2026-01-25",
+            "n": 24
+          },
+          {
+            "breaches": 0,
+            "buffer_mw": 4823.1,
+            "coverage": 1.0,
+            "delivery_date": "2026-01-26",
+            "n": 24
+          },
+          {
+            "breaches": 2,
+            "buffer_mw": 4806.5,
+            "coverage": 0.92,
+            "delivery_date": "2026-01-27",
+            "n": 24
+          },
+          {
+            "breaches": 21,
+            "buffer_mw": 4758.3,
+            "coverage": 0.12,
+            "delivery_date": "2026-01-28",
+            "n": 24
+          },
+          {
+            "breaches": 0,
+            "buffer_mw": 4796.0,
+            "coverage": 1.0,
+            "delivery_date": "2026-01-29",
+            "n": 24
+          },
+          {
+            "breaches": 0,
+            "buffer_mw": 5351.4,
+            "coverage": 1.0,
+            "delivery_date": "2026-01-30",
+            "n": 24
+          },
+          {
+            "breaches": 0,
+            "buffer_mw": 5329.9,
+            "coverage": 1.0,
+            "delivery_date": "2026-01-31",
+            "n": 24
+          },
+          {
+            "breaches": 0,
+            "buffer_mw": 5313.2,
+            "coverage": 1.0,
+            "delivery_date": "2026-02-01",
+            "n": 24
+          }
+        ],
+        "days_with_breach_share": 0.17,
+        "evaluated_days": 23,
+        "level": 0.95,
+        "mean_buffer_mw": 4986.1,
+        "min_history_days": 7,
+        "outcome_lag_days": 2,
+        "skipped_days": [
+          "2026-01-02",
+          "2026-01-03",
+          "2026-01-04",
+          "2026-01-05",
+          "2026-01-06",
+          "2026-01-07",
+          "2026-01-08",
+          "2026-01-09"
+        ],
+        "target": 0.95,
+        "window": {
+          "end": "2026-02-01",
+          "start": "2026-01-02"
+        }
+      }
+    },
+    "buffer": {
+      "basis": "in_sample",
+      "by_hour": [
+        {
+          "buffers": [
+            {
+              "buffer_mw": 1578.0,
+              "level": 0.5
+            },
+            {
+              "buffer_mw": 2738.0,
+              "level": 0.75
+            },
+            {
+              "buffer_mw": 3937.0,
+              "level": 0.9
+            },
+            {
+              "buffer_mw": 4544.2,
+              "level": 0.95
+            }
+          ],
+          "hour": 0
+        },
+        {
+          "buffers": [
+            {
+              "buffer_mw": 1750.0,
+              "level": 0.5
+            },
+            {
+              "buffer_mw": 2618.0,
+              "level": 0.75
+            },
+            {
+              "buffer_mw": 4185.0,
+              "level": 0.9
+            },
+            {
+              "buffer_mw": 5236.5,
+              "level": 0.95
+            }
+          ],
+          "hour": 1
+        },
+        {
+          "buffers": [
+            {
+              "buffer_mw": 1883.0,
+              "level": 0.5
+            },
+            {
+              "buffer_mw": 2812.2,
+              "level": 0.75
+            },
+            {
+              "buffer_mw": 4330.5,
+              "level": 0.9
+            },
+            {
+              "buffer_mw": 5607.0,
+              "level": 0.95
+            }
+          ],
+          "hour": 2
+        },
+        {
+          "buffers": [
+            {
+              "buffer_mw": 2214.5,
+              "level": 0.5
+            },
+            {
+              "buffer_mw": 2889.8,
+              "level": 0.75
+            },
+            {
+              "buffer_mw": 4512.0,
+              "level": 0.9
+            },
+            {
+              "buffer_mw": 5812.0,
+              "level": 0.95
+            }
+          ],
+          "hour": 3
+        },
+        {
+          "buffers": [
+            {
+              "buffer_mw": 2033.5,
+              "level": 0.5
+            },
+            {
+              "buffer_mw": 3082.5,
+              "level": 0.75
+            },
+            {
+              "buffer_mw": 4756.0,
+              "level": 0.9
+            },
+            {
+              "buffer_mw": 5875.2,
+              "level": 0.95
+            }
+          ],
+          "hour": 4
+        },
+        {
+          "buffers": [
+            {
+              "buffer_mw": 2039.5,
+              "level": 0.5
+            },
+            {
+              "buffer_mw": 3247.0,
+              "level": 0.75
+            },
+            {
+              "buffer_mw": 4844.0,
+              "level": 0.9
+            },
+            {
+              "buffer_mw": 5606.0,
+              "level": 0.95
+            }
+          ],
+          "hour": 5
+        },
+        {
+          "buffers": [
+            {
+              "buffer_mw": 1898.5,
+              "level": 0.5
+            },
+            {
+              "buffer_mw": 3239.5,
+              "level": 0.75
+            },
+            {
+              "buffer_mw": 4830.5,
+              "level": 0.9
+            },
+            {
+              "buffer_mw": 5420.0,
+              "level": 0.95
+            }
+          ],
+          "hour": 6
+        },
+        {
+          "buffers": [
+            {
+              "buffer_mw": 1794.0,
+              "level": 0.5
+            },
+            {
+              "buffer_mw": 3181.8,
+              "level": 0.75
+            },
+            {
+              "buffer_mw": 4817.0,
+              "level": 0.9
+            },
+            {
+              "buffer_mw": 5504.8,
+              "level": 0.95
+            }
+          ],
+          "hour": 7
+        },
+        {
+          "buffers": [
+            {
+              "buffer_mw": 1471.5,
+              "level": 0.5
+            },
+            {
+              "buffer_mw": 2726.0,
+              "level": 0.75
+            },
+            {
+              "buffer_mw": 3772.0,
+              "level": 0.9
+            },
+            {
+              "buffer_mw": 5131.0,
+              "level": 0.95
+            }
+          ],
+          "hour": 8
+        },
+        {
+          "buffers": [
+            {
+              "buffer_mw": 1833.0,
+              "level": 0.5
+            },
+            {
+              "buffer_mw": 2802.2,
+              "level": 0.75
+            },
+            {
+              "buffer_mw": 3477.5,
+              "level": 0.9
+            },
+            {
+              "buffer_mw": 4888.2,
+              "level": 0.95
+            }
+          ],
+          "hour": 9
+        },
+        {
+          "buffers": [
+            {
+              "buffer_mw": 1769.5,
+              "level": 0.5
+            },
+            {
+              "buffer_mw": 2675.0,
+              "level": 0.75
+            },
+            {
+              "buffer_mw": 3680.5,
+              "level": 0.9
+            },
+            {
+              "buffer_mw": 4640.8,
+              "level": 0.95
+            }
+          ],
+          "hour": 10
+        },
+        {
+          "buffers": [
+            {
+              "buffer_mw": 1812.5,
+              "level": 0.5
+            },
+            {
+              "buffer_mw": 2645.2,
+              "level": 0.75
+            },
+            {
+              "buffer_mw": 3700.0,
+              "level": 0.9
+            },
+            {
+              "buffer_mw": 4196.0,
+              "level": 0.95
+            }
+          ],
+          "hour": 11
+        },
+        {
+          "buffers": [
+            {
+              "buffer_mw": 1683.0,
+              "level": 0.5
+            },
+            {
+              "buffer_mw": 2600.5,
+              "level": 0.75
+            },
+            {
+              "buffer_mw": 3388.0,
+              "level": 0.9
+            },
+            {
+              "buffer_mw": 4133.2,
+              "level": 0.95
+            }
+          ],
+          "hour": 12
+        },
+        {
+          "buffers": [
+            {
+              "buffer_mw": 1452.0,
+              "level": 0.5
+            },
+            {
+              "buffer_mw": 2264.0,
+              "level": 0.75
+            },
+            {
+              "buffer_mw": 3175.0,
+              "level": 0.9
+            },
+            {
+              "buffer_mw": 4162.5,
+              "level": 0.95
+            }
+          ],
+          "hour": 13
+        },
+        {
+          "buffers": [
+            {
+              "buffer_mw": 1300.5,
+              "level": 0.5
+            },
+            {
+              "buffer_mw": 2447.8,
+              "level": 0.75
+            },
+            {
+              "buffer_mw": 3382.5,
+              "level": 0.9
+            },
+            {
+              "buffer_mw": 4380.5,
+              "level": 0.95
+            }
+          ],
+          "hour": 14
+        },
+        {
+          "buffers": [
+            {
+              "buffer_mw": 1161.0,
+              "level": 0.5
+            },
+            {
+              "buffer_mw": 2314.5,
+              "level": 0.75
+            },
+            {
+              "buffer_mw": 3350.5,
+              "level": 0.9
+            },
+            {
+              "buffer_mw": 4434.8,
+              "level": 0.95
+            }
+          ],
+          "hour": 15
+        },
+        {
+          "buffers": [
+            {
+              "buffer_mw": 1166.0,
+              "level": 0.5
+            },
+            {
+              "buffer_mw": 2229.2,
+              "level": 0.75
+            },
+            {
+              "buffer_mw": 4021.0,
+              "level": 0.9
+            },
+            {
+              "buffer_mw": 4284.5,
+              "level": 0.95
+            }
+          ],
+          "hour": 16
+        },
+        {
+          "buffers": [
+            {
+              "buffer_mw": 1267.5,
+              "level": 0.5
+            },
+            {
+              "buffer_mw": 2287.2,
+              "level": 0.75
+            },
+            {
+              "buffer_mw": 3771.5,
+              "level": 0.9
+            },
+            {
+              "buffer_mw": 4385.0,
+              "level": 0.95
+            }
+          ],
+          "hour": 17
+        },
+        {
+          "buffers": [
+            {
+              "buffer_mw": 1329.5,
+              "level": 0.5
+            },
+            {
+              "buffer_mw": 2602.0,
+              "level": 0.75
+            },
+            {
+              "buffer_mw": 3806.5,
+              "level": 0.9
+            },
+            {
+              "buffer_mw": 4140.2,
+              "level": 0.95
+            }
+          ],
+          "hour": 18
+        },
+        {
+          "buffers": [
+            {
+              "buffer_mw": 1515.0,
+              "level": 0.5
+            },
+            {
+              "buffer_mw": 2474.2,
+              "level": 0.75
+            },
+            {
+              "buffer_mw": 3606.0,
+              "level": 0.9
+            },
+            {
+              "buffer_mw": 4367.8,
+              "level": 0.95
+            }
+          ],
+          "hour": 19
+        },
+        {
+          "buffers": [
+            {
+              "buffer_mw": 1458.0,
+              "level": 0.5
+            },
+            {
+              "buffer_mw": 2406.2,
+              "level": 0.75
+            },
+            {
+              "buffer_mw": 3843.0,
+              "level": 0.9
+            },
+            {
+              "buffer_mw": 4642.5,
+              "level": 0.95
+            }
+          ],
+          "hour": 20
+        },
+        {
+          "buffers": [
+            {
+              "buffer_mw": 1318.5,
+              "level": 0.5
+            },
+            {
+              "buffer_mw": 2320.8,
+              "level": 0.75
+            },
+            {
+              "buffer_mw": 3716.5,
+              "level": 0.9
+            },
+            {
+              "buffer_mw": 4989.8,
+              "level": 0.95
+            }
+          ],
+          "hour": 21
+        },
+        {
+          "buffers": [
+            {
+              "buffer_mw": 1350.5,
+              "level": 0.5
+            },
+            {
+              "buffer_mw": 2475.0,
+              "level": 0.75
+            },
+            {
+              "buffer_mw": 4322.5,
+              "level": 0.9
+            },
+            {
+              "buffer_mw": 5274.0,
+              "level": 0.95
+            }
+          ],
+          "hour": 22
+        },
+        {
+          "buffers": [
+            {
+              "buffer_mw": 1633.5,
+              "level": 0.5
+            },
+            {
+              "buffer_mw": 2426.2,
+              "level": 0.75
+            },
+            {
+              "buffer_mw": 4145.5,
+              "level": 0.9
+            },
+            {
+              "buffer_mw": 5631.2,
+              "level": 0.95
+            }
+          ],
+          "hour": 23
+        }
+      ],
+      "caveat": "In-sample buffers use outcomes from the same window. Use the walk-forward back-test to judge calibration; periods within a day are autocorrelated, so tail estimates rest on roughly the number of delivery days, not periods.",
+      "n": 744,
+      "overall": [
+        {
+          "buffer_mw": 1592.0,
+          "level": 0.5
+        },
+        {
+          "buffer_mw": 2775.1,
+          "level": 0.75
+        },
+        {
+          "buffer_mw": 4097.9,
+          "level": 0.9
+        },
+        {
+          "buffer_mw": 5283.4,
+          "level": 0.95
+        }
+      ],
+      "window": {
+        "end": "2026-02-01",
+        "start": "2026-01-02"
+      }
+    }
+  },
+  "schema_version": 1,
+  "scope": {
+    "decision_dates": {
+      "end": "2026-01-31",
+      "start": "2026-01-01"
+    },
+    "default_cutoff": "09:00",
+    "delivery_dates": {
+      "end": "2026-02-01",
+      "start": "2026-01-02"
+    },
+    "delivery_days": 31,
+    "expected_hours": 744,
+    "mode": "decision_date",
+    "timezone": "Europe/London"
+  },
+  "snapshot": {
+    "fingerprint": "331dc8acb133704a",
+    "manifest_generated_at": "2026-11-01T18:42:17Z",
+    "source": {
+      "base_url": "https://data.elexon.co.uk/bmrs/api/v1",
+      "datasets": [
+        "FUELHH (fuelType=WIND)",
+        "WINDFOR"
+      ],
+      "documentation": {
+        "fuelhh": "https://bmrs.elexon.co.uk/api-documentation/endpoint/datasets/FUELHH/stream",
+        "windfor": "https://bmrs.elexon.co.uk/api-documentation/endpoint/datasets/WINDFOR/stream"
+      },
+      "name": "Elexon BMRS Insights Solution"
+    }
+  },
+  "summary": {
+    "baseline": {
+      "forecast_mae_mw": 2038.9,
+      "mae_mw": 4125.9,
+      "n": 744,
+      "name": "persistence_last_actual_at_cutoff",
+      "skill": 0.51
+    },
+    "coverage": {
+      "coverage_pct": 100.0,
+      "expected_periods": 744,
+      "missing_actual_periods": [],
+      "missing_forecast_periods": [],
+      "with_actual": 744,
+      "with_forecast": 744
+    },
+    "cutoff": "09:00",
+    "horizon_h": {
+      "max": 39.5,
+      "mean": 28.0,
+      "min": 16.5
+    },
+    "metrics": {
+      "bias_mw": 1747.9,
+      "correlation": 0.93,
+      "mae_mw": 2038.9,
+      "mape_n": 744,
+      "mape_pct": 22.04,
+      "mean_actual_mw": 11283.6,
+      "n": 744,
+      "n_missing_actual": 0,
+      "n_missing_forecast": 0,
+      "nmae_pct": 18.07,
+      "over_forecast_share": 0.85,
+      "p50_abs_mw": 1671.0,
+      "p50_err_mw": 1592.0,
+      "p5_err_mw": -1151.4,
+      "p90_abs_mw": 4097.9,
+      "p95_abs_mw": 5283.4,
+      "p95_err_mw": 5283.4,
+      "rmse_mw": 2504.8,
+      "shortfall_max_mw": 6870.0,
+      "shortfall_mean_mw": 1893.4,
+      "shortfall_p90_mw": 4097.9,
+      "shortfall_p95_mw": 5283.4,
+      "wape_pct": 18.07
+    },
+    "window": {
+      "delivery_days": 31,
+      "end": "2026-02-01",
+      "expected_periods": 744,
+      "start": "2026-01-02"
+    }
+  },
+  "worst": {
+    "days": [
+      {
+        "bias_mw": 5374.8,
+        "delivery_date": "2026-01-28",
+        "mae_mw": 5374.8,
+        "max_abs_mw": 6271.0,
+        "max_abs_time": "2026-01-28T04:00:00Z",
+        "n": 24,
+        "rmse_mw": 5399.4
+      },
+      {
+        "bias_mw": 4868.2,
+        "delivery_date": "2026-01-12",
+        "mae_mw": 4868.2,
+        "max_abs_mw": 6870.0,
+        "max_abs_time": "2026-01-12T01:00:00Z",
+        "n": 24,
+        "rmse_mw": 5120.9
+      },
+      {
+        "bias_mw": 4801.6,
+        "delivery_date": "2026-01-11",
+        "mae_mw": 4801.6,
+        "max_abs_mw": 5953.0,
+        "max_abs_time": "2026-01-11T23:00:00Z",
+        "n": 24,
+        "rmse_mw": 4853.4
+      },
+      {
+        "bias_mw": 3658.3,
+        "delivery_date": "2026-01-21",
+        "mae_mw": 3658.3,
+        "max_abs_mw": 4844.0,
+        "max_abs_time": "2026-01-21T05:00:00Z",
+        "n": 24,
+        "rmse_mw": 3766.5
+      },
+      {
+        "bias_mw": 3479.1,
+        "delivery_date": "2026-01-27",
+        "mae_mw": 3479.1,
+        "max_abs_mw": 6184.0,
+        "max_abs_time": "2026-01-27T23:00:00Z",
+        "n": 24,
+        "rmse_mw": 3578.4
+      }
+    ],
+    "metric": "mae",
+    "periods": [
+      {
+        "actual_mw": 14072.0,
+        "delivery_date": "2026-01-12",
+        "error_mw": 6870.0,
+        "forecast_mw": 20942.0,
+        "start_time": "2026-01-12T01:00:00Z"
+      },
+      {
+        "actual_mw": 14032.0,
+        "delivery_date": "2026-01-12",
+        "error_mw": 6758.0,
+        "forecast_mw": 20790.0,
+        "start_time": "2026-01-12T00:00:00Z"
+      },
+      {
+        "actual_mw": 14120.5,
+        "delivery_date": "2026-01-12",
+        "error_mw": 6755.5,
+        "forecast_mw": 20876.0,
+        "start_time": "2026-01-12T02:00:00Z"
+      },
+      {
+        "actual_mw": 14163.0,
+        "delivery_date": "2026-01-12",
+        "error_mw": 6646.0,
+        "forecast_mw": 20809.0,
+        "start_time": "2026-01-12T03:00:00Z"
+      },
+      {
+        "actual_mw": 14022.0,
+        "delivery_date": "2026-01-12",
+        "error_mw": 6561.0,
+        "forecast_mw": 20583.0,
+        "start_time": "2026-01-12T05:00:00Z"
+      }
+    ]
+  }
+}

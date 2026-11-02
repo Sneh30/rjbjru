@@ -1,0 +1,324 @@
+@import "./styles/tokens.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    border-color: var(--rule);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background:
+      radial-gradient(circle at 12% -10%, rgba(31, 95, 158, 0.1), transparent 42rem),
+      radial-gradient(circle at 92% 4%, rgba(217, 155, 43, 0.09), transparent 36rem),
+      var(--paper);
+    color: var(--ink);
+    font-family: var(--font-sans);
+    font-size: 15px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+  }
+
+  a {
+    color: var(--forecast);
+    text-underline-offset: 0.18em;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--focus);
+    outline-offset: 2px;
+  }
+
+  ::selection {
+    background: var(--band-soft);
+  }
+
+  table {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@layer components {
+  .wrap {
+    @apply mx-auto w-full max-w-[1440px] px-4 sm:px-6 lg:px-8;
+  }
+
+  .card {
+    background: var(--paper-raised);
+    border: 1px solid var(--rule);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .card-quiet {
+    background: color-mix(in srgb, var(--paper-raised) 55%, transparent);
+    border: 1px solid var(--rule);
+    border-radius: var(--radius);
+  }
+
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+  }
+
+  .btn {
+    @apply inline-flex min-h-9 items-center justify-center gap-2 rounded-lg border px-3 py-1.5 text-sm font-medium transition-colors;
+    border-color: var(--rule-strong);
+    background: var(--paper-raised);
+    color: var(--ink);
+  }
+
+  .btn:hover {
+    background: var(--paper-sunken);
+  }
+
+  .btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.45;
+  }
+
+  .btn-primary {
+    border-color: var(--forecast);
+    background: var(--forecast);
+    color: #fff;
+  }
+
+  .btn-primary:hover {
+    background: color-mix(in srgb, var(--forecast) 82%, black);
+  }
+
+  .btn-ghost {
+    border-color: transparent;
+    background: transparent;
+  }
+
+  .btn-ghost:hover {
+    background: var(--paper-sunken);
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-xs font-medium;
+    border-color: var(--rule);
+    background: var(--paper-sunken);
+    color: var(--ink-soft);
+  }
+
+  .field {
+    @apply min-h-9 rounded-lg border px-2.5 py-1.5 text-sm;
+    border-color: var(--rule-strong);
+    background: var(--paper-raised);
+    color: var(--ink);
+  }
+
+  .field:focus-visible {
+    outline: 2px solid var(--focus);
+    outline-offset: 1px;
+  }
+
+  .label {
+    @apply mb-1 block text-xs font-semibold uppercase tracking-wide;
+    color: var(--ink-muted);
+  }
+
+  .table-wrap {
+    @apply overflow-x-auto rounded-xl border;
+    border-color: var(--rule);
+  }
+
+  .data-table {
+    @apply w-full border-collapse text-sm;
+  }
+
+  .data-table th {
+    @apply sticky top-0 z-10 whitespace-nowrap px-3 py-2 text-left text-xs font-semibold uppercase tracking-wide;
+    background: var(--paper-sunken);
+    color: var(--ink-muted);
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .data-table td {
+    @apply whitespace-nowrap px-3 py-2;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .data-table tbody tr:hover {
+    background: color-mix(in srgb, var(--paper-sunken) 55%, transparent);
+  }
+
+  .data-table tbody tr:last-child td {
+    border-bottom: 0;
+  }
+
+  .num {
+    font-variant-numeric: tabular-nums;
+    text-align: right;
+  }
+
+  .prose-wind a {
+    text-decoration: underline;
+  }
+
+  .prose-wind p {
+    margin: 0.7rem 0;
+    color: var(--ink-soft);
+  }
+
+  .prose-wind h3 {
+    margin-top: 1.6rem;
+    font-size: 1.25rem;
+  }
+
+  .prose-wind ul {
+    margin: 0.7rem 0;
+    padding-left: 1.25rem;
+    list-style: disc;
+    color: var(--ink-soft);
+  }
+
+  .prose-wind li {
+    margin: 0.3rem 0;
+  }
+
+  .skip-link {
+    @apply absolute left-3 top-3 z-50 -translate-y-20 rounded-lg px-3 py-2 text-sm font-semibold text-white transition-transform;
+    background: var(--forecast);
+  }
+
+  .skip-link:focus {
+    transform: translateY(0);
+  }
+}
+
+@layer utilities {
+  .text-ink {
+    color: var(--ink);
+  }
+  .text-soft {
+    color: var(--ink-soft);
+  }
+  .text-muted {
+    color: var(--ink-muted);
+  }
+  .bg-paper {
+    background: var(--paper);
+  }
+  .bg-raised {
+    background: var(--paper-raised);
+  }
+  .bg-sunken {
+    background: var(--paper-sunken);
+  }
+  .border-rule {
+    border-color: var(--rule);
+  }
+  .text-over {
+    color: var(--over);
+  }
+  .text-under {
+    color: var(--under);
+  }
+  .text-forecast {
+    color: var(--forecast);
+  }
+  .text-band {
+    color: var(--band-ink);
+  }
+}
+
+.recharts-wrapper text {
+  fill: var(--ink-muted);
+  font-size: 11px;
+}
+
+.recharts-cartesian-axis-line,
+.recharts-cartesian-axis-tick-line {
+  stroke: var(--rule);
+}
+
+.recharts-cartesian-grid line {
+  stroke: var(--rule);
+  opacity: 0.65;
+}
+
+.recharts-tooltip-wrapper {
+  outline: none;
+}
+
+.chart-tooltip {
+  border: 1px solid var(--rule-strong);
+  border-radius: 10px;
+  background: var(--paper-raised);
+  box-shadow: var(--shadow-md);
+  padding: 0.6rem 0.75rem;
+  color: var(--ink);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.chart-tooltip strong {
+  font-variant-numeric: tabular-nums;
+}
+
+.spark-cell {
+  transition: opacity 120ms ease;
+}
+
+.spark-cell:hover {
+  opacity: 0.72;
+}
+
+.skeleton {
+  animation: pulse 1.6s ease-in-out infinite;
+  background: linear-gradient(
+    100deg,
+    var(--paper-sunken) 20%,
+    color-mix(in srgb, var(--paper-sunken) 55%, var(--paper-raised)) 45%,
+    var(--paper-sunken) 70%
+  );
+  background-size: 240% 100%;
+  border-radius: var(--radius-sm);
+}
+
+@keyframes pulse {
+  0% {
+    background-position: 120% 0;
+  }
+  100% {
+    background-position: -120% 0;
+  }
+}

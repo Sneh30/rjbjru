@@ -1,0 +1,50 @@
+{
+    "basis": "forecast",
+    "bins": [
+        {
+            "label": "Q1 (lowest)",
+            "from_mw": 3161.0,
+            "to_mw": 8214.0,
+            "n": 149,
+            "mae_mw": 1292.7,
+            "bias_mw": 379.5,
+            "nmae_pct": 22.07
+        },
+        {
+            "label": "Q2",
+            "from_mw": 8230.0,
+            "to_mw": 11282.0,
+            "n": 149,
+            "mae_mw": 1795.5,
+            "bias_mw": 1424.9,
+            "nmae_pct": 21.64
+        },
+        {
+            "label": "Q3",
+            "from_mw": 11302.0,
+            "to_mw": 15013.0,
+            "n": 149,
+            "mae_mw": 1663.0,
+            "bias_mw": 1550.3,
+            "nmae_pct": 14.56
+        },
+        {
+            "label": "Q4",
+            "from_mw": 15031.0,
+            "to_mw": 18098.0,
+            "n": 149,
+            "mae_mw": 1991.8,
+            "bias_mw": 1935.1,
+            "nmae_pct": 13.27
+        },
+        {
+            "label": "Q5",
+            "from_mw": 18103.0,
+            "to_mw": 21064.0,
+            "n": 148,
+            "mae_mw": 3461.1,
+            "bias_mw": 3461.1,
+            "nmae_pct": 21.82
+        }
+    ]
+}

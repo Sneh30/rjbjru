@@ -1,0 +1,244 @@
+{
+    "hours": [
+        {
+            "hour": 0,
+            "label": "00:00",
+            "n": 31,
+            "mae_mw": 2027.8,
+            "bias_mw": 1952.7,
+            "rmse_mw": 2526.1,
+            "shortfall_p90_mw": 3937.0,
+            "mean_actual_mw": 11616.0
+        },
+        {
+            "hour": 1,
+            "label": "01:00",
+            "n": 31,
+            "mae_mw": 2169.0,
+            "bias_mw": 2133.3,
+            "rmse_mw": 2671.5,
+            "shortfall_p90_mw": 4185.0,
+            "mean_actual_mw": 11353.8
+        },
+        {
+            "hour": 2,
+            "label": "02:00",
+            "n": 31,
+            "mae_mw": 2299.4,
+            "bias_mw": 2253.5,
+            "rmse_mw": 2799.8,
+            "shortfall_p90_mw": 4330.5,
+            "mean_actual_mw": 11156.5
+        },
+        {
+            "hour": 3,
+            "label": "03:00",
+            "n": 31,
+            "mae_mw": 2413.1,
+            "bias_mw": 2321.7,
+            "rmse_mw": 2908.7,
+            "shortfall_p90_mw": 4512.0,
+            "mean_actual_mw": 11024.8
+        },
+        {
+            "hour": 4,
+            "label": "04:00",
+            "n": 31,
+            "mae_mw": 2405.2,
+            "bias_mw": 2334.6,
+            "rmse_mw": 2904.4,
+            "shortfall_p90_mw": 4756.0,
+            "mean_actual_mw": 10932.6
+        },
+        {
+            "hour": 5,
+            "label": "05:00",
+            "n": 31,
+            "mae_mw": 2429.9,
+            "bias_mw": 2358.1,
+            "rmse_mw": 2919.2,
+            "shortfall_p90_mw": 4844.0,
+            "mean_actual_mw": 10793.3
+        },
+        {
+            "hour": 6,
+            "label": "06:00",
+            "n": 31,
+            "mae_mw": 2379.9,
+            "bias_mw": 2312.2,
+            "rmse_mw": 2876.6,
+            "shortfall_p90_mw": 4830.5,
+            "mean_actual_mw": 10721.1
+        },
+        {
+            "hour": 7,
+            "label": "07:00",
+            "n": 31,
+            "mae_mw": 2227.3,
+            "bias_mw": 2139.4,
+            "rmse_mw": 2735.9,
+            "shortfall_p90_mw": 4817.0,
+            "mean_actual_mw": 10817.1
+        },
+        {
+            "hour": 8,
+            "label": "08:00",
+            "n": 31,
+            "mae_mw": 2032.4,
+            "bias_mw": 1903.2,
+            "rmse_mw": 2494.7,
+            "shortfall_p90_mw": 3772.0,
+            "mean_actual_mw": 10983.1
+        },
+        {
+            "hour": 9,
+            "label": "09:00",
+            "n": 31,
+            "mae_mw": 1996.3,
+            "bias_mw": 1854.5,
+            "rmse_mw": 2449.6,
+            "shortfall_p90_mw": 3477.5,
+            "mean_actual_mw": 11000.6
+        },
+        {
+            "hour": 10,
+            "label": "10:00",
+            "n": 31,
+            "mae_mw": 1930.7,
+            "bias_mw": 1731.4,
+            "rmse_mw": 2390.6,
+            "shortfall_p90_mw": 3680.5,
+            "mean_actual_mw": 11082.0
+        },
+        {
+            "hour": 11,
+            "label": "11:00",
+            "n": 31,
+            "mae_mw": 1962.9,
+            "bias_mw": 1570.5,
+            "rmse_mw": 2337.2,
+            "shortfall_p90_mw": 3700.0,
+            "mean_actual_mw": 11142.0
+        },
+        {
+            "hour": 12,
+            "label": "12:00",
+            "n": 31,
+            "mae_mw": 1929.3,
+            "bias_mw": 1387.7,
+            "rmse_mw": 2295.5,
+            "shortfall_p90_mw": 3388.0,
+            "mean_actual_mw": 11186.5
+        },
+        {
+            "hour": 13,
+            "label": "13:00",
+            "n": 31,
+            "mae_mw": 1942.5,
+            "bias_mw": 1330.7,
+            "rmse_mw": 2265.0,
+            "shortfall_p90_mw": 3175.0,
+            "mean_actual_mw": 11139.5
+        },
+        {
+            "hour": 14,
+            "label": "14:00",
+            "n": 31,
+            "mae_mw": 1913.6,
+            "bias_mw": 1328.4,
+            "rmse_mw": 2234.2,
+            "shortfall_p90_mw": 3382.5,
+            "mean_actual_mw": 11114.5
+        },
+        {
+            "hour": 15,
+            "label": "15:00",
+            "n": 31,
+            "mae_mw": 1817.5,
+            "bias_mw": 1247.0,
+            "rmse_mw": 2199.8,
+            "shortfall_p90_mw": 3350.5,
+            "mean_actual_mw": 11273.4
+        },
+        {
+            "hour": 16,
+            "label": "16:00",
+            "n": 31,
+            "mae_mw": 1847.1,
+            "bias_mw": 1303.3,
+            "rmse_mw": 2228.5,
+            "shortfall_p90_mw": 4021.0,
+            "mean_actual_mw": 11385.5
+        },
+        {
+            "hour": 17,
+            "label": "17:00",
+            "n": 31,
+            "mae_mw": 1918.2,
+            "bias_mw": 1320.2,
+            "rmse_mw": 2292.1,
+            "shortfall_p90_mw": 3771.5,
+            "mean_actual_mw": 11578.0
+        },
+        {
+            "hour": 18,
+            "label": "18:00",
+            "n": 31,
+            "mae_mw": 1954.6,
+            "bias_mw": 1347.5,
+            "rmse_mw": 2368.0,
+            "shortfall_p90_mw": 3806.5,
+            "mean_actual_mw": 11784.6
+        },
+        {
+            "hour": 19,
+            "label": "19:00",
+            "n": 31,
+            "mae_mw": 1952.9,
+            "bias_mw": 1388.7,
+            "rmse_mw": 2383.0,
+            "shortfall_p90_mw": 3606.0,
+            "mean_actual_mw": 11887.1
+        },
+        {
+            "hour": 20,
+            "label": "20:00",
+            "n": 31,
+            "mae_mw": 1856.3,
+            "bias_mw": 1435.7,
+            "rmse_mw": 2339.8,
+            "shortfall_p90_mw": 3843.0,
+            "mean_actual_mw": 11880.5
+        },
+        {
+            "hour": 21,
+            "label": "21:00",
+            "n": 31,
+            "mae_mw": 1785.6,
+            "bias_mw": 1544.2,
+            "rmse_mw": 2324.1,
+            "shortfall_p90_mw": 3716.5,
+            "mean_actual_mw": 11783.2
+        },
+        {
+            "hour": 22,
+            "label": "22:00",
+            "n": 31,
+            "mae_mw": 1792.5,
+            "bias_mw": 1635.8,
+            "rmse_mw": 2368.6,
+            "shortfall_p90_mw": 4322.5,
+            "mean_actual_mw": 11691.9
+        },
+        {
+            "hour": 23,
+            "label": "23:00",
+            "n": 31,
+            "mae_mw": 1949.7,
+            "bias_mw": 1814.9,
+            "rmse_mw": 2532.3,
+            "shortfall_p90_mw": 4145.5,
+            "mean_actual_mw": 11477.9
+        }
+    ]
+}

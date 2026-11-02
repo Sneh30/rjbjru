@@ -1,0 +1,10 @@
+-r requirements.txt
+pytest==8.3.4
+pytest-cov==6.0.0
+hypothesis==6.124.2
+respx==0.22.0
+ruff==0.9.4
+mypy==1.14.1
+pandas-stubs==2.2.3.250308
+import-linter==2.3
+pip-audit==2.7.3

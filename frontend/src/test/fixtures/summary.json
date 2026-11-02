@@ -1,0 +1,54 @@
+{
+    "window": {
+        "start": "2026-01-02",
+        "end": "2026-02-01",
+        "delivery_days": 31,
+        "expected_periods": 744
+    },
+    "cutoff": "09:00",
+    "metrics": {
+        "n": 744,
+        "n_missing_actual": 0,
+        "n_missing_forecast": 0,
+        "mean_actual_mw": 11283.6,
+        "mae_mw": 2038.9,
+        "rmse_mw": 2504.8,
+        "bias_mw": 1747.9,
+        "nmae_pct": 18.07,
+        "wape_pct": 18.07,
+        "mape_pct": 22.04,
+        "mape_n": 744,
+        "p50_abs_mw": 1671.0,
+        "p90_abs_mw": 4097.9,
+        "p95_abs_mw": 5283.4,
+        "p5_err_mw": -1151.4,
+        "p50_err_mw": 1592.0,
+        "p95_err_mw": 5283.4,
+        "over_forecast_share": 0.85,
+        "shortfall_mean_mw": 1893.4,
+        "shortfall_p90_mw": 4097.9,
+        "shortfall_p95_mw": 5283.4,
+        "shortfall_max_mw": 6870.0,
+        "correlation": 0.93
+    },
+    "baseline": {
+        "name": "persistence_last_actual_at_cutoff",
+        "mae_mw": 4125.9,
+        "forecast_mae_mw": 2038.9,
+        "skill": 0.51,
+        "n": 744
+    },
+    "horizon_h": {
+        "min": 16.5,
+        "mean": 28.0,
+        "max": 39.5
+    },
+    "coverage": {
+        "expected_periods": 744,
+        "with_forecast": 744,
+        "with_actual": 744,
+        "missing_forecast_periods": [],
+        "missing_actual_periods": [],
+        "coverage_pct": 100.0
+    }
+}

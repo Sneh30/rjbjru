@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+backend/.venv
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+.python-version
+!.python-version
+
+# Node
+node_modules/
+frontend/dist/
+frontend/coverage/
+frontend/playwright-report/
+frontend/test-results/
+npm-debug.log*
+
+# Local configuration and secrets
+.env
+.env.local
+.anonymity-*
+.vercel/
+*.pem
+
+# OS / editors
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Local caches and regenerable ingestion input
+data/raw/
+.mypy_cache/

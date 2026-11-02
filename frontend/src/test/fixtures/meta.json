@@ -1,0 +1,121 @@
+{
+    "product": "WindLens",
+    "version": "1.0.0",
+    "timezone": "Europe/London",
+    "default_cutoff": "09:00",
+    "cutoff_grid": [
+        "06:00",
+        "08:00",
+        "09:00",
+        "09:20",
+        "09:50",
+        "10:00",
+        "12:00"
+    ],
+    "scope": {
+        "mode": "decision_date",
+        "decision_dates": {
+            "start": "2026-01-01",
+            "end": "2026-01-31"
+        },
+        "delivery_dates": {
+            "start": "2026-01-02",
+            "end": "2026-02-01"
+        },
+        "delivery_days": 31
+    },
+    "available_delivery_dates": [
+        "2026-01-02",
+        "2026-01-03",
+        "2026-01-04",
+        "2026-01-05",
+        "2026-01-06",
+        "2026-01-07",
+        "2026-01-08",
+        "2026-01-09",
+        "2026-01-10",
+        "2026-01-11",
+        "2026-01-12",
+        "2026-01-13",
+        "2026-01-14",
+        "2026-01-15",
+        "2026-01-16",
+        "2026-01-17",
+        "2026-01-18",
+        "2026-01-19",
+        "2026-01-20",
+        "2026-01-21",
+        "2026-01-22",
+        "2026-01-23",
+        "2026-01-24",
+        "2026-01-25",
+        "2026-01-26",
+        "2026-01-27",
+        "2026-01-28",
+        "2026-01-29",
+        "2026-01-30",
+        "2026-01-31",
+        "2026-02-01"
+    ],
+    "horizon_buckets_h": [
+        0.0,
+        6.0,
+        12.0,
+        18.0,
+        24.0,
+        36.0,
+        48.0,
+        72.0
+    ],
+    "constants": {
+        "period_minutes": 30,
+        "forecast_period_minutes": 60,
+        "sign_convention": "error = forecast - actual; positive = over-forecast (shortfall risk)",
+        "mape_min_actual_mw": 500.0,
+        "min_history_days": 7,
+        "outcome_lag_days": 2
+    },
+    "data": {
+        "fingerprint": "331dc8acb133704a",
+        "generated_at": "2026-11-01T18:42:17Z",
+        "source": "Elexon BMRS FUELHH (fuelType=WIND) and WINDFOR",
+        "datasets": [
+            "FUELHH",
+            "WINDFOR"
+        ],
+        "manifest_source": {
+            "base_url": "https://data.elexon.co.uk/bmrs/api/v1",
+            "datasets": [
+                "FUELHH (fuelType=WIND)",
+                "WINDFOR"
+            ],
+            "documentation": {
+                "fuelhh": "https://bmrs.elexon.co.uk/api-documentation/endpoint/datasets/FUELHH/stream",
+                "windfor": "https://bmrs.elexon.co.uk/api-documentation/endpoint/datasets/WINDFOR/stream"
+            },
+            "name": "Elexon BMRS Insights Solution"
+        },
+        "coverage": {
+            "actual_periods": 1536,
+            "actual_rows": 1536,
+            "hourly_actual_periods": 768,
+            "forecast_rows": 19856,
+            "forecast_vintages": 272,
+            "forecast_target_start": "2025-12-29T21:00:00Z",
+            "forecast_target_end": "2026-02-03T21:00:00Z"
+        },
+        "quality": {
+            "hourly_incomplete": 0,
+            "actual_missing_rows": 0
+        }
+    },
+    "methodology": {
+        "selection_rule": "latest WINDFOR vintage with publish_time <= cutoff (inclusive)",
+        "cutoff_rule": "09:00 Europe/London on the day before delivery",
+        "scope_note": "Decision-time metrics use the latest WINDFOR vintage published at or before the 09:00 Europe/London cutoff on the previous calendar day.",
+        "resolution_note": "WINDFOR is hourly and FUELHH is half-hourly. Each hourly actual is the mean of its two half-hour settlement periods; no interpolation or imputation is applied.",
+        "error_sign": "error = forecast - actual; positive = over-forecast (shortfall risk)",
+        "known_caveat": "Elexon describes both series as operational-metered wind, yet the observed WINDFOR level exceeds FUELHH WIND outturn in this snapshot. WindLens reports that measured difference directly rather than rescaling it away; see docs/METHODOLOGY.md."
+    },
+    "ai_disclosure": "Built with an AI coding agent working from a written specification, with live data checks and independently executed tests. See README.md."
+}
