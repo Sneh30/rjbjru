@@ -25,6 +25,18 @@ served by a FastAPI API and a React interface.
 
 ![Decision Desk for 15 January 2026, with hindsight and the P90 risk band enabled](docs/img/desk-hindsight.png)
 
+## Watch the walkthrough
+
+Two Unlisted YouTube cuts, one for each audience:
+
+| Part | What it covers | Length | Video |
+|---|---|---|---|
+| Part 1 | Customer pitch: the decision gate, Decision Desk, forecast vs actual, error metrics, and the buy buffer | 5:35 | [Wind Forecast Dashboard for Day-Ahead Power Buying (Client Demo)](https://www.youtube.com/watch?v=DwoXTmBGXPs) |
+| Part 2 | Tech-lead review: architecture, Elexon data flow, no-look-ahead selection, analysis, code layout, Docker, and CI | 6:26 | [Wind Forecast Dashboard, Architecture and Code Walkthrough (Tech Review)](https://www.youtube.com/watch?v=IiYuM5KSbSQ) |
+
+Both videos are **Unlisted**. The shared playlist is
+[WindLens walkthrough](https://www.youtube.com/playlist?list=PLWqqspWmakl0).
+
 ## What it does
 
 - **Decision Desk.** Pick a London delivery day and a cutoff. WindLens selects
